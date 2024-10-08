@@ -1,5 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
 
 # Step 1: Load the dataset
 data = pd.read_csv("data/spending_data.csv")
@@ -19,6 +21,19 @@ features = data[['Amount', 'Day0fWeek']]
 scaler = StandardScaler()
 scaled_features = scaler.fit_transform(features)
 
-# Output the preprocessed data
-print("Preprocessed Data:")
-print(scaled_features)
+# Step 6: Apply K-means clustering
+# Define the number of clusters
+kmeans = KMeans(n_clusters=3, random_state=42)
+kmeans.fit(scaled_features)
+
+# Step 7: Add cluster labels to the original data
+data['Cluster'] = kmeans.labels_
+
+# Step 8: Visualize the clusters
+plt.scatter(data['Amount'], data['Day0fWeek'],
+c=data['Cluster'], cmap='viridis')
+plt.xlabel('Amount')
+plt.ylabel('DayOfWeek')
+plt.title('Spending Clusters')
+plt.show()
+
