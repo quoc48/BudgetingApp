@@ -2,6 +2,8 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
+from sklearn.metrics import silhouette_score
+
 
 # Step 1: Load the dataset
 data = pd.read_csv("data/spending_data.csv")
@@ -37,5 +39,8 @@ plt.ylabel('DayOfWeek')
 plt.title('Spending Clusters')
 plt.show()
 
+# Step 9: Evaluate the clustering performance
+silhouette_avg = silhouette_score(scaled_features, kmeans.labels_)
+print(f"Silhouette score: {silhouette_avg:.2f}")
 
 
