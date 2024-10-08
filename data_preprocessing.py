@@ -37,3 +37,5 @@ plt.ylabel('DayOfWeek')
 plt.title('Spending Clusters')
 plt.show()
 
+
+
