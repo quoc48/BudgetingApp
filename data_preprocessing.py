@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
-from sklearn.metrics import silhouette_score
+from sklearn.metrics import silhouette_score, davies_bouldin_score
 
 
 # Step 1: Load the dataset
@@ -61,4 +61,6 @@ plt.show()
 silhouette_avg = silhouette_score(scaled_features, kmeans.labels_)
 print(f"Best number of Clusters: {best_k}, Silhouette score: {silhouette_avg:.2f}")
 
-
+# Step 10: Calculate Davies-Bouldin Score for the further evaluation
+davies_bouldin_avg = davies_bouldin_score(scaled_features, kmeans.labels_)
+print(f'Davies-Bouldin Score: {davies_bouldin_avg:2f}')
