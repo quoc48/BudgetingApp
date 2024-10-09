@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
-from sklearn.metrics import silhouette_score, davies_bouldin_score
+from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score
 
 
 # Step 1: Load the dataset
@@ -64,3 +64,7 @@ print(f"Best number of Clusters: {best_k}, Silhouette score: {silhouette_avg:.2f
 # Step 10: Calculate Davies-Bouldin Score for the further evaluation
 davies_bouldin_avg = davies_bouldin_score(scaled_features, kmeans.labels_)
 print(f'Davies-Bouldin Score: {davies_bouldin_avg:2f}')
+
+# Step 11: Calculate Calinski-harabasz Score for evaluation
+calinski_harabasz_avg = calinski_harabasz_score(scaled_features, kmeans.labels_)
+print(f'Calinski_Harabasz Score: {calinski_harabasz_avg:.2f}')
