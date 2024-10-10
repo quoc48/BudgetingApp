@@ -1,4 +1,6 @@
+import numpy as np
 import pandas as pd
+from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
@@ -29,6 +31,19 @@ features = data[['Amount', 'Day0fWeek', 'IsWeekend', 'CategoryEncoded']]
 # Step 5: Standardize the features
 scaler = StandardScaler()
 scaled_features = scaler.fit_transform(features)
+
+# Step 6: Determine explained variance to decide number of components
+pca = PCA().fit(scaled_features)
+explained_variance_ratio = np.cumsum(pca.explained_variance_ratio_)
+plt.figure(figsize=(10, 6))
+plt.plot(range(1, len(explained_variance_ratio) + 1),
+         explained_variance_ratio, marker='o')
+plt.xlabel('Number of Components')
+plt.ylabel('Cumulative Explained Variance')
+plt.title('Explained Variance vs Number of Components')
+plt.grid()
+plt.show()
+
 
 # Step 6: Apply K-means clustering with different number of clusters
 best_score = -1
