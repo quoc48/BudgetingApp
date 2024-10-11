@@ -61,7 +61,8 @@ for n_clusters in range(2, 7):
 kmeans = KMeans(n_clusters=best_k, random_state=42)
 kmeans.fit(scaled_features)
 
-# Step 7: Add cluster labels to the original data
+
+# Step 7: Reduce dimensionality using PCA for visualization purposes
 data['Cluster'] = kmeans.labels_
 
 # Step 8: Visualize the clusters
