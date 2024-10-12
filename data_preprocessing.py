@@ -99,3 +99,7 @@ print(f'Davies-Bouldin Score: {davies_bouldin_avg:2f}')
 # Step 14: Calculate Calinski-harabasz Score for evaluation
 calinski_harabasz_avg = calinski_harabasz_score(scaled_features, kmeans.labels_)
 print(f'Calinski_Harabasz Score: {calinski_harabasz_avg:.2f}')
+
+# Step 15: Save the labeled data to a new CSV file
+data.to_csv('data/spending_data_with_clusters.csv', index=False)
+print("Labeled data saved to 'spending_data_with_cluster.csv'")
