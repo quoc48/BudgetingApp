@@ -44,43 +44,58 @@ plt.title('Explained Variance vs Number of Components')
 plt.grid()
 plt.show()
 
+# Step 7: Reduce dimensionality using PCA for visualization purposes
+pca = PCA(n_components=2)
+pca_features = pca.fit_transform(scaled_features)
 
-# Step 6: Apply K-means clustering with different number of clusters
+# Step 8: Apply K-means clustering with different number of clusters
 best_score = -1
 best_k = 0
-for n_clusters in range(2, 7):
+silhouette_scores = []
+for n_clusters in range(2, 11):
     kmeans = KMeans(n_clusters=n_clusters, random_state=42)
     kmeans.fit(scaled_features)
     score = silhouette_score(scaled_features, kmeans.labels_)
+    silhouette_scores.append(score)
     print(f'Number of Cluster: {n_clusters}, Silhouette Score: {score: .2f}')
     if score > best_score:
         best_score = score
         best_k = n_clusters
 
-# Apply K-means with the best number of clusters
+# Plot Silhouette Score to determine the best number of clusters
+plt.figure(figsize=(10, 6))
+plt.plot(range(2, 11), silhouette_scores, marker='o')
+plt.xlabel('Number of Clusters')
+plt.ylabel('Silhouette Score')
+plt.title('Silhouette Score vs Number of Clusters')
+plt.grid()
+plt.show()
+
+# Step 9: Apply K-means with the best number of clusters
 kmeans = KMeans(n_clusters=best_k, random_state=42)
 kmeans.fit(scaled_features)
 
-
-# Step 7: Reduce dimensionality using PCA for visualization purposes
+# Step 10: Reduce dimensionality using PCA for visualization purposes
 data['Cluster'] = kmeans.labels_
 
-# Step 8: Visualize the clusters
-plt.scatter(data['Amount'], data['Day0fWeek'],
-c=data['Cluster'], cmap='viridis')
-plt.xlabel('Amount')
-plt.ylabel('DayOfWeek')
-plt.title('Spending Clusters')
+# Step 11: Visualize the clusters using PCA-reduced features
+plt.figure(figsize=(10, 6))
+plt.scatter(pca_features[:, 0], pca_features[:, 1],
+c=data['Cluster'], cmap='viridis', alpha=0.6, edgecolor='k')
+plt.xlabel('PCA Feature 1')
+plt.ylabel('PCA Feature 2')
+plt.title('Spending Clusters (PCA Projection)')
+plt.grid()
 plt.show()
 
-# Step 9: Evaluate the clustering performance
+# Step 12: Evaluate the clustering performance
 silhouette_avg = silhouette_score(scaled_features, kmeans.labels_)
 print(f"Best number of Clusters: {best_k}, Silhouette score: {silhouette_avg:.2f}")
 
-# Step 10: Calculate Davies-Bouldin Score for the further evaluation
+# Step 13: Calculate Davies-Bouldin Score for the further evaluation
 davies_bouldin_avg = davies_bouldin_score(scaled_features, kmeans.labels_)
 print(f'Davies-Bouldin Score: {davies_bouldin_avg:2f}')
 
-# Step 11: Calculate Calinski-harabasz Score for evaluation
+# Step 14: Calculate Calinski-harabasz Score for evaluation
 calinski_harabasz_avg = calinski_harabasz_score(scaled_features, kmeans.labels_)
 print(f'Calinski_Harabasz Score: {calinski_harabasz_avg:.2f}')
