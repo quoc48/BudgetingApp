@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import seaborn as sns
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.cluster import KMeans
@@ -101,5 +102,33 @@ calinski_harabasz_avg = calinski_harabasz_score(scaled_features, kmeans.labels_)
 print(f'Calinski_Harabasz Score: {calinski_harabasz_avg:.2f}')
 
 # Step 15: Save the labeled data to a new CSV file
-data.to_csv('data/spending_data_with_clusters.csv', index=False)
-print("Labeled data saved to 'spending_data_with_cluster.csv'")
+# data.to_csv('data/spending_data_with_clusters.csv', index=False)
+# print("Labeled data saved to 'spending_data_with_cluster.csv'")
+
+# Step 16: Analyze and visualize cluster characteristics using Seaborn
+plt.figure(figsize=(12, 8))
+sns.boxplot(x='Cluster', y='Amount', data=data)
+plt.title('Amount Spent by Cluster')
+plt.xlabel('Cluster')
+plt.ylabel('Amount Spent')
+plt.grid()
+plt.show()
+
+plt.figure(figsize=(12, 8))
+sns.countplot(x='Cluster', hue='IsWeekend', data=data)
+plt.title('Cluster Distribution by Weekend Spending')
+plt.xlabel('Cluster')
+plt.ylabel('Count')
+plt.grid()
+plt.show()
+
+# Step 17: Identify cluster characteristics
+cluster_summary = data.groupby('Cluster').agg(
+        Average_Amount=('Amount', 'mean'),
+        Median_Amount=('Amount', 'median'),
+        Count=('Amount', 'size'),
+        Weekend_Spend_Percentage=('IsWeekend', 'mean')).reset_index()
+
+cluster_summary['Weekend_Spend_Percentage'] *= 100
+print("Cluster Characteristic Summary:")
+print(cluster_summary)
