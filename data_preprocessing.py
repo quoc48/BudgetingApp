@@ -149,3 +149,8 @@ plt.xlabel('Cluster')
 plt.ylabel('Weekend Spending Percentage (%)')
 plt.grid()
 plt.show()
+
+# Step 19: Save the cluster summary to a new CSV file
+cluster_summary.to_csv('data/cluster_characteristics_summary.csv', index=False)
+print("Cluster characteristics summary saved to "
+      "'cluster_characteristics_summary.csv'")
