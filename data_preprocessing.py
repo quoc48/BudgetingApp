@@ -132,3 +132,20 @@ cluster_summary = data.groupby('Cluster').agg(
 cluster_summary['Weekend_Spend_Percentage'] *= 100
 print("Cluster Characteristic Summary:")
 print(cluster_summary)
+
+# Step 18: Visualize cluster summary characteristics
+plt.figure(figsize=(12, 8))
+sns.barplot(x='Cluster', y='Average_Amount', data=cluster_summary)
+plt.title('Average Amount Spent by Cluster')
+plt.xlabel('Cluster')
+plt.ylabel('Average Amount Spent')
+plt.grid()
+plt.show()
+
+plt.figure(figsize=(12, 8))
+sns.barplot(x='Cluster', y='Weekend_Spend_Percentage', data=cluster_summary)
+plt.title('Percentage of Weekend Spending by Cluster')
+plt.xlabel('Cluster')
+plt.ylabel('Weekend Spending Percentage (%)')
+plt.grid()
+plt.show()
