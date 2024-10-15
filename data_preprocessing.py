@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 from sklearn.decomposition import PCA
+from sklearn.neighbors import NearestNeighbors
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
@@ -154,3 +155,12 @@ plt.show()
 cluster_summary.to_csv('data/cluster_characteristics_summary.csv', index=False)
 print("Cluster characteristics summary saved to "
       "'cluster_characteristics_summary.csv'")
+
+# Step 20: Find nearest neighbors for cluster centroids
+nearest_neighbors = NearestNeighbors(n_neighbors=3).fit(scaled_features)
+centroids = kmeans.cluster_centers_
+_, indices = nearest_neighbors.kneighbors(centroids)
+
+# Display the nearest neighbors for each cluster centroid
+for i, neighbors in enumerate(indices):
+    print(f'Cluster {i} nearest neighbors (data points indices): {neighbors}')
