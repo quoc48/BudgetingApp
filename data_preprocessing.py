@@ -161,6 +161,28 @@ nearest_neighbors = NearestNeighbors(n_neighbors=3).fit(scaled_features)
 centroids = kmeans.cluster_centers_
 _, indices = nearest_neighbors.kneighbors(centroids)
 
-# Display the nearest neighbors for each cluster centroid
+# Step 21: Visualize the nearest neighbors for each cluster centroid
+plt.figure(figsize=(10, 6))
+
+# Plot all data points with their cluster labels
+plt.scatter(pca_features[:, 0], pca_features[:, 1],
+c=data['Cluster'], cmap='viridis', alpha=0.6,
+edgecolors='k', label='Data Points')
+
+# Highlight the centroids of each cluster
+centroids_pca = pca.transform(centroids)
+plt.scatter(centroids_pca[:, 0], centroids_pca[:, 1], marker='X',
+s=200, c='red', label='Cluster Centroids')
+
+# Highlight the nearest neighbors for each cluster centroid
 for i, neighbors in enumerate(indices):
-    print(f'Cluster {i} nearest neighbors (data points indices): {neighbors}')
+    plt.scatter(pca_features[neighbors, 0], pca_features[neighbors, 1],
+    edgecolors='blue', facecolors='none', s=200, linewidths=2,
+    label=f'Cluster {i} Nearest Neighbors')
+
+plt.xlabel('PCA Feature 1')
+plt.ylabel('PCA Feature 2')
+plt.title('Spending Cluster with Nearest Neighbors Highlighed')
+plt.legend()
+plt.grid()
+plt.show()
