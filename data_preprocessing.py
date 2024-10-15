@@ -177,7 +177,7 @@ s=200, c='red', label='Cluster Centroids')
 # Highlight the nearest neighbors for each cluster centroid
 for i, neighbors in enumerate(indices):
     plt.scatter(pca_features[neighbors, 0], pca_features[neighbors, 1],
-    edgecolors='blue', facecolors='none', s=200, linewidths=2,
+    edgecolors='blue', facecolors='none', s=200, linewidths=1,
     label=f'Cluster {i} Nearest Neighbors')
 
 plt.xlabel('PCA Feature 1')
