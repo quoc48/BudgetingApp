@@ -182,7 +182,7 @@ for i, neighbors in enumerate(indices):
 
 plt.xlabel('PCA Feature 1')
 plt.ylabel('PCA Feature 2')
-plt.title('Spending Cluster with Nearest Neighbors Highlighed')
+plt.title('Spending Cluster with Nearest Neighbors Highlighted')
 plt.legend()
 plt.grid()
 plt.show()
