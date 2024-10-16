@@ -186,3 +186,20 @@ plt.title('Spending Cluster with Nearest Neighbors Highlighted')
 plt.legend()
 plt.grid()
 plt.show()
+
+# Step 22: Analyze and interpret nearest neighbors
+nearest_neighbors_summary = []
+for i, neighbors in enumerate(indices):
+    neighbor_data = data.iloc[neighbors]
+    summary = {
+        'Avg_Amount': neighbor_data['Amount'].mean(),
+        'Median_Amount': neighbor_data['Amount'].median(),
+        'Most_Common_Day': neighbor_data['DayOfWeek'].mode()[0] if 'DayOfWeek' in neighbor_data.columns else 'N/A',
+        'Weekend_Spend_Percentage': neighbor_data['IsWeekend'].mean() * 100,
+        'Cluster': i
+    }
+    nearest_neighbors_summary.append(summary)
+
+nearest_neighbors_summary_df = pd.DataFrame(nearest_neighbors_summary)
+print("Nearest Neighbors Summary:")
+print(nearest_neighbors_summary_df)
