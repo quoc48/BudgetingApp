@@ -203,3 +203,7 @@ for i, neighbors in enumerate(indices):
 nearest_neighbors_summary_df = pd.DataFrame(nearest_neighbors_summary)
 print("Nearest Neighbors Summary:")
 print(nearest_neighbors_summary_df)
+
+# Step 23: Save nearest neighbors summary to CSV file
+nearest_neighbors_summary_df.to_csv('data/nearest_neighbors_summary.csv', index=False)
+print("Nearest neighbors summary saved to 'nearest_neighbors_summary.csv'")
