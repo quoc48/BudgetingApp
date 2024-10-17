@@ -214,3 +214,5 @@ silhouette_values = silhouette_score(scaled_features, kmeans.labels_,
 data['Sihouette_Score'] = silhouette_values
 print("Silhouette scores added to the dataset.")
 
+# Step 25: Save the updated datasey with silhouette scores to CSV
+data.to_csv('data/spending_data_with_clusters_and_silhouette.csv', index=False)
