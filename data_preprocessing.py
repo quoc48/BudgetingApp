@@ -207,3 +207,10 @@ print(nearest_neighbors_summary_df)
 # Step 23: Save nearest neighbors summary to CSV file
 nearest_neighbors_summary_df.to_csv('data/nearest_neighbors_summary.csv', index=False)
 print("Nearest neighbors summary saved to 'nearest_neighbors_summary.csv'")
+
+# Step 24: Calculate cluster silhouette scores for each data point
+silhouette_values = silhouette_score(scaled_features, kmeans.labels_,
+                    metric='euclidean')
+data['Sihouette_Score'] = silhouette_values
+print("Silhouette scores added to the dataset.")
+
