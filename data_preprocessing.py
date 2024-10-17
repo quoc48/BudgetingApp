@@ -216,3 +216,17 @@ print("Silhouette scores added to the dataset.")
 
 # Step 25: Save the updated datasey with silhouette scores to CSV
 data.to_csv('data/spending_data_with_clusters_and_silhouette.csv', index=False)
+
+# Step 26: Calculate the mean intra-cluster distance for each cluster
+intra_cluster_distances = []
+for i in range(best_k):
+    cluster_points = scaled_features[data['Cluster'] == i]
+    centroid = centroids[i]
+    distances = np.linalg.norm(cluster_points - centroid, axis=1)
+    mean_distance = distances.mean()
+    intra_cluster_distances.append({'Cluster': i,
+    'Mean_Intra_Cluster_Distance': mean_distance})
+
+intra_cluster_distances_df = pd.DataFrame(intra_cluster_distances)
+print("Intra-Cluster Distance Summary:")
+print(intra_cluster_distances_df)
