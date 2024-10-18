@@ -230,3 +230,5 @@ for i in range(best_k):
 intra_cluster_distances_df = pd.DataFrame(intra_cluster_distances)
 print("Intra-Cluster Distance Summary:")
 print(intra_cluster_distances_df)
+
+# Step 27: Save intra-cluster distances summary to CSV file
