@@ -232,3 +232,5 @@ print("Intra-Cluster Distance Summary:")
 print(intra_cluster_distances_df)
 
 # Step 27: Save intra-cluster distances summary to CSV file
+intra_cluster_distances_df.to_csv('data/intra_cluster_distances_summary.csv',
+                                  index=False)
