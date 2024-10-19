@@ -234,3 +234,31 @@ print(intra_cluster_distances_df)
 # Step 27: Save intra-cluster distances summary to CSV file
 intra_cluster_distances_df.to_csv('data/intra_cluster_distances_summary.csv',
                                   index=False)
+
+# Step 28: Calculate Dunn Index for the clustering
+def dunn_index(centroids, scaled_features, labels):
+    min_intercluster_distance = np.inf
+    max_intraccluster_distance = 0
+
+    # Calculate minimum inter-cluster distance
+    for i in range(len(centroids)):
+        for j in range(i + 1, len(centroids)):
+            distance = np.linalg.norm(centroids[i] - centroid[j])
+            if distance < min_intercluster_distance:
+                min_intercluster_distance = distance
+
+    # Calculate maximum intra-cluster distance
+    for i in range(best_k):
+        cluster_points = scaled_features[labels == i]
+        centroid = centroids[i]
+        distances = np.linalg.norm(cluster_points - centroid, axis=1)
+        max_distance = distances.max()
+        if max_distance > max_intraccluster_distance:
+            max_intraccluster_distance = max_distance
+
+    dunn = min_intercluster_distance / max_intraccluster_distance
+    return dunn
+
+# Calculate and print Dunn Index
+dunn_index_value = dunn_index(centroids, scaled_features, kmeans.labels_)
+print(f'Dunn Index: {dunn_index_value:.2f}')
