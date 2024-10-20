@@ -265,13 +265,13 @@ print(f'Dunn Index: {dunn_index_value:.2f}')
 
 # Step 29: Generate personalized budgeting insights
 insights = []
-for cluser in data['Cluster'].unique():
-    cluster_data = data[data['Cluster'] == cluser]
+for cluster in data['Cluster'].unique():
+    cluster_data = data[data['Cluster'] == cluster]
     high_spending_categories = cluster_data.groupby('Category').agg(
         Total_Amount=('Amount', 'sum')).sort_values(by='Total_Amount', ascending=False)
     top_category = high_spending_categories.index[0]
     insights.append({
-        'Cluster': cluser,
+        'Cluster': cluster,
         'Top_Spending_Category': top_category,
         'Avg_Amount_Spent': cluster_data['Amount'].mean(),
         'Recommendation': f'Consider reducing spending in {top_category} to save more.'
@@ -283,3 +283,5 @@ print(insights_df)
 
 # Save insights to CSV file
 insights_df.to_csv('data/budgeting_insights.csv', index=False)
+
+# Step 30: Visualize personalized budgeting insights
