@@ -285,3 +285,16 @@ print(insights_df)
 insights_df.to_csv('data/budgeting_insights.csv', index=False)
 
 # Step 30: Visualize personalized budgeting insights
+for cluster in data['Cluster'].unique():
+    cluster_data = data[data['Cluster'] == cluster]
+    spending_by_category = cluster_data.groupby('Category').agg(
+        Total_Amount=('Amount', 'sum')).reset_index()
+
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x='Category', y='Total_Amount', data=spending_by_category)
+    plt.title(f'Total Spending by Category for Cluster {cluster}')
+    plt.xlabel('Category')
+    plt.ylabel('Total Amount Spent')
+    plt.xticks(rotation=45)
+    plt.grid()
+    plt.show()
