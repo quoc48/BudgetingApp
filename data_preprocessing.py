@@ -288,10 +288,13 @@ insights_df.to_csv('data/budgeting_insights.csv', index=False)
 anomalies = []
 for cluster in data['Cluster'].unique():
     cluster_data = data[data['Cluster'] == cluster]
-    mean_amount = cluster_data['Amount'].mean()
-    std_amount = cluster_data['Amount'].std()
-    threshold = mean_amount + 1.5 * std_amount
-    cluster_anomalies = cluster_data[cluster_data['Amount'] > threshold]
+    Q1 = cluster_data['Amount'].quantile(0.5)
+    Q3 = cluster_data['Amount'].quantile(0.75)
+    IQR = Q3 - Q1
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+    cluster_anomalies = cluster_data[(cluster_data['Amount'] < lower_bound) |
+                                     (cluster_data['Amount'] > upper_bound)]
     anomalies.append(cluster_anomalies)
 
 anomalies_df = pd.concat(anomalies)
