@@ -284,17 +284,19 @@ print(insights_df)
 # Save insights to CSV file
 insights_df.to_csv('data/budgeting_insights.csv', index=False)
 
-# Step 30: Visualize personalized budgeting insights
+# Step 30: Anomaly Detection - Indentify high spending outliers
+anomalies = []
 for cluster in data['Cluster'].unique():
     cluster_data = data[data['Cluster'] == cluster]
-    spending_by_category = cluster_data.groupby('Category').agg(
-        Total_Amount=('Amount', 'sum')).reset_index()
+    mean_amount = cluster_data['Amount'].mean()
+    std_amount = cluster_data['Amount'].std()
+    threshold = mean_amount + 1.5 * std_amount
+    cluster_anomalies = cluster_data[cluster_data['Amount'] > threshold]
+    anomalies.append(cluster_anomalies)
 
-    plt.figure(figsize=(10, 6))
-    sns.barplot(x='Category', y='Total_Amount', data=spending_by_category)
-    plt.title(f'Total Spending by Category for Cluster {cluster}')
-    plt.xlabel('Category')
-    plt.ylabel('Total Amount Spent')
-    plt.xticks(rotation=45)
-    plt.grid()
-    plt.show()
+anomalies_df = pd.concat(anomalies)
+print("Anomolies Detected:")
+print(anomalies_df)
+
+# Save anomalies to CSV file
+anomalies_df.to_csv('data/anomolies.csv', index=False)
