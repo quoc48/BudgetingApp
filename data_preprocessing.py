@@ -243,7 +243,7 @@ def dunn_index(centroids, scaled_features, labels):
     # Calculate minimum inter-cluster distance
     for i in range(len(centroids)):
         for j in range(i + 1, len(centroids)):
-            distance = np.linalg.norm(centroids[i] - centroid[j])
+            distance = np.linalg.norm(centroids[i] - centroids[j])
             if distance < min_intercluster_distance:
                 min_intercluster_distance = distance
 
@@ -262,3 +262,24 @@ def dunn_index(centroids, scaled_features, labels):
 # Calculate and print Dunn Index
 dunn_index_value = dunn_index(centroids, scaled_features, kmeans.labels_)
 print(f'Dunn Index: {dunn_index_value:.2f}')
+
+# Step 29: Generate personalized budgeting insights
+insights = []
+for cluser in data['Cluster'].unique():
+    cluster_data = data[data['Cluster'] == cluser]
+    high_spending_categories = cluster_data.groupby('Category').agg(
+        Total_Amount=('Amount', 'sum')).sort_values(by='Total_Amount', ascending=False)
+    top_category = high_spending_categories.index[0]
+    insights.append({
+        'Cluster': cluser,
+        'Top_Spending_Category': top_category,
+        'Avg_Amount_Spent': cluster_data['Amount'].mean(),
+        'Recommendation': f'Consider reducing spending in {top_category} to save more.'
+    })
+
+insights_df=pd.DataFrame(insights)
+print("Personalized Budgeting Insights:")
+print(insights_df)
+
+# Save insights to CSV file
+insights_df.to_csv('data/budgeting_insights.csv', index=False)
