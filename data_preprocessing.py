@@ -303,3 +303,8 @@ print(anomalies_df)
 
 # Save anomalies to CSV file
 anomalies_df.to_csv('data/anomolies.csv', index=False)
+
+# Step 30: Generate personalized spending insights for each user
+# Generate recommendations based on cluster
+recommendations = []
+for idx, row
