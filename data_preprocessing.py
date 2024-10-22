@@ -307,4 +307,28 @@ anomalies_df.to_csv('data/anomolies.csv', index=False)
 # Step 30: Generate personalized spending insights for each user
 # Generate recommendations based on cluster
 recommendations = []
-for idx, row
+for idx, row in data.iterrows():
+    cluster = row['Cluster']
+    avg_amount = cluster_summary[cluster_summary['Cluster'] == cluster]['Average_Amount'].values[0]
+    if row['Amount'] > avg_amount:
+        recommendation = "Your spending of ${:.2f} is above the cluster average of ${:.2f}. Consider reducing spending in this category.".format(row['Amount'], avg_amount)
+    else:
+        recommendation = "Your spending is within the cluster average. Keep up the good budgeting!"
+    recommendations.append(recommendation)
+
+data['Spending_Recommendation'] = recommendations
+
+# Flag unusual spending days for each user
+unusual_spending_days = []
+for idx, row in data.iterrows():
+    if row['IsWeekend'] == 1 and row['Amount'] > avg_amount:
+        unusual_spending_days.append("High spending on a weekend")
+    elif row['Day0fWeek'] in [4, 5] and row['Amount'] > avg_amount:
+        unusual_spending_days.append("High spending towards the end of the week")
+    else:
+        unusual_spending_days.append("No unusual spending pattern detected")
+
+data['Unusual_Spending_Flag'] = unusual_spending_days
+
+# Save the updated data with insights to CSV
+data.to_csv('data/spending_data_with_insights.csv', index=False)
