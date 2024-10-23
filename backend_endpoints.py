@@ -26,3 +26,32 @@ def upload_data():
     else:
         return jsonify({'error': 'Invalid file format, please upload a CSV'}), 400
 
+# Endpoint 2: Run the clustering model
+@app.route('/run_clustering', method=['POST'])
+def run_clustering():
+    global data
+    if data.empty:
+        return jsonify({'error': 'No data available for clustering'}), 400
+
+    # Preprocessing data
+    try:
+        data['Date'] = pd.to_datetime(data['Date'])
+        data['DayOfWeek'] = data['Date'].dt.dayofweek
+        data['IsWeekend'] = data['DayOfWeek'].apply(lambda x: 1 if x>=5 else 0)
+        le = LabelEncoder()
+        data['CategoryEncoded'] = le.fit_transform(data['Category'])
+    except KeyError as e:
+        return jsonify({'error': f'Missing required columns in data: {str(e)}'}), 400
+
+    # Select features for clustering
+    features = data[['Amount', 'DayOfWeek', 'IsWeekend', 'CategoryEncoded']]
+    scaler = StandardScaler()
+    scaled_features = scaler.fit_transform(features)
+
+    # Run K-means clustering
+    best_k = 3
+    kmeans = KMeans(n_clusters=best_k, random_state=42)
+    kmeans.fit(scaled_features)
+    data['Cluster'] = kmeans.labels_
+
+    return jsonify({'message': 'Clustering successfully performed', 'number_of_clusters': best_k}), 200
