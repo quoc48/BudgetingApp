@@ -4,9 +4,10 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.cluster import KMeans
 import os
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 # In-memory storage for spending data
 data = pd.DataFrame()
 
@@ -27,7 +28,7 @@ def upload_data():
         return jsonify({'error': 'Invalid file format, please upload a CSV'}), 400
 
 # Endpoint 2: Run the clustering model
-@app.route('/run_clustering', method=['POST'])
+@app.route('/run_clustering', methods=['POST'])
 def run_clustering():
     global data
     if data.empty:
