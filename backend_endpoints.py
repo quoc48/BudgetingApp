@@ -55,3 +55,28 @@ def run_clustering():
     data['Cluster'] = kmeans.labels_
 
     return jsonify({'message': 'Clustering successfully performed', 'number_of_clusters': best_k}), 200
+
+# Endpoint 3: Retrieve categorized data and insights
+@app.route('/insights', methods=['GET'])
+def get_insights():
+    global data
+    if data.empty:
+        return jsonify({'error': 'No data available'}), 400
+
+    # Generate insights
+    cluster_summary = data.groupby('Cluster').agg(
+        Average_Amount=('Amount', 'mean'),
+        Median_Amount=('Amount', 'median'),
+        Count=('Amount', 'size'),
+        Weekend_Spend_Percentage=('IsWeekend', 'mean')).reset_index()
+    cluster_summary['Weekend_Spend_Percentage'] *= 100
+
+    response = {
+        'cluster_summary':
+            cluster_summary.to_dict(orient='records'),
+        'data': data.to_dict(orient='records')
+    }
+    return jsonify(response), 200
+
+if __name__ == '__main__':
+    app.run(debug=True)
