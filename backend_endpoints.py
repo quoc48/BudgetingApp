@@ -50,7 +50,7 @@ def run_clustering():
     scaled_features = scaler.fit_transform(features)
 
     # Run K-means clustering
-    best_k = 6
+    best_k = 3
     kmeans = KMeans(n_clusters=best_k, random_state=42)
     kmeans.fit(scaled_features)
     data['Cluster'] = kmeans.labels_
