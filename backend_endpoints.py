@@ -79,5 +79,11 @@ def get_insights():
     }
     return jsonify(response), 200
 
+# Endpoint 4: clear data
+@app.route('/clear_data', methods=['POST'])
+def clear_data():
+    # Clear the csv by writing an empty DataFrame
+    pd.DataFrame().to_csv('spending_data.csv')
+
 if __name__ == '__main__':
     app.run(debug=True)
