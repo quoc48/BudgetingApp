@@ -22,6 +22,10 @@ data['Type'] = data['Type'].str.replace(r'\s*\(\s*\)', '', regex=True).str.strip
 columns_to_keep = ['Date', 'Name', 'Category', 'Type', 'Amount']
 filtered_data = data[columns_to_keep]
 
+# Format the 'Amount' column in Vietnamese currency
+filtered_data['Amount'].fillna(0, inplace=True)
+filtered_data['Amount'] = filtered_data['Amount'].apply(lambda x: f"{int(x):,}")
+
 # Save the cleaned data back to a CSV
 filtered_data.to_csv('Expense_cleaned.csv', index=False)
 print("Links removed and data saved to 'Expense_cleaned.csv'")
