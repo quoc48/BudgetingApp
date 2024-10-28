@@ -121,16 +121,35 @@ def get_insights():
         logging.error(f"Error in get_insights: {e}")
         return jsonify({"error": str(e)})
 
-# Clear Data
-@app.route('/clear_data', methods=['POST'])
-def clear_data():
+# Send Monthly Data
+@app.route('/monthly_data', methods=['GET'])
+def get_monthly_data():
+    if not os.path.exists(DATA_FILE):
+        return jsonify({"error": "No data available. Please upload a file first."})
     try:
-        # Clear the CSV by writing an empty DataFrame
-        pd.DataFrame().to_csv(DATA_FILE, index=False)
-        logging.debug("Data cleared successfully.")
-        return jsonify({"message": "Data cleared successfully"})
+        # Load the data
+        data = pd.read_csv(DATA_FILE)
+
+        # Convert 'Date' to datetime
+        data['Date'] = pd.to_datetime(data['Date'], errors='coerce')
+
+        # Remove rows with invalid dates
+        data = data.dropna(subset=['Date'])
+
+        # Group by month and year
+        data['Month_Year'] = data['Date'].dt.to_period('M')
+        monthly_spend = data.groupby('Month_Year')['Amount'].sum().reset_index()
+        monthly_spend['Month_Year'] = monthly_spend['Month_Year'].dt.to_timestamp()
+
+        # Convert to JSON-friendly format
+        response_data = {
+            "months": monthly_spend['Month_Year'].dt.strftime('%Y-%m').tolist(),
+            "spendings": monthly_spend['Amount'].tolist()
+        }
+
+        return jsonify(response_data)
     except Exception as e:
-        logging.error(f"Error in clear_data: {e}")
+        logging.error(f"Error in get_monthly_data: {e}")
         return jsonify({"error": str(e)})
 
 
