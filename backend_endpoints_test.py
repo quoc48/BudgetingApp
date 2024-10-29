@@ -136,17 +136,15 @@ def get_monthly_data():
         # Remove rows with invalid dates
         data = data.dropna(subset=['Date'])
 
-        # Group by month and year
-        data['Month_Year'] = data['Date'].dt.to_period('M')
+        # Group by month and year to calculate the monthly spending
+        data['Month_Year'] = data['Date'].dt.to_period('M').astype(str)
         monthly_spend = data.groupby('Month_Year')['Amount'].sum().reset_index()
-        monthly_spend['Month_Year'] = monthly_spend['Month_Year'].dt.to_timestamp()
 
-        # Convert to JSON-friendly format
+        # Convert to JSON response
         response_data = {
-            "months": monthly_spend['Month_Year'].dt.strftime('%Y-%m').tolist(),
+            "months": monthly_spend['Month_Year'].tolist(),
             "spendings": monthly_spend['Amount'].tolist()
         }
-
         return jsonify(response_data)
     except Exception as e:
         logging.error(f"Error in get_monthly_data: {e}")
