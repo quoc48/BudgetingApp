@@ -5,6 +5,8 @@ import pandas as pd
 import os
 import logging
 
+from sklearn.cluster import KMeans
+
 app = Flask(__name__)
 CORS(app)
 
@@ -58,14 +60,20 @@ def run_clustering():
 
         # Add 'DayOfWeek' column
         data['Date'] = pd.to_datetime(data['Date'], errors='coerce')
-        data['DayOfWeek'] = data['Date'].dt.dayofweek
+        data['DayOfWeek'] = data['Date'].dt.dayofweek.fillna(-1).astype(int)
+
+        # Prepare data for clustering
+        features = data[['Amount', 'DayOfWeek']]
+        features = features.fillna(0)
+
+        # Apply KMeans Clustering
+        kmeans = KMeans(n_clusters=3, random_state=42)
+        data['Cluster'] = kmeans.fit_predict(features)
 
         # Convert 'Amount' column to numeric
-        data['Amount'] = pd.to_numeric(data['Amount'], errors='coerce').fillna(
-            0)
+        #data['Amount'] = pd.to_numeric(data['Amount'], errors='coerce').fillna(0)
 
-        # Placeholder for clustering logic
-        data['Cluster'] = (data.index % 3)  # Dummy clustering
+        # Save clustered data back to CSV
         data.to_csv(DATA_FILE, index=False)
         logging.debug("Clustering successfully performed.")
         return jsonify({"message": "Clustering successfully performed"})
