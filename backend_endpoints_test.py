@@ -6,6 +6,7 @@ import os
 import logging
 
 from sklearn.cluster import KMeans
+from sklearn.preprocessing import LabelEncoder
 
 app = Flask(__name__)
 CORS(app)
@@ -55,32 +56,59 @@ def run_clustering():
         return jsonify(
             {"error": "No data available. Please upload a file first."})
     try:
-        # Load the data and perform clustering (dummy example for now)
+        # Load the data
         data = pd.read_csv(DATA_FILE)
 
-        # Add 'DayOfWeek' column
-        data['Date'] = pd.to_datetime(data['Date'], errors='coerce')
-        data['DayOfWeek'] = data['Date'].dt.dayofweek.fillna(-1).astype(int)
+        # Feature Engineering
+        data['Date'] = pd.to_datetime(data['Date'])
+        data['DayOfWeek'] = data['Date'].dt.dayofweek
+        data['IsWeekend'] = data['DayOfWeek'].apply(lambda x: 1 if x >= 5 else 0)
 
-        # Prepare data for clustering
-        features = data[['Amount', 'DayOfWeek']]
-        features = features.fillna(0)
+        # Select columns to use for clustering
+        columns_for_clustering = ['Amount', 'DayOfWeek', 'IsWeekend'] # Example columns that are numeric
 
-        # Apply KMeans Clustering
+        if 'Category' in data.columns:
+            data['Category'].fillna('Unknown',
+                                    inplace=True)  # Fill missing values with a placeholder
+            le_category = LabelEncoder()
+            data['CategoryEncoded'] = le_category.fit_transform(data['Category'])
+            data['CategoryEncoded'] = data['CategoryEncoded'].astype(int)
+            columns_for_clustering.append('CategoryEncoded')
+
+        # Encoding 'Type'
+        if 'Type' in data.columns:
+            data['Type'].fillna('Unknown',
+                                inplace=True)  # Fill missing values with a placeholder
+            le_type = LabelEncoder()
+            data['TypeEncoded'] = le_type.fit_transform(data['Type'])
+            data['TypeEncoded'] = data['TypeEncoded'].astype(int)
+            columns_for_clustering.append('TypeEncoded')
+
+        # Use only numeric columns for clustering
+        clustering_data = data[columns_for_clustering]
+
+        print("Unique Categories before encoding:", data['Category'].unique())
+        print("Unique Types before encoding:", data['Type'].unique())
+
+        # Handle missing values by filling them with the median
+        data.fillna(data.median(), inplace=True)
+
+        # Normalize features
+        from sklearn.preprocessing import StandardScaler
+        scaler = StandardScaler()
+        scaled_features = scaler.fit_transform(clustering_data)
+
+        # KMeans clustering
         kmeans = KMeans(n_clusters=3, random_state=42)
-        data['Cluster'] = kmeans.fit_predict(features)
+        data['Cluster'] = kmeans.fit_predict(scaled_features)
 
-        # Convert 'Amount' column to numeric
-        #data['Amount'] = pd.to_numeric(data['Amount'], errors='coerce').fillna(0)
-
-        # Save clustered data back to CSV
+        # Save updated data
         data.to_csv(DATA_FILE, index=False)
         logging.debug("Clustering successfully performed.")
         return jsonify({"message": "Clustering successfully performed"})
     except Exception as e:
         logging.error(f"Error in run_clustering: {e}")
         return jsonify({"error": str(e)})
-
 
 # Get Insights
 @app.route('/insights', methods=['GET'])
