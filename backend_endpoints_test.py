@@ -72,7 +72,6 @@ def run_clustering():
                                     inplace=True)  # Fill missing values with a placeholder
             le_category = LabelEncoder()
             data['CategoryEncoded'] = le_category.fit_transform(data['Category'])
-            data['CategoryEncoded'] = data['CategoryEncoded'].astype(int)
             columns_for_clustering.append('CategoryEncoded')
 
         # Encoding 'Type'
@@ -81,17 +80,13 @@ def run_clustering():
                                 inplace=True)  # Fill missing values with a placeholder
             le_type = LabelEncoder()
             data['TypeEncoded'] = le_type.fit_transform(data['Type'])
-            data['TypeEncoded'] = data['TypeEncoded'].astype(int)
             columns_for_clustering.append('TypeEncoded')
 
         # Use only numeric columns for clustering
         clustering_data = data[columns_for_clustering]
 
-        print("Unique Categories before encoding:", data['Category'].unique())
-        print("Unique Types before encoding:", data['Type'].unique())
-
         # Handle missing values by filling them with the median
-        data.fillna(data.median(), inplace=True)
+        clustering_data.fillna(clustering_data.median(), inplace=True)
 
         # Normalize features
         from sklearn.preprocessing import StandardScaler
