@@ -152,40 +152,6 @@ def get_insights():
         logging.error(f"Error in get_insights: {e}")
         return jsonify({"error": str(e)})
 
-# Send Monthly Data
-@app.route('/monthly_data', methods=['GET'])
-def monthly_data():
-    if not os.path.exists(DATA_FILE):
-        return jsonify({"error": "No data available. Please upload a file first."})
-    try:
-        # Load the data
-        data = pd.read_csv(DATA_FILE)
-
-        # Convert 'Date' column to datetime
-        data['Date'] = pd.to_datetime(data['Date'], errors='coerce')
-
-        # Drop rows where 'Date' could not be converted
-        data = data.dropna(subset=['Date'])
-
-        # Extract month and year for grouping
-        data['Month_Year'] = data['Date'].dt.to_period('M')
-
-        # Group by 'Month_Year' and sum the 'Amount' column
-        monthly_spend = data.groupby('Month_Year').agg({'Amount': 'sum'}).reset_index()
-
-        # Convert 'Month_Year' back to string for easier handling in frontend
-        monthly_spend['Month_Year'] = monthly_spend['Month_Year'].astype(str)
-
-        # Prepare response data
-        response_data = {
-            "months": monthly_spend['Month_Year'].tolist(),
-            "spendings": monthly_spend['Amount'].tolist()
-        }
-        return jsonify(response_data)
-
-    except Exception as e:
-        return jsonify({"error": str(e)})
-
 
 if __name__ == '__main__':
     app.run(debug=True)
