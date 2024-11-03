@@ -105,7 +105,7 @@ def run_clustering():
         logging.error(f"Error in run_clustering: {e}")
         return jsonify({"error": str(e)})
 
-# Get Insights
+# Enhanced Get Insights
 @app.route('/insights', methods=['GET'])
 def get_insights():
     if not os.path.exists(DATA_FILE):
@@ -116,6 +116,7 @@ def get_insights():
 
         # Convert 'Amount' column to numeric with error handling
         data['Amount'] = pd.to_numeric(data['Amount'], errors='coerce').fillna(0)
+        data['Date'] = pd.to_datetime(data['Date'])
 
         # Check if required columns exist
         if 'Cluster' not in data.columns or 'DayOfWeek' not in data.columns:
@@ -133,21 +134,24 @@ def get_insights():
             Weekend_Spend_Percentage=('DayOfWeek', lambda x: ((x >= 5).sum() / len(x)) * 100 if len(x) > 0 else 0)
         ).reset_index()
 
-        # Replace problematic values in cluster_summary for JSON serialization
-        cluster_summary.replace([np.inf, -np.inf], 0, inplace=True)
-        cluster_summary.fillna(0, inplace=True)  # Replacing NaN with 0 for better JSON serialization
+        # Monthly summary
+        data['Month'] = data['Date'].dt.to_period('M')
+        monthly_summary = data.groupby('Month').agg(Total_Spend=('Amount', 'sum')).reset_index()
 
-        # Convert cluster_summary to dictionary
-        cluster_summary = cluster_summary.to_dict(orient='records')
+        # Convert 'Month' column to string for JSON serialization
+        monthly_summary['Month'] = monthly_summary['Month'].astype(str)
 
-        # Clean detailed data for JSON serialization
-        data.replace([np.inf, -np.inf], 0, inplace=True)
-        data.fillna('', inplace=True)  # Fill NaN values with an empty string to prevent JSON issues
-        detailed_data = data.to_dict(orient='records')
+        # Top spending categories
+        top_categories = data.groupby('Category').agg(Total_Spend=('Amount', 'sum')).nlargest(5, 'Total_Spend').reset_index()
 
-        logging.debug(f"Cluster Summary: {cluster_summary}")
+        # Combine insights into response
+        insights = {
+            "cluster_summary": cluster_summary.to_dict(orient='records'),
+            "monthly_summary": monthly_summary.to_dict(orient='records'),
+            "top_categories": top_categories.to_dict(orient='records')
+        }
+        return jsonify(insights)
 
-        return jsonify({"cluster_summary": cluster_summary, "data": detailed_data})
     except Exception as e:
         logging.error(f"Error in get_insights: {e}")
         return jsonify({"error": str(e)})
