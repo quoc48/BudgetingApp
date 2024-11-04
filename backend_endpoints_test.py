@@ -115,43 +115,48 @@ def get_insights():
         data = pd.read_csv(DATA_FILE)
 
         # Convert 'Amount' column to numeric with error handling
-        data['Amount'] = pd.to_numeric(data['Amount'], errors='coerce').fillna(0)
-        data['Date'] = pd.to_datetime(data['Date'])
+        data['Amount'] = pd.to_numeric(data['Amount'].str.replace(',', ''), errors='coerce').fillna(0)
 
-        # Check if required columns exist
-        if 'Cluster' not in data.columns or 'DayOfWeek' not in data.columns:
-            logging.error("Required columns are missing. Please run clustering first.")
-            return jsonify({"error": "Required columns are missing. Please run clustering first."})
+        # Top 5 transactions for each cluster
+        top_transactions = data.groupby('Cluster').apply(
+            lambda x: x.nlargest(5, 'Amount')[['Date', 'Name', 'Category', 'Amount']]
+        ).reset_index(drop=True)
 
-        # Log data preview for debugging
-        logging.debug(f"Data preview: {data.head()}")
+        # Most frequent expenses for each cluster
+        frequent_expenses = data.groupby(
+            ['Cluster', 'Category']).size().reset_index(name='Frequency')
+        frequent_expenses = frequent_expenses.sort_values(
+            ['Cluster', 'Frequency'], ascending=[True, False])
+        top_frequent_expenses = frequent_expenses.groupby('Cluster').head(
+            3).reset_index(drop=True)
 
-        # Group by cluster and calculate summary
-        cluster_summary = data.groupby('Cluster').agg(
-            Average_Amount=('Amount', 'mean'),
-            Median_Amount=('Amount', 'median'),
-            Count=('Amount', 'size'),
-            Weekend_Spend_Percentage=('DayOfWeek', lambda x: ((x >= 5).sum() / len(x)) * 100 if len(x) > 0 else 0)
-        ).reset_index()
+        # Outliers in each cluster using IQR method
+        outliers = []
+        for cluster in data['Cluster'].unique():
+            cluster_data = data[data['Cluster'] == cluster]
+            Q1 = cluster_data['Amount'].quantile(0.25)
+            Q3 = cluster_data['Amount'].quantile(0.75)
+            IQR = Q3 - Q1
+            high_outliers = cluster_data[cluster_data['Amount'] > (Q3 + 1.5 * IQR)]
+            low_outliers = cluster_data[cluster_data['Amount'] < (Q1 - 1.5 * IQR)]
+            outliers.append({
+                "Cluster": cluster,
+                "High Outliers": high_outliers[
+                    ['Date', 'Name', 'Category', 'Amount']].to_dict(
+                    orient='records'),
+                "Low Outliers": low_outliers[
+                    ['Date', 'Name', 'Category', 'Amount']].to_dict(
+                    orient='records')
+            })
 
-        # Monthly summary
-        data['Month'] = data['Date'].dt.to_period('M')
-        monthly_summary = data.groupby('Month').agg(Total_Spend=('Amount', 'sum')).reset_index()
-
-        # Convert 'Month' column to string for JSON serialization
-        monthly_summary['Month'] = monthly_summary['Month'].astype(str)
-
-        # Top spending categories
-        top_categories = data.groupby('Category').agg(Total_Spend=('Amount', 'sum')).nlargest(5, 'Total_Spend').reset_index()
-
-        # Combine insights into response
+        # Convert insights into JSON
         insights = {
-            "cluster_summary": cluster_summary.to_dict(orient='records'),
-            "monthly_summary": monthly_summary.to_dict(orient='records'),
-            "top_categories": top_categories.to_dict(orient='records')
+            "top_transactions": top_transactions.to_dict(orient='records'),
+            "top_frequent_expenses": top_frequent_expenses.to_dict(
+                    orient='records'),
+            "outliers": outliers
         }
         return jsonify(insights)
-
     except Exception as e:
         logging.error(f"Error in get_insights: {e}")
         return jsonify({"error": str(e)})
