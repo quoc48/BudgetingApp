@@ -114,13 +114,17 @@ def get_insights():
         # Load the data
         data = pd.read_csv(DATA_FILE)
 
-        # Convert 'Amount' column to numeric with error handling
-        data['Amount'] = pd.to_numeric(data['Amount'].str.replace(',', ''), errors='coerce').fillna(0)
+        # Ensure 'Amount' column is string, replace commas, and then convert to numeric
+        data['Amount'] = data['Amount'].astype(str).str.replace(',', '', regex=True)
+        data['Amount'] = pd.to_numeric(data['Amount'], errors='coerce').fillna(0)
 
         # Top 5 transactions for each cluster
         top_transactions = data.groupby('Cluster').apply(
             lambda x: x.nlargest(5, 'Amount')[['Date', 'Name', 'Category', 'Amount']]
         ).reset_index(drop=True)
+
+        # Convert columns to native Python types for JSON serialization
+        top_transactions = top_transactions.astype(object)
 
         # Most frequent expenses for each cluster
         frequent_expenses = data.groupby(
@@ -129,6 +133,9 @@ def get_insights():
             ['Cluster', 'Frequency'], ascending=[True, False])
         top_frequent_expenses = frequent_expenses.groupby('Cluster').head(
             3).reset_index(drop=True)
+
+        # Convert columns to native Python types for JSON serialization
+        top_frequent_expenses = top_frequent_expenses.astype(object)
 
         # Outliers in each cluster using IQR method
         outliers = []
@@ -140,13 +147,14 @@ def get_insights():
             high_outliers = cluster_data[cluster_data['Amount'] > (Q3 + 1.5 * IQR)]
             low_outliers = cluster_data[cluster_data['Amount'] < (Q1 - 1.5 * IQR)]
             outliers.append({
-                "Cluster": cluster,
+                "Cluster": int(cluster),
+                # Convert cluster label to int for JSON compatibility
                 "High Outliers": high_outliers[
-                    ['Date', 'Name', 'Category', 'Amount']].to_dict(
-                    orient='records'),
+                    ['Date', 'Name', 'Category', 'Amount']].astype(
+                    object).to_dict(orient='records'),
                 "Low Outliers": low_outliers[
-                    ['Date', 'Name', 'Category', 'Amount']].to_dict(
-                    orient='records')
+                    ['Date', 'Name', 'Category', 'Amount']].astype(
+                    object).to_dict(orient='records')
             })
 
         # Convert insights into JSON
