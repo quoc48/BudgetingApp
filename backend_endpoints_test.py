@@ -105,7 +105,7 @@ def run_clustering():
         logging.error(f"Error in run_clustering: {e}")
         return jsonify({"error": str(e)})
 
-# Enhanced Get Insights
+# Get Insights
 @app.route('/insights', methods=['GET'])
 def get_insights():
     if not os.path.exists(DATA_FILE):
