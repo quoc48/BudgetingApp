@@ -120,7 +120,8 @@ def get_insights():
 
         # Top 5 transactions for each cluster
         top_transactions = data.groupby('Cluster').apply(
-            lambda x: x.nlargest(5, 'Amount')[['Date', 'Name', 'Category', 'Amount']]
+            lambda x: x.nlargest(5, 'Amount')[
+                ['Date', 'Name', 'Category', 'Amount', 'Cluster']]
         ).reset_index(drop=True)
 
         # Convert columns to native Python types for JSON serialization
@@ -156,6 +157,11 @@ def get_insights():
                     ['Date', 'Name', 'Category', 'Amount']].astype(
                     object).to_dict(orient='records')
             })
+
+         # Add sequential index to each high outlier
+        for cluster in outliers:
+            for index, outlier in enumerate(cluster['High Outliers']):
+                outlier['TransactionIndex'] = index  # Add a sequential index
 
         # Convert insights into JSON
         insights = {
