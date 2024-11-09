@@ -50,6 +50,8 @@ def preprocess_data(data):
     # Feature: Day of the Week
     data['DayOfWeek'] = data['Date'].dt.dayofweek
 
+    data['Hour'] = data['Date'].dt.hour
+
     # Feature: IsWeekend (1 if Saturday or Sunday, else 0)
     data['IsWeekend'] = data['DayOfWeek'].apply(lambda x: 1 if x >= 5 else 0)
 
@@ -93,7 +95,7 @@ def run_clustering():
         scaled_features = scaler.fit_transform(clustering_data)
 
         # KMeans clustering
-        kmeans = KMeans(n_clusters=3,
+        kmeans = KMeans(n_clusters=6,
                         random_state=42)  # Adjust n_clusters as needed
         data['Cluster'] = kmeans.fit_predict(scaled_features)
 
@@ -122,33 +124,32 @@ def get_insights():
 
         for cluster in data['Cluster'].unique():
             cluster_data = data[data['Cluster'] == cluster]
-
-            # Calculate cluster characteristics
             average_amount = cluster_data['Amount'].mean()
             median_amount = cluster_data['Amount'].median()
             transaction_count = len(cluster_data)
             weekend_spend_percentage = cluster_data['IsWeekend'].mean() * 100
-            top_categories = cluster_data['Category'].value_counts().head(
+
+            # Calculate top categories by percentage of spending
+            category_share = (cluster_data.groupby('Category')['Amount'].sum() /
+                              cluster_data['Amount'].sum()).nlargest(
                 3).to_dict()
 
-            # Generate a suggestion based on spending behavior
             if average_amount > data['Amount'].quantile(0.75):
-                suggestion = "This cluster has high-value transactions. Consider budgeting for these significant expenses."
+                suggestion = "High-value transactions dominate. Budget for significant expenses."
             elif weekend_spend_percentage > 50:
-                suggestion = "High percentage of weekend spending detected. Monitor leisure and social spending."
+                suggestion = "Weekend-focused spending detected. Monitor discretionary expenses."
             elif transaction_count > data['Amount'].count() * 0.2:
-                suggestion = "This cluster has frequent, low-value transactions. Consider tracking daily expenses closely."
+                suggestion = "Frequent low-value transactions. Consolidate or track these closely."
             else:
-                suggestion = "This cluster has a balanced spending pattern."
+                suggestion = "This cluster reflects balanced spending patterns."
 
-            # Append cluster insights
             cluster_insights.append({
                 "Cluster": int(cluster),
                 "Average Amount": average_amount,
                 "Median Amount": median_amount,
                 "Transaction Count": transaction_count,
                 "Weekend Spend Percentage": weekend_spend_percentage,
-                "Top Categories": top_categories,
+                "Top Categories by Spending Share": category_share,
                 "Suggestion": suggestion
             })
 

@@ -1,791 +1,791 @@
-Date,Name,Category,Type,Amount,DayOfWeek,IsWeekend,CategoryEncoded,TypeEncoded,Cluster
-2024-01-01,Quỹ team,Other,Phát sinh (Nice to have),200000,0.0,0,6,1,1
-2024-01-01,An cua,Thực phẩm,Phát sinh (Nice to have),762000,0.0,0,8,1,1
-2024-01-01,Tiền gift Danny,Mua sắm,Phát sinh (Nice to have),745000,0.0,0,5,1,1
-2024-01-01,Sữa Ensure,Sức khoẻ,Phát sinh (Nice to have),927000,0.0,0,7,1,1
-2024-01-01,Hummingbird,Cà phê,Phát sinh (Nice to have),140000,0.0,0,0,1,1
-2024-01-01,Vé máy bay tết,Đi lại,Phải chi (Must have),2261000,0.0,0,10,2,0
-2024-01-01,Ăn sáng bún bò,Thực phẩm,Phải chi (Must have),50000,0.0,0,8,2,0
-2024-01-01,Đi chợ,Thực phẩm,Phải chi (Must have),400000,0.0,0,8,2,0
-2024-01-01,Netflix,Hoá đơn - Thanh toán định kì,Phải chi (Must have),53000,0.0,0,4,2,0
-2024-01-01,3G,Giải trí,Phát sinh (Nice to have),3000,0.0,0,3,1,1
-2024-01-02,Ăn bánh xèo,Thực phẩm,Phát sinh (Nice to have),288000,1.0,0,8,1,1
-2024-01-02,Sách tiki,Giáo dục,Phải chi (Must have),173000,1.0,0,2,2,0
-2024-01-02,Lotte,Mua sắm,Phát sinh (Nice to have),350000,1.0,0,5,1,1
-2024-01-02,Thuốc pharma,Sức khoẻ,Phát sinh (Nice to have),220000,1.0,0,7,1,1
-2024-01-02,Bàn chải đánh răng,Sức khoẻ,Phải chi (Must have),150000,1.0,0,7,2,0
-2024-01-03,Nước,Thực phẩm,Phải chi (Must have),65000,2.0,0,8,2,0
-2024-01-04,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4870000,3.0,0,4,2,0
-2024-01-04,Cà phê,Cà phê,Lãng phí (Wasted),58000,3.0,0,0,0,1
-2024-01-04,Lotte,Mua sắm,Phát sinh (Nice to have),369000,3.0,0,5,1,1
-2024-01-05,Pin remote máy lạnh,Mua sắm,Phát sinh (Nice to have),18000,4.0,0,5,1,1
-2024-01-06,Đi chợ,Thực phẩm,Phải chi (Must have),166000,5.0,1,8,2,2
-2024-01-06,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),240000,5.0,1,4,2,2
-2024-01-06,Nạp tiền điện thoại,Other,Phát sinh (Nice to have),50000,5.0,1,6,1,2
-2024-01-06,Bánh mì,Thực phẩm,Phát sinh (Nice to have),20000,5.0,1,8,1,2
-2024-01-07,Cà phê Shin - Khe sanh,Cà phê,Phải chi (Must have),220000,6.0,1,0,2,2
-2024-01-07,Cà phê gói trung nguyên,Mua sắm,Phát sinh (Nice to have),75000,6.0,1,5,1,2
-2024-01-05,Ăn trưa,Thực phẩm,Phải chi (Must have),42000,4.0,0,8,2,0
-2024-01-08,Ăn tối,Thực phẩm,Phải chi (Must have),68000,0.0,0,8,2,0
-2024-01-09,Nước,Thực phẩm,Phải chi (Must have),65000,1.0,0,8,2,0
-2024-01-09,Giấy lọc cà phê,Cà phê,Phải chi (Must have),152000,1.0,0,0,2,0
-2024-01-10,Cà phê,Cà phê,Phát sinh (Nice to have),29000,2.0,0,0,1,1
-2024-01-10,Cơm gà,Thực phẩm,Phải chi (Must have),45000,2.0,0,8,2,0
-2024-01-10,Hớt tóc,Sức khoẻ,Phải chi (Must have),70000,2.0,0,7,2,0
-2024-01-10,Bún bò,Thực phẩm,Phải chi (Must have),40000,2.0,0,8,2,0
-2024-01-11,Cà phê,Cà phê,Phát sinh (Nice to have),29000,3.0,0,0,1,1
-2024-01-11,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,3.0,0,8,2,0
-2024-01-11,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0,10,2,0
-2024-01-11,Bánh cuốn tây sơn,Thực phẩm,Phải chi (Must have),69000,3.0,0,8,2,0
-2024-01-12,Cà phê,Cà phê,Phát sinh (Nice to have),48000,4.0,0,0,1,1
-2024-01-13,Ăn sáng,Thực phẩm,Phải chi (Must have),23000,5.0,1,8,2,2
-2024-01-13,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,1,10,2,2
-2024-01-15,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,0.0,0,8,2,0
-2024-01-15,Cà phê,Cà phê,Phát sinh (Nice to have),48000,0.0,0,0,1,1
-2024-01-15,Trả tín dụng,Hoá đơn - Thanh toán định kì,Phải chi (Must have),6154000,0.0,0,4,2,0
-2024-01-16,Ăn sáng,Thực phẩm,Phải chi (Must have),23000,1.0,0,8,2,0
-2024-01-17,Ăn sáng,Thực phẩm,Phải chi (Must have),12000,2.0,0,8,2,0
-2024-01-17,cà phê,Cà phê,Phát sinh (Nice to have),29000,2.0,0,0,1,1
-2024-01-17,Cơm tấm,Thực phẩm,Phải chi (Must have),46000,2.0,0,8,2,0
-2024-01-19,Bánh mì que,Thực phẩm,Phải chi (Must have),10000,4.0,0,8,2,0
-2024-01-19,Xanh Sm bike,Đi lại,Phát sinh (Nice to have),20000,4.0,0,10,1,1
-2024-01-19,Cà phê,Cà phê,Phát sinh (Nice to have),48000,4.0,0,0,1,1
-2024-01-19,Xanh SM bike,Đi lại,Phát sinh (Nice to have),52000,4.0,0,10,1,1
-2024-01-20,Cháo gói,Thực phẩm,Phải chi (Must have),33000,5.0,1,8,2,2
-2024-01-21,Bún bò,Thực phẩm,Phải chi (Must have),61000,6.0,1,8,2,2
-2024-01-21,Gửi xe cà phê,Đi lại,Phát sinh (Nice to have),25000,6.0,1,10,1,2
-2024-01-21,Phở,Thực phẩm,Phải chi (Must have),40000,6.0,1,8,2,2
-2024-01-21,Chuối,Thực phẩm,Phát sinh (Nice to have),11000,6.0,1,8,1,2
-2024-01-21,Kem đánh răng,Sức khoẻ,Phải chi (Must have),74000,6.0,1,7,2,2
-2024-01-22,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0,10,2,0
-2024-01-22,Cà phê,Cà phê,Phát sinh (Nice to have),48000,0.0,0,0,1,1
-2024-01-19,Tiền grab,Đi lại,Phát sinh (Nice to have),36000,4.0,0,10,1,1
-2024-01-22,Cơm tấm,Thực phẩm,Phải chi (Must have),58000,0.0,0,8,2,0
-2024-01-22,Cháo gà,Thực phẩm,Phải chi (Must have),50000,0.0,0,8,2,0
-2024-01-22,Nước uống,Thực phẩm,Phải chi (Must have),10000,0.0,0,8,2,0
-2024-01-22,Thuốc cảm,Sức khoẻ,Phát sinh (Nice to have),48000,0.0,0,7,1,1
-2024-01-23,Bánh mì que,Thực phẩm,Phải chi (Must have),15000,1.0,0,8,2,0
-2024-01-23,Ăn trưa,Thực phẩm,Phải chi (Must have),59000,1.0,0,8,2,0
-2024-01-23,Trà xanh,Thực phẩm,Lãng phí (Wasted),75000,1.0,0,8,0,1
-2024-01-23,Chích thuốc,Sức khoẻ,Phát sinh (Nice to have),100000,1.0,0,7,1,1
-2024-01-23,Bún bò,Thực phẩm,Phải chi (Must have),40000,1.0,0,8,2,0
-2024-01-23,Nước,Thực phẩm,Phải chi (Must have),26000,1.0,0,8,2,0
-2024-01-23,Xịt ho,Sức khoẻ,Phát sinh (Nice to have),129000,1.0,0,7,1,1
-2024-01-24,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,2.0,0,8,2,0
-2024-01-24,Chích thuốc cảm,Sức khoẻ,Phát sinh (Nice to have),100000,2.0,0,7,1,1
-2024-01-24,Dừa,Thực phẩm,Phát sinh (Nice to have),18000,2.0,0,8,1,1
-2024-01-24,Cơm tấm,Thực phẩm,Phải chi (Must have),57000,2.0,0,8,2,0
-2024-01-25,Chích thuốc,Sức khoẻ,Phát sinh (Nice to have),100000,3.0,0,7,1,1
-2024-01-25,Ăn sáng,Thực phẩm,Phải chi (Must have),35000,3.0,0,8,2,0
-2024-01-24,Lotte,Thực phẩm,Phát sinh (Nice to have),124000,2.0,0,8,1,1
-2024-01-25,Nước,Thực phẩm,Phải chi (Must have),65000,3.0,0,8,2,0
-2024-01-25,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0,10,2,0
-2024-01-25,Bánh cuốn tây sơn,Thực phẩm,Phải chi (Must have),69000,3.0,0,8,2,0
-2024-01-26,Tiêm thuốc,Sức khoẻ,Phát sinh (Nice to have),100000,4.0,0,7,1,1
-2024-01-26,Ăn trưa,Thực phẩm,Phải chi (Must have),47000,4.0,0,8,2,0
-2024-01-26,Gửi xe cty,Đi lại,Phát sinh (Nice to have),20000,4.0,0,10,1,1
-2024-01-26,Nước mía,Thực phẩm,Phát sinh (Nice to have),32000,4.0,0,8,1,1
-2024-01-27,Chích thuốc,Sức khoẻ,Phát sinh (Nice to have),100000,5.0,1,7,1,2
-2024-01-27,Ăn trưa,Thực phẩm,Phải chi (Must have),55000,5.0,1,8,2,2
-2024-01-27,Spotify,Giải trí,Phát sinh (Nice to have),65000,5.0,1,3,1,2
-2024-01-27,Cháo gói,Thực phẩm,Phải chi (Must have),50000,5.0,1,8,2,2
-2024-01-27,Ăn tối,Thực phẩm,Phải chi (Must have),35000,5.0,1,8,2,2
-2024-01-28,Cơm tấm,Thực phẩm,Phải chi (Must have),46000,6.0,1,8,2,2
-2024-01-27,Dừa tươi,Thực phẩm,Phát sinh (Nice to have),20000,5.0,1,8,1,2
-2024-01-29,Bún chả hà nội,Thực phẩm,Phải chi (Must have),60000,0.0,0,8,2,0
-2024-01-29,Grab bike,Đi lại,Phát sinh (Nice to have),80000,0.0,0,10,1,1
-2024-01-30,Cơm tấm,Thực phẩm,Phải chi (Must have),56000,1.0,0,8,2,0
-2024-02-01,Farewell team,Other,Phát sinh (Nice to have),2300000,3.0,0,6,1,1
-2024-01-31,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,2.0,0,8,2,0
-2024-01-31,Ăn trưA,Thực phẩm,Phải chi (Must have),78000,2.0,0,8,2,0
-2024-02-01,Magic keyboard,Mua sắm,Phát sinh (Nice to have),1200000,3.0,0,5,1,1
-2024-02-01,Netflix,Giải trí,Phải chi (Must have),53000,3.0,0,3,2,0
-2024-02-01,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0,10,2,0
-2024-01-31,Cà phê,Cà phê,Phát sinh (Nice to have),130000,2.0,0,0,1,1
-2024-02-01,Cơm tấm,Thực phẩm,Phải chi (Must have),78000,3.0,0,8,2,0
-2024-02-01,3G,Giải trí,Phát sinh (Nice to have),14000,3.0,0,3,1,1
-2024-02-01,Bún bò,Thực phẩm,Phải chi (Must have),35000,3.0,0,8,2,0
-2024-02-05,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4700000,0.0,0,4,2,0
-2024-02-06,Internet ,Hoá đơn - Thanh toán định kì,Phải chi (Must have),240000,1.0,0,4,2,0
-2024-02-15,Tín dụng,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4215000,3.0,0,4,2,0
-2024-02-19,Chi phí Tết nhà Quốc,Other,Phát sinh (Nice to have),10000000,0.0,0,6,1,1
-2024-02-19,Vé máy bay vô Tết,Đi lại,Phát sinh (Nice to have),4260000,0.0,0,10,1,1
-2024-02-22,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,3.0,0,8,2,0
-2024-02-22,Cà phê,Cà phê,Phát sinh (Nice to have),145000,3.0,0,0,1,1
-2024-02-22,Cà phê hạt,Cà phê,Phải chi (Must have),240000,3.0,0,0,2,0
-2024-02-22,Lotte mart,Thực phẩm,Phải chi (Must have),436000,3.0,0,8,2,0
-2024-02-22,Dây cáp HDML,Mua sắm,Phát sinh (Nice to have),459000,3.0,0,5,1,1
-2024-02-22,Chi phí tết nhà Thôi,Other,Phát sinh (Nice to have),13000000,3.0,0,6,1,1
-2024-02-23,Chụp hình thẻ ,Other,Phát sinh (Nice to have),46000,4.0,0,6,1,1
-2024-02-23,Đi chợ,Thực phẩm,Phải chi (Must have),78000,4.0,0,8,2,0
-2024-02-23,Nước,Thực phẩm,Phải chi (Must have),65000,4.0,0,8,2,0
-2024-02-24,Đi chợ,Thực phẩm,Phải chi (Must have),140000,5.0,1,8,2,2
-2024-02-24,ăn vặt,Thực phẩm,Lãng phí (Wasted),104000,5.0,1,8,0,2
-2024-02-25,Lẩu bò,Thực phẩm,Lãng phí (Wasted),213000,6.0,1,8,0,2
-2024-02-25,Cà phê,Cà phê,Phát sinh (Nice to have),25000,6.0,1,0,1,2
-2024-02-25,Dừa + Chè,Thực phẩm,Phát sinh (Nice to have),34000,6.0,1,8,1,2
-2024-02-25,Lotte,Thực phẩm,Phải chi (Must have),200000,6.0,1,8,2,2
-2024-02-26,Đi chợ,Thực phẩm,Phải chi (Must have),198000,0.0,0,8,2,0
-2024-02-27,Spotify,Giải trí,Phát sinh (Nice to have),59000,1.0,0,3,1,1
-2024-02-28,Ăn sáng,Thực phẩm,Phải chi (Must have),48000,2.0,0,8,2,0
-2024-02-28,Cà phê Passio,Cà phê,Phát sinh (Nice to have),50000,2.0,0,0,1,1
-2024-02-28,Sinh tố sầu riêng bơ,Thực phẩm,Lãng phí (Wasted),40000,2.0,0,8,0,1
-2024-02-29,Đổ xăng,Đi lại,Phải chi (Must have),60000,3.0,0,10,2,0
-2024-02-29,Nước,Thực phẩm,Phải chi (Must have),65000,3.0,0,8,2,0
-2024-02-29,Đường cát,Thực phẩm,Phải chi (Must have),38000,3.0,0,8,2,0
-2024-03-01,Cà phê Hummingbird ,Cà phê,Phát sinh (Nice to have),150000,4.0,0,0,1,1
-2024-03-01,Cà phê hạt,Cà phê,Phải chi (Must have),210000,4.0,0,0,2,0
-2024-03-01,Gà rán lotte,Thực phẩm,Phát sinh (Nice to have),154000,4.0,0,8,1,1
-2024-03-01,Đậu que,Thực phẩm,Phải chi (Must have),6000,4.0,0,8,2,0
-2024-03-01,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4500000,4.0,0,4,2,0
-2024-03-01,Netflix,Giải trí,Phải chi (Must have),53000,4.0,0,3,2,0
-2024-03-01,Internet ,Hoá đơn - Thanh toán định kì,Phải chi (Must have),240000,4.0,0,4,2,0
-2024-03-04,Bánh mì sáng,Thực phẩm,Phải chi (Must have),30000,0.0,0,8,2,0
-2024-03-03,Khám bệnh Hoàn Mỹ,Sức khoẻ,Phát sinh (Nice to have),2555000,6.0,1,7,1,2
-2024-03-03,Bún chả phố cổ buổi trưa,Thực phẩm,Phát sinh (Nice to have),189000,6.0,1,8,1,2
-2024-03-03,Cà phê Passio,Sức khoẻ,Lãng phí (Wasted),25000,6.0,1,7,0,2
-2024-03-04,Set tạ - Decalthon ,Sức khoẻ,Phát sinh (Nice to have),999000,0.0,0,7,1,1
-2024-03-04,Netflix,Giải trí,Phải chi (Must have),53000,0.0,0,3,2,0
-2024-03-04,Đi chợ,Thực phẩm,Phải chi (Must have),70000,0.0,0,8,2,0
-2024-03-04,Lotte,Thực phẩm,Phải chi (Must have),213000,0.0,0,8,2,0
-2024-03-05,Nước,Thực phẩm,Phải chi (Must have),65000,1.0,0,8,2,0
-2024-03-06,Hớt tóc,Sức khoẻ,Phải chi (Must have),70000,2.0,0,7,2,0
-2024-03-07,Đi chợ,Thực phẩm,Phải chi (Must have),109000,3.0,0,8,2,0
-2024-03-08,Cà phê Hoof,Cà phê,Phát sinh (Nice to have),219000,4.0,0,0,1,1
-2024-03-08,Bánh cuốn Tây Sơn,Thực phẩm,Phát sinh (Nice to have),186000,4.0,0,8,1,1
-2024-03-09,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,1,10,2,2
-2024-03-08,Giữ xe Aperia,Đi lại,Phát sinh (Nice to have),5000,4.0,0,10,1,1
-2024-03-08,3G,Đi lại,Phát sinh (Nice to have),6000,4.0,0,10,1,1
-2024-03-09,Đi chợ,Thực phẩm,Phải chi (Must have),65000,5.0,1,8,2,2
-2024-03-09,Coffee with aD,Cà phê,Phát sinh (Nice to have),160000,5.0,1,0,1,2
-2024-03-10,Đi chợ,Thực phẩm,Phải chi (Must have),210000,6.0,1,8,2,2
-2024-03-10,Chuối và mì tôm chay,Thực phẩm,Phát sinh (Nice to have),18000,6.0,1,8,1,2
-2024-03-11,Passio coffee,Cà phê,Lãng phí (Wasted),50000,0.0,0,0,0,1
-2024-03-11,Đậu phộng,Thực phẩm,Lãng phí (Wasted),20000,0.0,0,8,0,1
-2024-03-11,Gửi xe bảo hiểm ,Đi lại,Phát sinh (Nice to have),4000,0.0,0,10,1,1
-2024-03-11,Nước suối,Thực phẩm,Phát sinh (Nice to have),7000,0.0,0,8,1,1
-2024-03-11,Bánh mì sáng,Thực phẩm,Phải chi (Must have),15000,0.0,0,8,2,0
-2024-03-14,Công chứng giấy tờ,Other,Phát sinh (Nice to have),17000,3.0,0,6,1,1
-2024-03-11,Photo công chứng,Other,Phát sinh (Nice to have),13000,0.0,0,6,1,1
-2024-03-11,Lotte,Thực phẩm,Phải chi (Must have),226000,0.0,0,8,2,0
-2024-03-11,Nước,Thực phẩm,Phải chi (Must have),65000,0.0,0,8,2,0
-2024-03-02,Aeon mall ,Mua sắm,Phát sinh (Nice to have),448000,5.0,1,5,1,2
-2024-03-12,Lotte,Mua sắm,Phải chi (Must have),232000,1.0,0,5,2,0
-2024-03-13,Cà phê là việt,Cà phê,Lãng phí (Wasted),105000,2.0,0,0,0,1
-2024-03-13,Cơm gà,Thực phẩm,Phải chi (Must have),127000,2.0,0,8,2,0
-2024-03-14,Tín dụng thẻ,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4708000,3.0,0,4,2,0
-2024-03-14,Matcha bar,Cà phê,Phát sinh (Nice to have),200000,3.0,0,0,1,1
-2024-03-14,Coffee hạt Hoof,Cà phê,Phải chi (Must have),150000,3.0,0,0,2,0
-2024-03-14,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0,10,2,0
-2024-03-14,Trái cây,Thực phẩm,Phát sinh (Nice to have),95000,3.0,0,8,1,1
-2024-03-15,Bắp trái,Thực phẩm,Phát sinh (Nice to have),15000,4.0,0,8,1,1
-2024-03-15,Ăn sáng bún,Thực phẩm,Phải chi (Must have),33000,4.0,0,8,2,0
-2024-03-15,Dừa trái,Thực phẩm,Phải chi (Must have),24000,4.0,0,8,2,0
-2024-03-16,Nước,Thực phẩm,Phải chi (Must have),65000,5.0,1,8,2,2
-2024-03-16,Gửi xe wall street,Đi lại,Phát sinh (Nice to have),4000,5.0,1,10,1,2
-2024-03-17,Đi chợ,Thực phẩm,Phải chi (Must have),157000,6.0,1,8,2,2
-2024-03-17,Cà phê aD,Cà phê,Phát sinh (Nice to have),165000,6.0,1,0,1,2
-2024-03-17,Gas,Hoá đơn - Thanh toán định kì,Phải chi (Must have),438000,6.0,1,4,2,2
-2024-03-18,Bún bò,Thực phẩm,Phát sinh (Nice to have),70000,0.0,0,8,1,1
-2024-03-18,Cà phê shin,Cà phê,Lãng phí (Wasted),161000,0.0,0,0,0,1
-2024-03-19,Bún + cà chua + giá đỗ,Thực phẩm,Phải chi (Must have),21000,1.0,0,8,2,0
-2024-03-19,Cà phê Pasio,Cà phê,Phát sinh (Nice to have),50000,1.0,0,0,1,1
-2024-03-17,Đi chợ,Thực phẩm,Phải chi (Must have),157000,6.0,1,8,2,2
-2024-03-18,Bún bò,Thực phẩm,Phải chi (Must have),70000,0.0,0,8,2,0
-2024-03-20,Bún đậu,Thực phẩm,Phát sinh (Nice to have),75000,2.0,0,8,1,1
-2024-03-20,Nước,Thực phẩm,Phải chi (Must have),65000,2.0,0,8,2,0
-2024-03-20,Rau + chuối,Thực phẩm,Phát sinh (Nice to have),50000,2.0,0,8,1,1
-2024-03-21,Bánh tráng trộn,Thực phẩm,Lãng phí (Wasted),30000,3.0,0,8,0,1
-2024-03-21,Để xe Lotte,Đi lại,Phát sinh (Nice to have),4000,3.0,0,10,1,1
-2024-03-21,Trứng gà,Thực phẩm,Phát sinh (Nice to have),6000,3.0,0,8,1,1
-2024-03-22,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,4.0,0,8,2,0
-2024-03-22,Bánh mì,Thực phẩm,Phát sinh (Nice to have),40000,4.0,0,8,1,1
-2024-03-22,Cà phê Hummingbird,Cà phê,Phát sinh (Nice to have),160000,4.0,0,0,1,1
-2024-03-22,Cà phê hạt Hummingbird,Cà phê,Phải chi (Must have),335000,4.0,0,0,2,0
-2024-03-22,Thảm Yoga,Sức khoẻ,Phát sinh (Nice to have),325000,4.0,0,7,1,1
-2024-03-22,Yến mạnh + hạt hướng dương,Thực phẩm,Phát sinh (Nice to have),322000,4.0,0,8,1,1
-2024-03-22,Trái cây Aeon Mall,Thực phẩm,Phát sinh (Nice to have),265000,4.0,0,8,1,1
-2024-03-23,Trứng + mì tôm,Thực phẩm,Phải chi (Must have),38000,5.0,1,8,2,2
-2024-03-23,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,1,10,2,2
-2024-03-23,Chè,Thực phẩm,Phát sinh (Nice to have),40000,5.0,1,8,1,2
-2024-03-24,Đi chợ,Thực phẩm,Phải chi (Must have),286000,6.0,1,8,2,2
-2024-03-25,Nước,Thực phẩm,Phải chi (Must have),65000,0.0,0,8,2,0
-2024-03-26,Gửi xe lotte,Đi lại,Phát sinh (Nice to have),4000,1.0,0,10,1,1
-2024-03-26,Lotte,Mua sắm,Phải chi (Must have),218000,1.0,0,5,2,0
-2024-03-26,Gà rán Lotte,Thực phẩm,Phát sinh (Nice to have),97000,1.0,0,8,1,1
-2024-03-27,Ăn Hàn Quốc,Thực phẩm,Phát sinh (Nice to have),300000,2.0,0,8,1,1
-2024-03-27,Bánh Hỷ Long Môn,Thực phẩm,Lãng phí (Wasted),70000,2.0,0,8,0,1
-2024-03-28,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,3.0,0,8,2,0
-2024-03-28,Lotte,Thực phẩm,Phát sinh (Nice to have),220000,3.0,0,8,1,1
-2024-03-28,Bút chì ,Giáo dục,Phát sinh (Nice to have),10000,3.0,0,2,1,1
-2024-03-29,Bún đậu,Thực phẩm,Phát sinh (Nice to have),82000,4.0,0,8,1,1
-2024-03-30,Ăn sáng,Thực phẩm,Phải chi (Must have),50000,5.0,1,8,2,2
-2024-03-30,Cà phê Hummingbird,Cà phê,Phát sinh (Nice to have),140000,5.0,1,0,1,2
-2024-03-30,Nước,Thực phẩm,Phải chi (Must have),65000,5.0,1,8,2,2
-2024-03-30,Rau,Thực phẩm,Phải chi (Must have),17000,5.0,1,8,2,2
-2024-04-04,Nước,Thực phẩm,Phải chi (Must have),65000,3.0,0,8,2,0
-2024-04-01,Card điện thoại,Other,Phát sinh (Nice to have),100000,0.0,0,6,1,1
-2024-04-01,Đi chợ,Thực phẩm,Phải chi (Must have),323000,0.0,0,8,2,0
-2024-04-01,Cắt tóc,Sức khoẻ,Phải chi (Must have),70000,0.0,0,7,2,0
-2024-04-01,quả chanh + tắt,Thực phẩm,Phải chi (Must have),6000,0.0,0,8,2,0
-2024-04-01,Gửi xe lotte,Đi lại,Phát sinh (Nice to have),4000,0.0,0,10,1,1
-2024-04-01,GIấy ăn ,Mua sắm,Phải chi (Must have),33000,0.0,0,5,2,0
-2024-04-01,Chuối,Thực phẩm,Phát sinh (Nice to have),12000,0.0,0,8,1,1
-2024-04-01,Phúc long,Thực phẩm,Phát sinh (Nice to have),45000,0.0,0,8,1,1
-2024-04-01,Trứng và tỏi,Thực phẩm,Phải chi (Must have),35000,0.0,0,8,2,0
-2024-04-02,Chè,Thực phẩm,Phát sinh (Nice to have),85000,1.0,0,8,1,1
-2024-04-02,Cơm tấm + Bún mắm,Thực phẩm,Phát sinh (Nice to have),86000,1.0,0,8,1,1
-2024-04-03,Highland,Thực phẩm,Phát sinh (Nice to have),55000,2.0,0,8,1,1
-2024-04-03,Ăn sáng,Thực phẩm,Phải chi (Must have),66000,2.0,0,8,2,0
-2024-04-04,Bánh mì,Thực phẩm,Phải chi (Must have),17000,3.0,0,8,2,0
-2024-04-04,Cà phê Passio,Cà phê,Phát sinh (Nice to have),50000,3.0,0,0,1,1
-2024-04-04,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0,10,2,0
-2024-04-03,Lotte,Thực phẩm,Phát sinh (Nice to have),216000,2.0,0,8,1,1
-2024-04-05,Netflix,Giải trí,Phải chi (Must have),53000,4.0,0,3,2,0
-2024-04-05,Dừa,Thực phẩm,Phải chi (Must have),26000,4.0,0,8,2,0
-2024-04-05,Ăn sáng,Thực phẩm,Phát sinh (Nice to have),70000,4.0,0,8,1,1
-2024-04-05,Cà phê ở Sala,Cà phê,Phát sinh (Nice to have),100000,4.0,0,0,1,1
-2024-04-06,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),5030000,5.0,1,4,2,2
-2024-04-06,Chè,Thực phẩm,Phát sinh (Nice to have),30000,5.0,1,8,1,2
-2024-04-06,Gửi xe lotte,Đi lại,Phát sinh (Nice to have),4000,5.0,1,10,1,2
-2024-04-08,Nước,Thực phẩm,Phải chi (Must have),65000,0.0,0,8,2,0
-2024-04-07,Đi chợ,Thực phẩm,Phải chi (Must have),430000,6.0,1,8,2,2
-2024-04-08,Cà phê Passio,Cà phê,Phát sinh (Nice to have),50000,0.0,0,0,1,1
-2024-04-08,Bún + gía,Thực phẩm,Phải chi (Must have),13000,0.0,0,8,2,0
-2024-04-09,Chè ,Thực phẩm,Lãng phí (Wasted),30000,1.0,0,8,0,1
-,,Unknown,Unknown,0,,0,9,3,0
-2024-04-09,Nước mía,Thực phẩm,Lãng phí (Wasted),12000,1.0,0,8,0,1
-2024-04-09,Lotte (Trứng + Nước lau sàn+chố),Mua sắm,Phải chi (Must have),139000,1.0,0,5,2,0
-2024-04-10,Cà phê passio,Cà phê,Phát sinh (Nice to have),38000,2.0,0,0,1,1
-2024-04-10,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),250000,2.0,0,4,2,0
-2024-04-10,Trả tín dụng,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4200000,2.0,0,4,2,0
-2024-04-10,Trái cây Lotte,Thực phẩm,Phát sinh (Nice to have),332000,2.0,0,8,1,1
-2024-04-11,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0,10,2,0
-2024-04-11,Bún đậu,Thực phẩm,Phát sinh (Nice to have),146000,3.0,0,8,1,1
-2024-04-12,Chè,Thực phẩm,Phát sinh (Nice to have),15000,4.0,0,8,1,1
-2024-04-12,Cà phê Passio,Cà phê,Phát sinh (Nice to have),25000,4.0,0,0,1,1
-2024-04-13,Cà phê passio,Cà phê,Phát sinh (Nice to have),50000,5.0,1,0,1,2
-2024-04-13,Nước,Thực phẩm,Phải chi (Must have),65000,5.0,1,8,2,2
-2024-04-13,Nem cuốn,Thực phẩm,Phát sinh (Nice to have),134000,5.0,1,8,1,2
-2024-04-15,LinkedIn Account,Other,Lãng phí (Wasted),750000,0.0,0,6,0,1
-2024-04-14,Đi chợ,Thực phẩm,Phải chi (Must have),400000,6.0,1,8,2,2
-2024-04-15,Bánh tráng trộn,Thực phẩm,Lãng phí (Wasted),35000,0.0,0,8,0,1
-2024-04-15,Thuốc nhỏ mắt,Sức khoẻ,Phát sinh (Nice to have),61000,0.0,0,7,1,1
-2024-04-16,Cà phê Passio,Cà phê,Phát sinh (Nice to have),49000,1.0,0,0,1,1
-2024-04-16,Đồ ăn Kenhbachau,Thực phẩm,Phát sinh (Nice to have),292000,1.0,0,8,1,1
-2024-04-17,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,2.0,0,8,2,0
-2024-04-17,Cà phê Passio,Cà phê,Phát sinh (Nice to have),25000,2.0,0,0,1,1
-2024-04-17,Kindle book,Giáo dục,Phát sinh (Nice to have),5000,2.0,0,2,1,1
-2024-04-17,Bún mắm miền tây,Thực phẩm,Phát sinh (Nice to have),104000,2.0,0,8,1,1
-2024-04-17,Chè,Thực phẩm,Lãng phí (Wasted),40000,2.0,0,8,0,1
-2024-04-17,Rửa xe,Đi lại,Phát sinh (Nice to have),30000,2.0,0,10,1,1
-2024-04-18,Đi chợ,Thực phẩm,Phải chi (Must have),459000,3.0,0,8,2,0
-2024-04-18,Trái cây,Thực phẩm,Phát sinh (Nice to have),309000,3.0,0,8,1,1
-2024-04-19,Ăn sáng bánh mì,Thực phẩm,Phải chi (Must have),20000,4.0,0,8,2,0
-2024-04-19,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0,0,1,1
-2024-04-19,Highland,Thực phẩm,Lãng phí (Wasted),55000,4.0,0,8,0,1
-2024-04-20,Cà phê passio,Cà phê,Phát sinh (Nice to have),25000,5.0,1,0,1,2
-2024-04-20,Đi chợ,Thực phẩm,Phải chi (Must have),142000,5.0,1,8,2,2
-2024-04-20,Mì tôm,Thực phẩm,Phát sinh (Nice to have),10000,5.0,1,8,1,2
-2024-04-20,Phở,Thực phẩm,Phát sinh (Nice to have),40000,5.0,1,8,1,2
-2024-04-20,Japani Matcha,Thực phẩm,Phát sinh (Nice to have),141000,5.0,1,8,1,2
-2024-04-21,Cà phê Passio,Cà phê,Phát sinh (Nice to have),25000,6.0,1,0,1,2
-2024-04-21,Đi chợ,Thực phẩm,Phải chi (Must have),14500,6.0,1,8,2,2
-2024-04-22,Cà phê Passio,Cà phê,Phát sinh (Nice to have),25000,0.0,0,0,1,1
-2024-04-21,Đồ ăn ở quê,Thực phẩm,Phải chi (Must have),3000000,6.0,1,8,2,2
-2024-04-22,Cà phê muối,Cà phê,Phát sinh (Nice to have),25000,0.0,0,0,1,1
-2024-04-22,Rau,Thực phẩm,Phải chi (Must have),44000,0.0,0,8,2,0
-2024-04-23,Đổ xăng,Đi lại,Phải chi (Must have),50000,1.0,0,10,2,0
-2024-04-23,Cà phê Passio,Cà phê,Phát sinh (Nice to have),60000,1.0,0,0,1,1
-2024-04-23,Chụp hình passport,Other,Phát sinh (Nice to have),30000,1.0,0,6,1,1
-2024-04-23,Nước,Thực phẩm,Phải chi (Must have),65000,1.0,0,8,2,0
-2024-04-23,Nước ngọt,Thực phẩm,Lãng phí (Wasted),20000,1.0,0,8,0,1
-2024-04-22,Giấy lọc cà phê,Cà phê,Phát sinh (Nice to have),152000,0.0,0,0,1,1
-2024-04-23,Bún,Thực phẩm,Phải chi (Must have),10000,1.0,0,8,2,0
-2024-04-24,Ăn sáng,Thực phẩm,Phải chi (Must have),20000,2.0,0,8,2,0
-2024-04-24,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,2.0,0,0,1,1
-2024-04-25,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0,0,1,1
-2024-04-25,Dừa,Thực phẩm,Phát sinh (Nice to have),16000,3.0,0,8,1,1
-2024-04-25,Trà đen tóc,Thực phẩm,Phát sinh (Nice to have),330000,3.0,0,8,1,1
-2024-04-25,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),215000,3.0,0,0,2,0
-2024-04-25,Vinmart,Thực phẩm,Phát sinh (Nice to have),86000,3.0,0,8,1,1
-2024-04-26,Mì spagetti và chuối,Thực phẩm,Phải chi (Must have),84000,4.0,0,8,2,0
-2024-04-26,Mít,Thực phẩm,Phát sinh (Nice to have),34000,4.0,0,8,1,1
-2024-04-27,Ăn sáng,Thực phẩm,Phải chi (Must have),68000,5.0,1,8,2,2
-2024-04-27,Vé xem phim Lật mặt 7,Giải trí,Phát sinh (Nice to have),168000,5.0,1,3,1,2
-2024-04-27,Rau,Thực phẩm,Phải chi (Must have),32000,5.0,1,8,2,2
-2024-04-28,Bánh cuốn tây sơn,Thực phẩm,Phát sinh (Nice to have),69000,6.0,1,8,1,2
-2024-04-28,Gửi xe Lotte,Đi lại,Phát sinh (Nice to have),5000,6.0,1,10,1,2
-2024-04-28,Nước,Thực phẩm,Phải chi (Must have),65000,6.0,1,8,2,2
-2024-04-28,Đi chợ + trái cây,Thực phẩm,Phải chi (Must have),32000,6.0,1,8,2,2
-2024-04-28,Nước ép trái cây,Thực phẩm,Phát sinh (Nice to have),35000,6.0,1,8,1,2
-2024-04-29,Lotte,Mua sắm,Phát sinh (Nice to have),546000,0.0,0,5,1,1
-2024-05-01,Bánh mì,Thực phẩm,Phải chi (Must have),40000,2.0,0,8,2,0
-2024-05-01,Đi chợ,Thực phẩm,Phải chi (Must have),225000,2.0,0,8,2,0
-2024-05-02,Ăn sáng,Thực phẩm,Phải chi (Must have),55000,3.0,0,8,2,0
-2024-05-02,Nước trái cây,Thực phẩm,Phát sinh (Nice to have),115000,3.0,0,8,1,1
-2024-05-02,Nước,Thực phẩm,Phải chi (Must have),65000,3.0,0,8,2,0
-2024-05-02,Vé xem phim,Giải trí,Phát sinh (Nice to have),168000,3.0,0,3,1,1
-2024-05-02,Bao tay,Mua sắm,Phải chi (Must have),34000,3.0,0,5,2,0
-2024-05-03,Cà phê hạt Hummingbird,Cà phê,Phát sinh (Nice to have),235000,4.0,0,0,1,1
-2024-05-03,Phí passport,Other,Phát sinh (Nice to have),190000,4.0,0,6,1,1
-,,Unknown,Unknown,0,,0,9,3,0
-2024-05-03,Gạo,Thực phẩm,Phải chi (Must have),200000,4.0,0,8,2,0
-2024-05-03,Nước mía,Thực phẩm,Lãng phí (Wasted),12000,4.0,0,8,0,1
-2024-05-04,Bánh tráng trộn,Thực phẩm,Phát sinh (Nice to have),35000,5.0,1,8,1,2
-2024-05-05,"Lotte - Sữa, Bánh",Thực phẩm,Phát sinh (Nice to have),217000,6.0,1,8,1,2
-2024-05-05,Netflix,Giải trí,Phải chi (Must have),53000,6.0,1,3,2,2
-2024-05-05,Đi chợ,Thực phẩm,Phải chi (Must have),200000,6.0,1,8,2,2
-2024-05-05,Ăn tối,Thực phẩm,Phát sinh (Nice to have),112000,6.0,1,8,1,2
-2024-05-06,Nước bình 5 lít,Thực phẩm,Phát sinh (Nice to have),26000,0.0,0,8,1,1
-2024-05-06,Nước ngọt,Thực phẩm,Lãng phí (Wasted),10000,0.0,0,8,0,1
-2024-05-07,Thuốc nhỏ mắt,Sức khoẻ,Phát sinh (Nice to have),135000,1.0,0,7,1,1
-2024-05-07,Trứng lộn + bún bò,Thực phẩm,Phát sinh (Nice to have),60000,1.0,0,8,1,1
-2024-05-08,Coffee Show 2024,Cà phê,Phát sinh (Nice to have),302000,2.0,0,0,1,1
-2024-05-09,Món Thái,Thực phẩm,Phát sinh (Nice to have),386000,3.0,0,8,1,1
-2024-05-09,Ăn sáng,Thực phẩm,Phải chi (Must have),66000,3.0,0,8,2,0
-2024-05-08,Chè,Thực phẩm,Lãng phí (Wasted),30000,2.0,0,8,0,1
-2024-05-08,Đường,Thực phẩm,Phải chi (Must have),37000,2.0,0,8,2,0
-2024-05-09,Tiền nhà ,Hoá đơn - Thanh toán định kì,Phải chi (Must have),5650000,3.0,0,4,2,0
-2024-05-10,Đi chợ,Thực phẩm,Phải chi (Must have),36000,4.0,0,8,2,0
-2024-05-11,Ăn sáng,Thực phẩm,Phải chi (Must have),35000,5.0,1,8,2,2
-2024-05-11,Đi show và phê,Giải trí,Phát sinh (Nice to have),45000,5.0,1,3,1,2
-2024-05-12,Đi chợ,Thực phẩm,Phải chi (Must have),400000,6.0,1,8,2,2
-2024-05-15,Tín dụng,Hoá đơn - Thanh toán định kì,Phải chi (Must have),720000,2.0,0,4,2,0
-2024-05-12,Trứng cút,Thực phẩm,Phát sinh (Nice to have),18000,6.0,1,8,1,2
-2024-05-12,Nước ngọt,Thực phẩm,Lãng phí (Wasted),15000,6.0,1,8,0,2
-2024-05-12,Nước,Thực phẩm,Phải chi (Must have),65000,6.0,1,8,2,2
-2024-05-13,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),250000,0.0,0,4,2,0
-2024-05-14,Chích thuốc + chuyền nước,Sức khoẻ,Phát sinh (Nice to have),435000,1.0,0,7,1,1
-2024-05-14,Vinmart,Mua sắm,Phát sinh (Nice to have),198000,1.0,0,5,1,1
-2024-05-15,Chuyền nước + chích thuốc,Sức khoẻ,Phát sinh (Nice to have),280000,2.0,0,7,1,1
-2024-05-15,Đổ xăng,Đi lại,Phải chi (Must have),50000,2.0,0,10,2,0
-2024-05-16,Chuyền nước chích thuốc,Sức khoẻ,Phát sinh (Nice to have),280000,3.0,0,7,1,1
-2024-05-17,Thuốc cảm + dầu gió + chích thuốc,Sức khoẻ,Phát sinh (Nice to have),365000,4.0,0,7,1,1
-2024-05-16,Đi chợ,Thực phẩm,Phải chi (Must have),140000,3.0,0,8,2,0
-2024-05-18,Bún + giá,Thực phẩm,Phải chi (Must have),17000,5.0,1,8,2,2
-2024-05-18,Thuốc cảm,Sức khoẻ,Phát sinh (Nice to have),130000,5.0,1,7,1,2
-2024-05-18,Nước,Thực phẩm,Phải chi (Must have),65000,5.0,1,8,2,2
-2024-05-18,Hớt tóc,Sức khoẻ,Phải chi (Must have),70000,5.0,1,7,2,2
-2024-05-18,Mèo thần tài,Mua sắm,Phát sinh (Nice to have),819000,5.0,1,5,1,2
-2024-05-18,Ăn chè,Thực phẩm,Lãng phí (Wasted),30000,5.0,1,8,0,2
-2024-05-18,Sữa chua + miếng gói,Thực phẩm,Phát sinh (Nice to have),56000,5.0,1,8,1,2
-2024-05-19,Đi chợ,Thực phẩm,Phải chi (Must have),100000,6.0,1,8,2,2
-2024-05-19,Bún chả,Thực phẩm,Phải chi (Must have),189000,6.0,1,8,2,2
-2024-05-19,Thuốc pharma,Sức khoẻ,Phát sinh (Nice to have),74000,6.0,1,7,1,2
-2024-05-20,Cà phê passio,Cà phê,Phát sinh (Nice to have),25000,0.0,0,0,1,1
-2024-05-20,Amazon book,Giáo dục,Phải chi (Must have),440000,0.0,0,2,2,0
-2024-05-20,Macbook Air,Giáo dục,Phát sinh (Nice to have),12000000,0.0,0,2,1,1
-2024-05-20,Pizza,Thực phẩm,Phát sinh (Nice to have),254000,0.0,0,8,1,1
-2024-05-20,Lotte,Thực phẩm,Phát sinh (Nice to have),261000,0.0,0,8,1,1
-2024-05-21,Bánh xèo,Thực phẩm,Phát sinh (Nice to have),171000,1.0,0,8,1,1
-2024-05-21,Trà sữa Koi,Thực phẩm,Lãng phí (Wasted),49000,1.0,0,8,0,1
-2024-05-22,Đổ xăng,Đi lại,Phải chi (Must have),50000,2.0,0,10,2,0
-2024-05-22,Cà phê thousand bean,Cà phê,Phát sinh (Nice to have),105000,2.0,0,0,1,1
-2024-05-22,Bún bò,Thực phẩm,Phát sinh (Nice to have),60000,2.0,0,8,1,1
-2024-05-23,Passio coffee,Cà phê,Phát sinh (Nice to have),50000,3.0,0,0,1,1
-2024-05-23,Figma plan,Giáo dục,Phát sinh (Nice to have),425000,3.0,0,2,1,1
-2024-05-24,Passio coffee,Cà phê,Phát sinh (Nice to have),25000,4.0,0,0,1,1
-2024-05-24,Bún + giá đỗ,Thực phẩm,Phải chi (Must have),17000,4.0,0,8,2,0
-2024-05-24,Dừa,Thực phẩm,Phát sinh (Nice to have),14000,4.0,0,8,1,1
-2024-05-24,Ăn Hàn Quốc,Thực phẩm,Phát sinh (Nice to have),710000,4.0,0,8,1,1
-2024-05-25,Sầu riêng,Thực phẩm,Lãng phí (Wasted),320000,5.0,1,8,0,2
-2024-05-26,Bơ,Thực phẩm,Phát sinh (Nice to have),30000,6.0,1,8,1,2
-2024-05-26,Ăn sáng,Thực phẩm,Phải chi (Must have),23000,6.0,1,8,2,2
-2024-05-26,Cà phê Passio,Cà phê,Phát sinh (Nice to have),25000,6.0,1,0,1,2
-2024-05-26,Nước,Thực phẩm,Phải chi (Must have),65000,6.0,1,8,2,2
-2024-05-26,Cà phê hạt Hummingbird,Cà phê,Phải chi (Must have),350000,6.0,1,0,2,2
-2024-05-26,Uniqlo,Mua sắm,Phát sinh (Nice to have),989000,6.0,1,5,1,2
-2024-05-27,Rau + trái cây,Thực phẩm,Phải chi (Must have),13000,0.0,0,8,2,0
-2024-05-27,Lotte,Thực phẩm,Phải chi (Must have),200000,0.0,0,8,2,0
-2024-05-30,Cà phê trung nguyên,Cà phê,Lãng phí (Wasted),114000,3.0,0,0,0,1
-2024-05-30,Cơm tấm,Thực phẩm,Phát sinh (Nice to have),105000,3.0,0,8,1,1
-2024-05-30,Lotte cho trái cây + mì tôm,Thực phẩm,Phát sinh (Nice to have),103000,3.0,0,8,1,1
-2024-05-30,Nước,Thực phẩm,Phải chi (Must have),65000,3.0,0,8,2,0
-2024-05-31,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,4.0,0,8,2,0
-2024-05-31,Đăng ký bằng lái xe,Đi lại,Phát sinh (Nice to have),1000000,4.0,0,10,1,1
-2024-05-31,Lotte thực phẩm,Thực phẩm,Phát sinh (Nice to have),160000,4.0,0,8,1,1
-2024-05-31,Nước giặt,Mua sắm,Phải chi (Must have),90000,4.0,0,5,2,0
-2024-06-01,Cà phê hummingbird,Cà phê,Lãng phí (Wasted),75000,5.0,1,0,0,2
-2024-06-02,Đi chợ,Thực phẩm,Phải chi (Must have),334000,6.0,1,8,2,2
-2024-06-03,coffee passio,Cà phê,Phát sinh (Nice to have),50000,0.0,0,0,1,1
-2024-06-03,Đi chợ,Thực phẩm,Phải chi (Must have),21000,0.0,0,8,2,0
-2024-06-03,Nước,Thực phẩm,Phải chi (Must have),65000,0.0,0,8,2,0
-2024-06-03,Nước coca,Thực phẩm,Phát sinh (Nice to have),10000,0.0,0,8,1,1
-2024-06-04,Bánh mì,Thực phẩm,Phải chi (Must have),40000,1.0,0,8,2,0
-2024-06-04,Bún tươi,Thực phẩm,Phải chi (Must have),10000,1.0,0,8,2,0
-2024-06-04,Lotte,Thực phẩm,Phát sinh (Nice to have),200000,1.0,0,8,1,1
-2024-06-09,Đổ xăng,Đi lại,Phải chi (Must have),50000,6.0,1,10,2,2
-2024-06-05,Cà phê passio,Cà phê,Phát sinh (Nice to have),50000,2.0,0,0,1,1
-2024-06-06,Ăn cua,Thực phẩm,Phát sinh (Nice to have),546000,3.0,0,8,1,1
-2024-06-06,Cà phê passio,Cà phê,Lãng phí (Wasted),25000,3.0,0,0,0,1
-2024-06-06,Ăn sáng,Thực phẩm,Phải chi (Must have),40000,3.0,0,8,2,0
-2024-06-06,Gửi xe thi bằng lái,Đi lại,Phát sinh (Nice to have),10000,3.0,0,10,1,1
-2024-06-08,Quần đùi,Mua sắm,Phát sinh (Nice to have),127000,5.0,1,5,1,2
-2024-06-08,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,5.0,1,8,2,2
-2024-06-08,Cà phê passio,Cà phê,Phát sinh (Nice to have),25000,5.0,1,0,1,2
-2024-06-08,Gửi xe,Đi lại,Phát sinh (Nice to have),10000,5.0,1,10,1,2
-2024-06-08,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),215000,5.0,1,0,2,2
-2024-06-08,Cà phê hummingbird,Cà phê,Phát sinh (Nice to have),140000,5.0,1,0,1,2
-2024-06-08,Nước,Thực phẩm,Phải chi (Must have),75000,5.0,1,8,2,2
-2024-06-06,Bắp trái,Thực phẩm,Phát sinh (Nice to have),20000,3.0,0,8,1,1
-2024-06-10,Đi chợ,Thực phẩm,Phải chi (Must have),245000,0.0,0,8,2,0
-2024-06-10,Áo thun ba lỗ,Mua sắm,Phát sinh (Nice to have),116000,0.0,0,5,1,1
-2024-06-15,Internet (1),Hoá đơn - Thanh toán định kì,Phải chi (Must have),250000,5.0,1,4,2,2
-2024-06-14,Bánh xèo phú yên (1),Thực phẩm,Phát sinh (Nice to have),105000,4.0,0,8,1,1
-2024-06-12,Lotte mart (1),Thực phẩm,Unknown,525000,2.0,0,8,3,0
-2024-06-12,Cà phê beanthere (1),Cà phê,Unknown,59000,2.0,0,0,3,0
-2024-06-13,Lotte (1),Mua sắm,Phát sinh (Nice to have),152000,3.0,0,5,1,1
-2024-06-14,Gói euro (1),Giải trí,Phát sinh (Nice to have),66000,4.0,0,3,1,1
-2024-06-12,Nước (1),Thực phẩm,Unknown,65000,2.0,0,8,3,0
-2024-06-14,Bún + giá đỗ (1),Thực phẩm,Phải chi (Must have),17000,4.0,0,8,2,0
-2024-06-11,Cơm gà (1),Thực phẩm,Unknown,51000,1.0,0,8,3,0
-2024-06-13,Cà phê passio (1),Cà phê,Lãng phí (Wasted),54000,3.0,0,0,0,1
-2024-06-12,Gà rán Lotte (1),Thực phẩm,Unknown,155000,2.0,0,8,3,0
-2024-06-15,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),5346000,5.0,1,4,2,2
-2024-06-15,Ăn sáng,Thực phẩm,Phải chi (Must have),35000,5.0,1,8,2,2
-2024-06-15,Đi chợ,Thực phẩm,Phải chi (Must have),286000,5.0,1,8,2,2
-2024-06-15,Trà sữa,Thực phẩm,Lãng phí (Wasted),49000,5.0,1,8,0,2
-2024-06-16,Nước,Thực phẩm,Phải chi (Must have),65000,6.0,1,8,2,2
-2024-06-16,Bánh bèo huế,Thực phẩm,Lãng phí (Wasted),102000,6.0,1,8,0,2
-2024-06-16,Nón bulldog,Đi lại,Phát sinh (Nice to have),776000,6.0,1,10,1,2
-2024-06-16,Cà phê  hoàng sa,Cà phê,Lãng phí (Wasted),110000,6.0,1,0,0,2
-2024-06-16,Đổ xăng,Đi lại,Phải chi (Must have),50000,6.0,1,10,2,2
-2024-06-17,Ăn sáng,Thực phẩm,Phải chi (Must have),23000,0.0,0,8,2,0
-2024-06-17,Gạo,Thực phẩm,Phải chi (Must have),200000,0.0,0,8,2,0
-2024-06-17,Trà sữa Sasimi,Thực phẩm,Lãng phí (Wasted),70000,0.0,0,8,0,1
-2024-06-18,Spotify premium,Giải trí,Phát sinh (Nice to have),59000,1.0,0,3,1,1
-2024-06-18,Bún,Thực phẩm,Phải chi (Must have),10000,1.0,0,8,2,0
-2024-06-18,Đi chợ,Thực phẩm,Phải chi (Must have),147000,1.0,0,8,2,0
-2024-06-18,Hớt tóc,Sức khoẻ,Phát sinh (Nice to have),60000,1.0,0,7,1,1
-2024-06-19,Mỹ phẩm ,Sức khoẻ,Phát sinh (Nice to have),1213000,2.0,0,7,1,1
-2024-06-19,Trứng cút,Thực phẩm,Phải chi (Must have),18000,2.0,0,8,2,0
-2024-06-19,Cà phê passio,Cà phê,Lãng phí (Wasted),50000,2.0,0,0,0,1
-2024-06-19,Bún mắm,Thực phẩm,Phát sinh (Nice to have),50000,2.0,0,8,1,1
-2024-06-18,3G,Giải trí,Phát sinh (Nice to have),7000,1.0,0,3,1,1
-2024-06-20,Nước,Thực phẩm,Phải chi (Must have),65000,3.0,0,8,2,0
-2024-06-20,Trái cây lotte,Thực phẩm,Phát sinh (Nice to have),259000,3.0,0,8,1,1
-2024-06-20,Nước xả vải,Other,Phải chi (Must have),191000,3.0,0,6,2,0
-2024-06-21,Cà phê passio,Cà phê,Lãng phí (Wasted),50000,4.0,0,0,0,1
-2024-06-22,Farewell Thuan,Other,Phát sinh (Nice to have),36,5.0,1,6,1,2
-2024-06-23,Lotte - Rau củ,Thực phẩm,Phải chi (Must have),765000,6.0,1,8,2,2
-2024-06-24,Bánh mì,Thực phẩm,Phải chi (Must have),9000,0.0,0,8,2,0
-2024-06-24,Cà phê Passio,Cà phê,Phát sinh (Nice to have),25000,0.0,0,0,1,1
-2024-06-24,Bắp + bơ,Thực phẩm,Phát sinh (Nice to have),28000,0.0,0,8,1,1
-2024-06-24,Áo thun,Mua sắm,Phát sinh (Nice to have),64000,0.0,0,5,1,1
-2024-06-24,Nước,Thực phẩm,Phải chi (Must have),65000,0.0,0,8,2,0
-2024-06-25,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),215000,1.0,0,0,2,0
-2024-06-25,Khám sức khoẻ đi làm,Sức khoẻ,Phát sinh (Nice to have),180000,1.0,0,7,1,1
-2024-06-25,Hồ sơ xin việc công chứng,Other,Phát sinh (Nice to have),36000,1.0,0,6,1,1
-2024-06-25,Nước mắt nhân tạo,Sức khoẻ,Phải chi (Must have),60000,1.0,0,7,2,0
-2024-06-25,Hớt tóc,Sức khoẻ,Phải chi (Must have),70000,1.0,0,7,2,0
-2024-06-25,Vinmart,Thực phẩm,Lãng phí (Wasted),82000,1.0,0,8,0,1
-2024-06-26,Mắt kính Owndays,Sức khoẻ,Phát sinh (Nice to have),961000,2.0,0,7,1,1
-2024-06-26,Bún đậu,Thực phẩm,Phát sinh (Nice to have),122000,2.0,0,8,1,1
-2024-06-26,Cà phê beanthere,Thực phẩm,Phát sinh (Nice to have),56000,2.0,0,8,1,1
-2024-06-26,Đồ ăn ở quê,Thực phẩm,Phải chi (Must have),1500000,2.0,0,8,2,0
-2024-06-28,Đổ xăng,Đi lại,Phải chi (Must have),50000,4.0,0,10,2,0
-2024-06-28,Công chứng ,Other,Phát sinh (Nice to have),12000,4.0,0,6,1,1
-2024-06-28,Coffee Hoff Specialty,Cà phê,Phát sinh (Nice to have),210000,4.0,0,0,1,1
-2024-06-28,Gía đỗ,Thực phẩm,Phải chi (Must have),7000,4.0,0,8,2,0
-2024-06-28,Gửi xe,Đi lại,Phát sinh (Nice to have),5000,4.0,0,10,1,1
-2024-06-28,Giấy lọc cà phê,Cà phê,Phải chi (Must have),132000,4.0,0,0,2,0
-2024-06-29,Lotte,Thực phẩm,Phải chi (Must have),400000,5.0,1,8,2,2
-2024-06-30,Đi chợ,Thực phẩm,Phải chi (Must have),116000,6.0,1,8,2,2
-2024-07-01,Netflix ,Giải trí,Phải chi (Must have),53000,0.0,0,3,2,0
-2024-06-30,Bánh canh hẹ,Thực phẩm,Phải chi (Must have),97000,6.0,1,8,2,2
-2024-07-01,syngum,Thực phẩm,Phát sinh (Nice to have),29000,0.0,0,8,1,1
-2024-06-28,Thay nhớt xe,Đi lại,Phát sinh (Nice to have),210000,4.0,0,10,1,1
-2024-07-02,Cà phê passio,Cà phê,Phát sinh (Nice to have),24000,1.0,0,0,1,1
-2024-07-02,Gửi xe bảo hiểm,Đi lại,Phát sinh (Nice to have),5000,1.0,0,10,1,1
-2024-07-03,Cà phê Pasio,Cà phê,Phát sinh (Nice to have),19000,2.0,0,0,1,1
-2024-07-03,Bún đậu,Thực phẩm,Phải chi (Must have),53000,2.0,0,8,2,0
-2024-07-03,Nước,Thực phẩm,Phải chi (Must have),65000,2.0,0,8,2,0
-2024-07-04,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0,0,1,1
-2024-07-04,Cơm tấm,Thực phẩm,Phải chi (Must have),49000,3.0,0,8,2,0
-2024-07-05,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0,0,1,1
-2024-07-05,Cơm tấm,Thực phẩm,Phải chi (Must have),47000,4.0,0,8,2,0
-2024-07-05,Lotte,Thực phẩm,Phải chi (Must have),113000,4.0,0,8,2,0
-2024-07-05,Đổ xăng,Đi lại,Phải chi (Must have),50000,4.0,0,10,2,0
-2024-07-05,Trà sữa,Thực phẩm,Lãng phí (Wasted),47000,4.0,0,8,0,1
-2024-07-06,Đi chợ,Thực phẩm,Phải chi (Must have),323000,5.0,1,8,2,2
-2024-07-06,Listerine,Sức khoẻ,Phải chi (Must have),200000,5.0,1,7,2,2
-2024-07-06,Lotte,Thực phẩm,Phải chi (Must have),550000,5.0,1,8,2,2
-2024-07-08,Nước,Thực phẩm,Phải chi (Must have),70000,0.0,0,8,2,0
-2024-07-08,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,0.0,0,0,1,1
-2024-07-05,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4930000,4.0,0,4,2,0
-2024-07-09,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,1.0,0,0,1,1
-2024-07-09,Nước đóng chai,Thực phẩm,Phải chi (Must have),7000,1.0,0,8,2,0
-2024-07-10,Đổ xăng,Đi lại,Phải chi (Must have),50000,2.0,0,10,2,0
-2024-07-10,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,2.0,0,0,1,1
-2024-07-10,Bột giặt,Other,Phải chi (Must have),146000,2.0,0,6,2,0
-2024-07-10,Khoai lang + thanh long,Thực phẩm,Phát sinh (Nice to have),35000,2.0,0,8,1,1
-2024-07-11,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0,0,1,1
-2024-07-12,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0,0,1,1
-2024-07-12,Bún,Thực phẩm,Phải chi (Must have),56000,4.0,0,8,2,0
-2024-07-12,Nem cuốn bà điệp,Thực phẩm,Phải chi (Must have),65000,4.0,0,8,2,0
-2024-07-13,Đi chợ,Thực phẩm,Phải chi (Must have),390000,5.0,1,8,2,2
-2024-07-13,Nước,Thực phẩm,Phải chi (Must have),70000,5.0,1,8,2,2
-2024-07-13,Bún bò với aD,Thực phẩm,Phát sinh (Nice to have),160000,5.0,1,8,1,2
-2024-07-13,Card điện thoại bố già,Other,Phát sinh (Nice to have),50000,5.0,1,6,1,2
-2024-07-13,Lotte - Rau - Trái cây,Thực phẩm,Phải chi (Must have),443700,5.0,1,8,2,2
-2024-07-14,Đổ xăng,Đi lại,Phải chi (Must have),50000,6.0,1,10,2,2
-2024-07-14,Hummingbird coffee,Cà phê,Phát sinh (Nice to have),70000,6.0,1,0,1,2
-2024-07-15,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,0.0,0,0,1,1
-2024-07-16,Singum,Other,Phát sinh (Nice to have),29000,1.0,0,6,1,1
-2024-07-16,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,1.0,0,0,1,1
-2024-07-17,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,2.0,0,0,1,1
-2024-07-18,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0,0,1,1
-2024-07-18,Thuốc pharma,Sức khoẻ,Phát sinh (Nice to have),114000,3.0,0,7,1,1
-2024-07-18,Tín dụng HSBC,Hoá đơn - Thanh toán định kì,Phải chi (Must have),3494000,3.0,0,4,2,0
-2024-07-19,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),240000,4.0,0,4,2,0
-2024-07-19,Spotify,Giải trí,Phát sinh (Nice to have),65000,4.0,0,3,1,1
-2024-07-19,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0,0,1,1
-2024-07-19,Cơm tấm,Thực phẩm,Phải chi (Must have),50000,4.0,0,8,2,0
-2024-07-19,Nước,Thực phẩm,Phải chi (Must have),70000,4.0,0,8,2,0
-2024-07-19,Đổ xăng,Đi lại,Phải chi (Must have),50000,4.0,0,10,2,0
-2024-07-19,Dimsum,Thực phẩm,Phát sinh (Nice to have),685000,4.0,0,8,1,1
-2024-07-20,Nhổ và trám răng,Sức khoẻ,Phát sinh (Nice to have),2614000,5.0,1,7,1,2
-2024-07-20,Ăn sáng,Thực phẩm,Phải chi (Must have),43000,5.0,1,8,2,2
-2024-07-20,"Cà chua, sữa, cháo gói Lotte",Thực phẩm,Phải chi (Must have),260800,5.0,1,8,2,2
-2024-07-20,Bánh cuốn tây sơn,Thực phẩm,Phải chi (Must have),73000,5.0,1,8,2,2
-2024-07-21,Đi chợ,Thực phẩm,Phải chi (Must have),244000,6.0,1,8,2,2
-2024-07-21,"Kem trị mụn, dầu gội, chống nắng",Sức khoẻ,Phát sinh (Nice to have),934000,6.0,1,7,1,2
-2024-07-21,Đồ chơi cho Tom & Bo,Mua sắm,Phát sinh (Nice to have),540000,6.0,1,5,1,2
-2024-07-22,Thuốc giải nhiệt và khẩu trang pharma,Sức khoẻ,Phát sinh (Nice to have),89000,0.0,0,7,1,1
-2024-07-22,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0,10,2,0
-2024-07-22,Vé máy bay,Đi lại,Phát sinh (Nice to have),3186000,0.0,0,10,1,1
-2024-08-01,Tiền đồ ăn ở quê,Thực phẩm,Phải chi (Must have),1500000,3.0,0,8,2,0
-2024-07-22,Gạo,Thực phẩm,Phải chi (Must have),200000,0.0,0,8,2,0
-2024-07-22,Nước,Thực phẩm,Phải chi (Must have),70000,0.0,0,8,2,0
-2024-07-22,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,0.0,0,0,1,1
-2024-07-23,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,1.0,0,0,1,1
-2024-07-24,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,2.0,0,0,1,1
-2024-07-25,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0,0,1,1
-2024-07-23,"Lotte - Nước lau sàn, dầu gội",Mua sắm,Phải chi (Must have),465000,1.0,0,5,2,0
-2024-07-25,Grab tới nha sỹ,Sức khoẻ,Phát sinh (Nice to have),52000,3.0,0,7,1,1
-2024-07-25,Bún bò,Thực phẩm,Phát sinh (Nice to have),172000,3.0,0,8,1,1
-2024-07-26,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0,0,1,1
-2024-07-28,Gas,Hoá đơn - Thanh toán định kì,Phải chi (Must have),450000,6.0,1,4,2,2
-2024-07-29,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,0.0,0,0,1,1
-2024-07-29,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0,10,2,0
-2024-07-29,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,0.0,0,8,2,0
-2024-07-29,3G,Giải trí,Phát sinh (Nice to have),20000,0.0,0,3,1,1
-2024-07-30,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,1.0,0,0,1,1
-2024-07-30,Ăn sáng,Thực phẩm,Phải chi (Must have),23000,1.0,0,8,2,0
-2024-07-30,Sữa bịch,Thực phẩm,Phát sinh (Nice to have),4000,1.0,0,8,1,1
-2024-07-31,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,2.0,0,0,1,1
-2024-07-31,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,2.0,0,8,2,0
-2024-07-31,Cơm tấm,Thực phẩm,Phải chi (Must have),60000,2.0,0,8,2,0
-2024-08-01,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,3.0,0,8,2,0
-2024-08-01,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0,0,1,1
-2024-08-01,Cơm tấm,Thực phẩm,Phải chi (Must have),55000,3.0,0,8,2,0
-2024-08-02,Bánh cuốn tây sơn,Thực phẩm,Phải chi (Must have),69000,4.0,0,8,2,0
-2024-08-02,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0,0,1,1
-2024-08-03,Ăn sáng + gía,Thực phẩm,Phải chi (Must have),30000,5.0,1,8,2,2
-2024-08-03,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,1,10,2,2
-2024-08-03,Cà phê Hummingbird,Cà phê,Phát sinh (Nice to have),75000,5.0,1,0,1,2
-2024-08-03,Netflix,Giải trí,Phải chi (Must have),53000,5.0,1,3,2,2
-2024-08-03,Nước,Thực phẩm,Phải chi (Must have),70000,5.0,1,8,2,2
-2024-07-31,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,2.0,0,8,2,0
-2024-08-04,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,6.0,1,8,2,2
-2024-08-04,Hớt tóc,Sức khoẻ,Phải chi (Must have),70000,6.0,1,7,2,2
-2024-07-29,Kẹo gum,Thực phẩm,Phát sinh (Nice to have),29000,0.0,0,8,1,1
-2024-08-04,"Rau, củ, sữa lotte",Thực phẩm,Phải chi (Must have),259000,6.0,1,8,2,2
-2024-08-05,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,0.0,0,0,1,1
-2024-08-05,Nước GS25,Other,Lãng phí (Wasted),31000,0.0,0,6,0,1
-2024-08-05,Grab sân bay,Đi lại,Phát sinh (Nice to have),30000,0.0,0,10,1,1
-2024-08-05,Nem nướng cô điệp,Thực phẩm,Phải chi (Must have),149000,0.0,0,8,2,0
-2024-08-06,Biếu mẹ,Other,Phát sinh (Nice to have),2000000,1.0,0,6,1,1
-2024-08-07,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,2.0,0,0,1,1
-2024-08-06,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,1.0,0,0,1,1
-2024-08-07,Đổ xăng,Đi lại,Phải chi (Must have),50000,2.0,0,10,2,0
-2024-08-07,Về quê đám hỏi bé Xuân,Đi lại,Phát sinh (Nice to have),3200000,2.0,0,10,1,1
-2024-08-07,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4844000,2.0,0,4,2,0
-2024-08-07,Đi chợ,Thực phẩm,Phải chi (Must have),119000,2.0,0,8,2,0
-2024-08-08,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0,0,1,1
-2024-08-08,Sữa chua + sữa,Thực phẩm,Phải chi (Must have),119000,3.0,0,8,2,0
-2024-08-10,Cà phê okio,Cà phê,Phát sinh (Nice to have),155000,5.0,1,0,1,2
-2024-08-10,Lotte,Thực phẩm,Phải chi (Must have),190000,5.0,1,8,2,2
-2024-08-10,Trái cây,Thực phẩm,Phải chi (Must have),50000,5.0,1,8,2,2
-2024-08-10,Ăn sáng,Thực phẩm,Phải chi (Must have),69000,5.0,1,8,2,2
-2024-09-01,Kính Owndays,Sức khoẻ,Phải chi (Must have),3450000,6.0,1,7,2,2
-2024-08-10,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),200000,5.0,1,0,2,2
-2024-08-10,Thuốc cảm và kẹo ngậm,Sức khoẻ,Phát sinh (Nice to have),94000,5.0,1,7,1,2
-2024-08-11,Đi chợ,Thực phẩm,Phải chi (Must have),320000,6.0,1,8,2,2
-2024-08-11,Thuốc cảm,Sức khoẻ,Phát sinh (Nice to have),57000,6.0,1,7,1,2
-2024-08-11,Trà sữa,Thực phẩm,Lãng phí (Wasted),50000,6.0,1,8,0,2
-2024-08-12,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0,10,2,0
-2024-08-12,Passio,Cà phê,Phát sinh (Nice to have),19000,0.0,0,0,1,1
-2024-08-15,Nước,Thực phẩm,Phải chi (Must have),70000,3.0,0,8,2,0
-2024-08-17,Phở,Thực phẩm,Phải chi (Must have),80000,5.0,1,8,2,2
-2024-08-15,"Sữa chua, ăn vặt",Thực phẩm,Phát sinh (Nice to have),149000,3.0,0,8,1,1
-2024-08-16,Lotte,Mua sắm,Phải chi (Must have),708000,4.0,0,5,2,0
-2024-08-17,Giặt giày,Other,Phát sinh (Nice to have),80000,5.0,1,6,1,2
-2024-08-17,Tín dụng,Hoá đơn - Thanh toán định kì,Phải chi (Must have),5092000,5.0,1,4,2,2
-2024-08-17,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),240000,5.0,1,4,2,2
-2024-08-17,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,1,10,2,2
-2024-08-17,Cà phê Okkio,Cà phê,Phát sinh (Nice to have),155000,5.0,1,0,1,2
-2024-08-17,Đi chợ,Thực phẩm,Phải chi (Must have),141000,5.0,1,8,2,2
-2024-08-17,Hót tóc,Sức khoẻ,Phải chi (Must have),60000,5.0,1,7,2,2
-2024-08-17,"Mua khăn, ",Mua sắm,Phát sinh (Nice to have),310000,5.0,1,5,1,2
-2024-08-18,Đi chợ,Thực phẩm,Phải chi (Must have),92000,6.0,1,8,2,2
-2024-08-19,Nước,Thực phẩm,Phải chi (Must have),70000,0.0,0,8,2,0
-2024-08-19,card điện thoại,Other,Phát sinh (Nice to have),20000,0.0,0,6,1,1
-2024-08-20,Ăn trưa,Thực phẩm,Phải chi (Must have),50000,1.0,0,8,2,0
-2024-08-20,Trả góp,Hoá đơn - Thanh toán định kì,Phải chi (Must have),5092000,1.0,0,4,2,0
-2024-08-20,Giá đỗ,Thực phẩm,Phải chi (Must have),7000,1.0,0,8,2,0
-2024-08-20,Spotify,Giải trí,Phát sinh (Nice to have),65000,1.0,0,3,1,1
-2024-08-22,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0,10,2,0
-2024-08-22,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0,0,1,1
-2024-08-23,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0,0,1,1
-2024-08-23,Gửi xe,Đi lại,Phát sinh (Nice to have),10000,4.0,0,10,1,1
-2024-08-24,Ăn trưa,Thực phẩm,Phải chi (Must have),78000,5.0,1,8,2,2
-2024-08-24,Lotte,Mua sắm,Phải chi (Must have),280000,5.0,1,5,2,2
-2024-08-24,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),215000,5.0,1,0,2,2
-2024-08-25,Nước,Thực phẩm,Phải chi (Must have),70000,6.0,1,8,2,2
-2024-08-26,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0,10,2,0
-2024-08-25,Đi chợ,Thực phẩm,Phải chi (Must have),84000,6.0,1,8,2,2
-2024-08-25,Hớt tóc,Sức khoẻ,Phải chi (Must have),90000,6.0,1,7,2,2
-2024-08-25,Đi chợ,Thực phẩm,Phải chi (Must have),213000,6.0,1,8,2,2
-2024-08-25,Bánh mì + bánh trung thu,Thực phẩm,Phát sinh (Nice to have),70000,6.0,1,8,1,2
-2024-08-26,Khẩu trang + thuốc nhỏ mắt,Sức khoẻ,Phát sinh (Nice to have),107000,0.0,0,7,1,1
-2024-08-26,nước ngọt,Thực phẩm,Lãng phí (Wasted),10000,0.0,0,8,0,1
-2024-08-27,Sữa chua + bánh,Thực phẩm,Phát sinh (Nice to have),121000,1.0,0,8,1,1
-2024-08-29,Nước,Thực phẩm,Phải chi (Must have),70000,3.0,0,8,2,0
-2024-08-29,Bánh tráng trộn,Thực phẩm,Lãng phí (Wasted),35000,3.0,0,8,0,1
-2024-08-29,Sữa chua + kẹo + bánh,Thực phẩm,Phát sinh (Nice to have),147000,3.0,0,8,1,1
-2024-08-30,Bún mắm nem,Thực phẩm,Phải chi (Must have),69000,4.0,0,8,2,0
-2024-08-31,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,5.0,1,8,2,2
-2024-08-31,Lotte đồ ăn,Thực phẩm,Phải chi (Must have),291000,5.0,1,8,2,2
-2024-08-31,Cà phê Hummingbird (lễ 2/9) ,Cà phê,Phát sinh (Nice to have),310000,5.0,1,0,1,2
-2024-09-01,Đi chợ,Thực phẩm,Phải chi (Must have),465000,6.0,1,8,2,2
-2024-09-01,Netflix,Giải trí,Phải chi (Must have),53000,6.0,1,3,2,2
-2024-09-02,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0,10,2,0
-2024-09-02,Váy đám cưới bé Xuân,Mua sắm,Phát sinh (Nice to have),845000,0.0,0,5,1,1
-2024-09-02,Áo thun UT Uniqlo,Mua sắm,Phát sinh (Nice to have),391000,0.0,0,5,1,1
-2024-09-02,Sushi Aionmal,Thực phẩm,Phát sinh (Nice to have),192000,0.0,0,8,1,1
-2024-09-02,kem đánh răng,Sức khoẻ,Phải chi (Must have),74000,0.0,0,7,2,0
-2024-09-02,Dâù ăn,Thực phẩm,Phải chi (Must have),65000,0.0,0,8,2,0
-2024-09-02,chuối,Thực phẩm,Phát sinh (Nice to have),25000,0.0,0,8,1,1
-2024-09-03,Đi chợ,Thực phẩm,Phải chi (Must have),308000,1.0,0,8,2,0
-2024-09-03,Khẩu trang + kẹo,Sức khoẻ,Phát sinh (Nice to have),72000,1.0,0,7,1,1
-2024-09-03,Bánh trung thu + bánh hỏi lotte,Thực phẩm,Phát sinh (Nice to have),139000,1.0,0,8,1,1
-2024-09-03,Mua vàng cho bé Xuân,Other,Phát sinh (Nice to have),11800000,1.0,0,6,1,1
-2024-09-04,Nước,Thực phẩm,Phải chi (Must have),70000,2.0,0,8,2,0
-2024-09-04,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),220000,2.0,0,0,2,0
-2024-09-06,Highland coffee,Thực phẩm,Phát sinh (Nice to have),55000,4.0,0,8,1,1
-2024-09-07,Cà phê hạt hummingbird cho Hương Anh,Cà phê,Phát sinh (Nice to have),235000,5.0,1,0,1,2
-2024-09-07,Lotte,Mua sắm,Phải chi (Must have),520000,5.0,1,5,2,2
-2024-09-07,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,1,10,2,2
-2024-09-07,Hummingbird,Cà phê,Phát sinh (Nice to have),65000,5.0,1,0,1,2
-2024-09-07,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4910000,5.0,1,4,2,2
-2024-09-07,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),250000,5.0,1,4,2,2
-2024-09-08,Bánh phồng chiên,Thực phẩm,Phát sinh (Nice to have),11000,6.0,1,8,1,2
-2024-09-08,Đi chợ,Thực phẩm,Phải chi (Must have),190000,6.0,1,8,2,2
-2024-09-08,Bảo trì xe yamaha,Đi lại,Phát sinh (Nice to have),1704000,6.0,1,10,1,2
-2024-09-08,Bánh cuốn tây sơn,Thực phẩm,Phải chi (Must have),74000,6.0,1,8,2,2
-2024-09-09,Nước,Thực phẩm,Phải chi (Must have),70000,0.0,0,8,2,0
-2024-09-09,Vé máy bay về đà nẵng đám cưới,Đi lại,Phát sinh (Nice to have),5040000,0.0,0,10,1,1
-2024-09-09,Tiền đám ma ba Thiện,Other,Phát sinh (Nice to have),300000,0.0,0,6,1,1
-2024-09-09,Coca cola,Thực phẩm,Lãng phí (Wasted),10000,0.0,0,8,0,1
-2024-09-12,Kẹo gum,Thực phẩm,Lãng phí (Wasted),29000,3.0,0,8,0,1
-2024-09-12,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0,10,2,0
-2024-09-12,Khẩu trang + kẹo,Sức khoẻ,Phát sinh (Nice to have),79000,3.0,0,7,1,1
-2024-09-13,Phở ăn tối,Thực phẩm,Phát sinh (Nice to have),86000,4.0,0,8,1,1
-2024-09-13,Trà sữa alley,Thực phẩm,Lãng phí (Wasted),67000,4.0,0,8,0,1
-2024-09-14,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,5.0,1,8,2,2
-2024-09-14,Sầu riêng,Thực phẩm,Lãng phí (Wasted),300000,5.0,1,8,0,2
-2024-09-14,Đi chợ,Thực phẩm,Phải chi (Must have),90000,5.0,1,8,2,2
-2024-09-14,Bánh kẹo cho cu Bo,Thực phẩm,Phát sinh (Nice to have),230000,5.0,1,8,1,2
-2024-09-14,Bánh pía + hạt cho bố mẹ,Thực phẩm,Phát sinh (Nice to have),769000,5.0,1,8,1,2
-2024-09-14,Ủng hộ đồng bào bão lũ,Other,Phát sinh (Nice to have),200000,5.0,1,6,1,2
-2024-09-15,Giấy lọc và phê,Cà phê,Phải chi (Must have),120000,6.0,1,0,2,2
-2024-09-15,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),215000,6.0,1,0,2,2
-2024-09-15,VTV cap gói 1 ngày + 3G,Giải trí,Lãng phí (Wasted),13000,6.0,1,3,0,2
-2024-09-16,Sữa rửa mặt,Sức khoẻ,Phải chi (Must have),374000,0.0,0,7,2,0
-2024-09-16,Trả góp,Hoá đơn - Thanh toán định kì,Phải chi (Must have),3103000,0.0,0,4,2,0
-2024-09-14,Hớt tóc,Sức khoẻ,Phải chi (Must have),90000,5.0,1,7,2,2
-2024-09-21,Spotify,Giải trí,Phát sinh (Nice to have),65000,5.0,1,3,1,2
-2024-09-22,Bún bò,Thực phẩm,Phải chi (Must have),70000,6.0,1,8,2,2
-2024-09-22,Đi chợ,Thực phẩm,Phải chi (Must have),270000,6.0,1,8,2,2
-2024-09-23,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0,10,2,0
-2024-09-23,Lotte trái cây,Thực phẩm,Phát sinh (Nice to have),308000,0.0,0,8,1,1
-2024-11-01,Mỹ phẩm,Sức khoẻ,Phát sinh (Nice to have),2080000,4.0,0,7,1,1
-2024-09-24,Khẩu trang,Sức khoẻ,Phải chi (Must have),26000,1.0,0,7,2,0
-2024-09-25,Nước,Thực phẩm,Phải chi (Must have),70000,2.0,0,8,2,0
-2024-09-25,Thuốc cảm pharma,Sức khoẻ,Phát sinh (Nice to have),169000,2.0,0,7,1,1
-2024-09-26,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0,10,2,0
-2024-09-26,Bánh tráng ở quê,Thực phẩm,Phát sinh (Nice to have),260000,3.0,0,8,1,1
-2024-09-26,Tiền biếu mẹ Thôi,Other,Phát sinh (Nice to have),1300000,3.0,0,6,1,1
-2024-09-28,Dừa,Thực phẩm,Phát sinh (Nice to have),52000,5.0,1,8,1,2
-2024-09-28,Ăn cua,Thực phẩm,Phát sinh (Nice to have),810000,5.0,1,8,1,2
-2024-09-28,Thuốc xịt ho,Sức khoẻ,Phát sinh (Nice to have),270000,5.0,1,7,1,2
-2024-09-28,Giá,Thực phẩm,Phải chi (Must have),7000,5.0,1,8,2,2
-2024-09-29,Ăn sáng,Thực phẩm,Phải chi (Must have),66000,6.0,1,8,2,2
-2024-09-29,Cà phê passio,Cà phê,Phát sinh (Nice to have),25000,6.0,1,0,1,2
-2024-09-29,Đi chợ,Thực phẩm,Phải chi (Must have),126000,6.0,1,8,2,2
-2024-09-29,Nước,Thực phẩm,Phải chi (Must have),70000,6.0,1,8,2,2
-2024-09-21,Trip Đà nẵng,Du lịch,Phát sinh (Nice to have),4876000,5.0,1,1,1,2
-2024-09-29,Chi phí về quê đám cưới bé Xuân,Đi lại,Phát sinh (Nice to have),1610000,6.0,1,10,1,2
-2024-09-29,Đi chợ,Thực phẩm,Phải chi (Must have),118000,6.0,1,8,2,2
-2024-10-01,cà phê hạt hummingbird,Cà phê,Phải chi (Must have),215000,1.0,0,0,2,0
-2024-10-01,Đám cưới Quang,Other,Phát sinh (Nice to have),1000000,1.0,0,6,1,1
-2024-10-01,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4880000,1.0,0,4,2,0
-2024-10-01,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),240000,1.0,0,4,2,0
-2024-10-01,Trả góp,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4203000,1.0,0,4,2,0
-2024-10-01,Netflix,Hoá đơn - Thanh toán định kì,Phải chi (Must have),53000,1.0,0,4,2,0
-2024-10-01,Tiền đồ ăn ở quê,Thực phẩm,Phải chi (Must have),1700000,1.0,0,8,2,0
-2024-09-30,Sinh tố,Thực phẩm,Phát sinh (Nice to have),25000,0.0,0,8,1,1
-2024-10-01,Khẩu trang,Sức khoẻ,Phải chi (Must have),95000,1.0,0,7,2,0
-2024-10-02,Đổ xăng,Đi lại,Phải chi (Must have),50000,2.0,0,10,2,0
-2024-10-02,Nước listerine + sữa tắm,Mua sắm,Phải chi (Must have),390000,2.0,0,5,2,0
-2024-10-02,"Sữa chua, kẹo, bánh ngọt + rau củ quả lotte",Thực phẩm,Phát sinh (Nice to have),333000,2.0,0,8,1,1
-2024-10-03,Rổ + khay gia vị,Mua sắm,Phát sinh (Nice to have),151000,3.0,0,5,1,1
-2024-10-05,Nước giặt,Mua sắm,Phải chi (Must have),139000,5.0,1,5,2,2
-2024-10-05,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,5.0,1,8,2,2
-2024-10-05,Đi chợ,Thực phẩm,Phải chi (Must have),163000,5.0,1,8,2,2
-2024-10-06,Ăn tối Tacos,Thực phẩm,Phát sinh (Nice to have),63000,6.0,1,8,1,2
-2024-10-08,Chuối Winmart,Thực phẩm,Phát sinh (Nice to have),16000,1.0,0,8,1,1
-2024-10-07,Sách tiki,Giáo dục,Phát sinh (Nice to have),245000,0.0,0,2,1,1
-2024-10-07,"Dầu ăn, đậu hủ, chuối Winmart",Thực phẩm,Phải chi (Must have),115000,0.0,0,8,2,0
-2024-10-08,Gà rán,Thực phẩm,Phát sinh (Nice to have),111000,1.0,0,8,1,1
-2024-10-10,Đồ ăn ở quê,Thực phẩm,Phải chi (Must have),3000000,3.0,0,8,2,0
-2024-10-10,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0,10,2,0
-2024-10-10,Trà sữa Koi,Thực phẩm,Lãng phí (Wasted),50000,3.0,0,8,0,1
-2024-10-17,Rau + chuối Winmart,Thực phẩm,Phát sinh (Nice to have),50000,3.0,0,8,1,1
-2024-10-11,Mì tôm,Thực phẩm,Phát sinh (Nice to have),29000,4.0,0,8,1,1
-2024-10-11,Mì odon,Thực phẩm,Phát sinh (Nice to have),284000,4.0,0,8,1,1
-2024-10-12,Thảm chùi chân shopee,Mua sắm,Phát sinh (Nice to have),154000,5.0,1,5,1,2
-2024-10-12,Passio coffee,Cà phê,Phát sinh (Nice to have),49000,5.0,1,0,1,2
-2024-10-12,Đi chợ,Thực phẩm,Phải chi (Must have),382000,5.0,1,8,2,2
-2024-10-12,Cắt tóc,Sức khoẻ,Phải chi (Must have),90000,5.0,1,7,2,2
-2024-10-13,Xanh SM đám cưới Quang,Đi lại,Phát sinh (Nice to have),116000,6.0,1,10,1,2
-2024-10-13,Bánh mì,Thực phẩm,Phát sinh (Nice to have),40000,6.0,1,8,1,2
-2024-10-13,Cà phê đám cưới Quang,Cà phê,Phát sinh (Nice to have),202000,6.0,1,0,1,2
-2024-10-15,Đổ xăng,Đi lại,Phải chi (Must have),50000,1.0,0,10,2,0
-2024-10-15,Gạo,Thực phẩm,Phải chi (Must have),210000,1.0,0,8,2,0
-2024-10-15,Nước,Thực phẩm,Phải chi (Must have),70000,1.0,0,8,2,0
-2024-10-15,Miến dẫm chân,Mua sắm,Phát sinh (Nice to have),154000,1.0,0,5,1,1
-2024-10-16,Sữa chua + trái cây Winmart,Thực phẩm,Phát sinh (Nice to have),117000,2.0,0,8,1,1
-2024-10-17,Quýt Winmart,Thực phẩm,Phát sinh (Nice to have),53000,3.0,0,8,1,1
-2024-10-17,Cà phê Passio,Cà phê,Phải chi (Must have),95000,3.0,0,0,2,0
-2024-10-19,Nhổ răng,Sức khoẻ,Phát sinh (Nice to have),2724000,5.0,1,7,1,2
-2024-10-19,Kem ý quận 1,Thực phẩm,Phát sinh (Nice to have),155000,5.0,1,8,1,2
-2024-10-19,Cà phê hạt Hummingbird,Cà phê,Phải chi (Must have),235000,5.0,1,0,2,2
-2024-10-19,Cháo gói Winmart,Thực phẩm,Phát sinh (Nice to have),59000,5.0,1,8,1,2
-2024-10-19,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,1,10,2,2
-2024-10-19,Sinh tố bơ,Thực phẩm,Phát sinh (Nice to have),35000,5.0,1,8,1,2
-2024-10-19,Bắp trái,Thực phẩm,Phát sinh (Nice to have),10000,5.0,1,8,1,2
-2024-10-20,Đi chợ,Thực phẩm,Phải chi (Must have),290000,6.0,1,8,2,2
-2024-10-20,Nước,Thực phẩm,Phải chi (Must have),70000,6.0,1,8,2,2
-2024-10-21,Chuối,Thực phẩm,Phát sinh (Nice to have),15000,0.0,0,8,1,1
-2024-10-24,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0,10,2,0
-2024-10-24,Mì quảng,Thực phẩm,Phát sinh (Nice to have),52000,3.0,0,8,1,1
-2024-10-25,Nước,Thực phẩm,Phải chi (Must have),70000,4.0,0,8,2,0
-2024-10-24,Trái cây + đồ ăn vặt lotte,Thực phẩm,Phát sinh (Nice to have),455000,3.0,0,8,1,1
-2024-10-26,Đi chợ,Thực phẩm,Phải chi (Must have),440000,5.0,1,8,2,2
-2024-10-27,"Bột giặt, kem đánh răng, giấy vệ sinh, gia vị",Mua sắm,Phải chi (Must have),215000,6.0,1,5,2,2
-2024-10-27,Đi chợ,Thực phẩm,Phải chi (Must have),129000,6.0,1,8,2,2
-2024-10-27,Card điện thoại,Other,Phát sinh (Nice to have),30000,6.0,1,6,1,2
-2024-10-28,Nước ngọt cocacola,Thực phẩm,Lãng phí (Wasted),10000,0.0,0,8,0,1
+Date,Name,Category,Type,Amount,DayOfWeek,Hour,IsWeekend,CategoryEncoded,TypeEncoded,Cluster
+2024-01-01,Quỹ team,Other,Phát sinh (Nice to have),200000,0.0,0.0,0,6,1,1
+2024-01-01,An cua,Thực phẩm,Phát sinh (Nice to have),762000,0.0,0.0,0,8,1,1
+2024-01-01,Tiền gift Danny,Mua sắm,Phát sinh (Nice to have),745000,0.0,0.0,0,5,1,1
+2024-01-01,Sữa Ensure,Sức khoẻ,Phát sinh (Nice to have),927000,0.0,0.0,0,7,1,1
+2024-01-01,Hummingbird,Cà phê,Phát sinh (Nice to have),140000,0.0,0.0,0,0,1,3
+2024-01-01,Vé máy bay tết,Đi lại,Phải chi (Must have),2261000,0.0,0.0,0,10,2,0
+2024-01-01,Ăn sáng bún bò,Thực phẩm,Phải chi (Must have),50000,0.0,0.0,0,8,2,0
+2024-01-01,Đi chợ,Thực phẩm,Phải chi (Must have),400000,0.0,0.0,0,8,2,0
+2024-01-01,Netflix,Hoá đơn - Thanh toán định kì,Phải chi (Must have),53000,0.0,0.0,0,4,2,0
+2024-01-01,3G,Giải trí,Phát sinh (Nice to have),3000,0.0,0.0,0,3,1,3
+2024-01-02,Ăn bánh xèo,Thực phẩm,Phát sinh (Nice to have),288000,1.0,0.0,0,8,1,1
+2024-01-02,Sách tiki,Giáo dục,Phải chi (Must have),173000,1.0,0.0,0,2,2,3
+2024-01-02,Lotte,Mua sắm,Phát sinh (Nice to have),350000,1.0,0.0,0,5,1,1
+2024-01-02,Thuốc pharma,Sức khoẻ,Phát sinh (Nice to have),220000,1.0,0.0,0,7,1,1
+2024-01-02,Bàn chải đánh răng,Sức khoẻ,Phải chi (Must have),150000,1.0,0.0,0,7,2,0
+2024-01-03,Nước,Thực phẩm,Phải chi (Must have),65000,2.0,0.0,0,8,2,0
+2024-01-04,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4870000,3.0,0.0,0,4,2,4
+2024-01-04,Cà phê,Cà phê,Lãng phí (Wasted),58000,3.0,0.0,0,0,0,3
+2024-01-04,Lotte,Mua sắm,Phát sinh (Nice to have),369000,3.0,0.0,0,5,1,1
+2024-01-05,Pin remote máy lạnh,Mua sắm,Phát sinh (Nice to have),18000,4.0,0.0,0,5,1,1
+2024-01-06,Đi chợ,Thực phẩm,Phải chi (Must have),166000,5.0,0.0,1,8,2,2
+2024-01-06,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),240000,5.0,0.0,1,4,2,2
+2024-01-06,Nạp tiền điện thoại,Other,Phát sinh (Nice to have),50000,5.0,0.0,1,6,1,5
+2024-01-06,Bánh mì,Thực phẩm,Phát sinh (Nice to have),20000,5.0,0.0,1,8,1,5
+2024-01-07,Cà phê Shin - Khe sanh,Cà phê,Phải chi (Must have),220000,6.0,0.0,1,0,2,2
+2024-01-07,Cà phê gói trung nguyên,Mua sắm,Phát sinh (Nice to have),75000,6.0,0.0,1,5,1,5
+2024-01-05,Ăn trưa,Thực phẩm,Phải chi (Must have),42000,4.0,0.0,0,8,2,0
+2024-01-08,Ăn tối,Thực phẩm,Phải chi (Must have),68000,0.0,0.0,0,8,2,0
+2024-01-09,Nước,Thực phẩm,Phải chi (Must have),65000,1.0,0.0,0,8,2,0
+2024-01-09,Giấy lọc cà phê,Cà phê,Phải chi (Must have),152000,1.0,0.0,0,0,2,3
+2024-01-10,Cà phê,Cà phê,Phát sinh (Nice to have),29000,2.0,0.0,0,0,1,3
+2024-01-10,Cơm gà,Thực phẩm,Phải chi (Must have),45000,2.0,0.0,0,8,2,0
+2024-01-10,Hớt tóc,Sức khoẻ,Phải chi (Must have),70000,2.0,0.0,0,7,2,0
+2024-01-10,Bún bò,Thực phẩm,Phải chi (Must have),40000,2.0,0.0,0,8,2,0
+2024-01-11,Cà phê,Cà phê,Phát sinh (Nice to have),29000,3.0,0.0,0,0,1,3
+2024-01-11,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,3.0,0.0,0,8,2,0
+2024-01-11,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0.0,0,10,2,0
+2024-01-11,Bánh cuốn tây sơn,Thực phẩm,Phải chi (Must have),69000,3.0,0.0,0,8,2,0
+2024-01-12,Cà phê,Cà phê,Phát sinh (Nice to have),48000,4.0,0.0,0,0,1,3
+2024-01-13,Ăn sáng,Thực phẩm,Phải chi (Must have),23000,5.0,0.0,1,8,2,2
+2024-01-13,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,0.0,1,10,2,2
+2024-01-15,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,0.0,0.0,0,8,2,0
+2024-01-15,Cà phê,Cà phê,Phát sinh (Nice to have),48000,0.0,0.0,0,0,1,3
+2024-01-15,Trả tín dụng,Hoá đơn - Thanh toán định kì,Phải chi (Must have),6154000,0.0,0.0,0,4,2,4
+2024-01-16,Ăn sáng,Thực phẩm,Phải chi (Must have),23000,1.0,0.0,0,8,2,0
+2024-01-17,Ăn sáng,Thực phẩm,Phải chi (Must have),12000,2.0,0.0,0,8,2,0
+2024-01-17,cà phê,Cà phê,Phát sinh (Nice to have),29000,2.0,0.0,0,0,1,3
+2024-01-17,Cơm tấm,Thực phẩm,Phải chi (Must have),46000,2.0,0.0,0,8,2,0
+2024-01-19,Bánh mì que,Thực phẩm,Phải chi (Must have),10000,4.0,0.0,0,8,2,0
+2024-01-19,Xanh Sm bike,Đi lại,Phát sinh (Nice to have),20000,4.0,0.0,0,10,1,1
+2024-01-19,Cà phê,Cà phê,Phát sinh (Nice to have),48000,4.0,0.0,0,0,1,3
+2024-01-19,Xanh SM bike,Đi lại,Phát sinh (Nice to have),52000,4.0,0.0,0,10,1,1
+2024-01-20,Cháo gói,Thực phẩm,Phải chi (Must have),33000,5.0,0.0,1,8,2,2
+2024-01-21,Bún bò,Thực phẩm,Phải chi (Must have),61000,6.0,0.0,1,8,2,2
+2024-01-21,Gửi xe cà phê,Đi lại,Phát sinh (Nice to have),25000,6.0,0.0,1,10,1,5
+2024-01-21,Phở,Thực phẩm,Phải chi (Must have),40000,6.0,0.0,1,8,2,2
+2024-01-21,Chuối,Thực phẩm,Phát sinh (Nice to have),11000,6.0,0.0,1,8,1,5
+2024-01-21,Kem đánh răng,Sức khoẻ,Phải chi (Must have),74000,6.0,0.0,1,7,2,2
+2024-01-22,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0.0,0,10,2,0
+2024-01-22,Cà phê,Cà phê,Phát sinh (Nice to have),48000,0.0,0.0,0,0,1,3
+2024-01-19,Tiền grab,Đi lại,Phát sinh (Nice to have),36000,4.0,0.0,0,10,1,1
+2024-01-22,Cơm tấm,Thực phẩm,Phải chi (Must have),58000,0.0,0.0,0,8,2,0
+2024-01-22,Cháo gà,Thực phẩm,Phải chi (Must have),50000,0.0,0.0,0,8,2,0
+2024-01-22,Nước uống,Thực phẩm,Phải chi (Must have),10000,0.0,0.0,0,8,2,0
+2024-01-22,Thuốc cảm,Sức khoẻ,Phát sinh (Nice to have),48000,0.0,0.0,0,7,1,1
+2024-01-23,Bánh mì que,Thực phẩm,Phải chi (Must have),15000,1.0,0.0,0,8,2,0
+2024-01-23,Ăn trưa,Thực phẩm,Phải chi (Must have),59000,1.0,0.0,0,8,2,0
+2024-01-23,Trà xanh,Thực phẩm,Lãng phí (Wasted),75000,1.0,0.0,0,8,0,1
+2024-01-23,Chích thuốc,Sức khoẻ,Phát sinh (Nice to have),100000,1.0,0.0,0,7,1,1
+2024-01-23,Bún bò,Thực phẩm,Phải chi (Must have),40000,1.0,0.0,0,8,2,0
+2024-01-23,Nước,Thực phẩm,Phải chi (Must have),26000,1.0,0.0,0,8,2,0
+2024-01-23,Xịt ho,Sức khoẻ,Phát sinh (Nice to have),129000,1.0,0.0,0,7,1,1
+2024-01-24,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,2.0,0.0,0,8,2,0
+2024-01-24,Chích thuốc cảm,Sức khoẻ,Phát sinh (Nice to have),100000,2.0,0.0,0,7,1,1
+2024-01-24,Dừa,Thực phẩm,Phát sinh (Nice to have),18000,2.0,0.0,0,8,1,1
+2024-01-24,Cơm tấm,Thực phẩm,Phải chi (Must have),57000,2.0,0.0,0,8,2,0
+2024-01-25,Chích thuốc,Sức khoẻ,Phát sinh (Nice to have),100000,3.0,0.0,0,7,1,1
+2024-01-25,Ăn sáng,Thực phẩm,Phải chi (Must have),35000,3.0,0.0,0,8,2,0
+2024-01-24,Lotte,Thực phẩm,Phát sinh (Nice to have),124000,2.0,0.0,0,8,1,1
+2024-01-25,Nước,Thực phẩm,Phải chi (Must have),65000,3.0,0.0,0,8,2,0
+2024-01-25,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0.0,0,10,2,0
+2024-01-25,Bánh cuốn tây sơn,Thực phẩm,Phải chi (Must have),69000,3.0,0.0,0,8,2,0
+2024-01-26,Tiêm thuốc,Sức khoẻ,Phát sinh (Nice to have),100000,4.0,0.0,0,7,1,1
+2024-01-26,Ăn trưa,Thực phẩm,Phải chi (Must have),47000,4.0,0.0,0,8,2,0
+2024-01-26,Gửi xe cty,Đi lại,Phát sinh (Nice to have),20000,4.0,0.0,0,10,1,1
+2024-01-26,Nước mía,Thực phẩm,Phát sinh (Nice to have),32000,4.0,0.0,0,8,1,1
+2024-01-27,Chích thuốc,Sức khoẻ,Phát sinh (Nice to have),100000,5.0,0.0,1,7,1,5
+2024-01-27,Ăn trưa,Thực phẩm,Phải chi (Must have),55000,5.0,0.0,1,8,2,2
+2024-01-27,Spotify,Giải trí,Phát sinh (Nice to have),65000,5.0,0.0,1,3,1,5
+2024-01-27,Cháo gói,Thực phẩm,Phải chi (Must have),50000,5.0,0.0,1,8,2,2
+2024-01-27,Ăn tối,Thực phẩm,Phải chi (Must have),35000,5.0,0.0,1,8,2,2
+2024-01-28,Cơm tấm,Thực phẩm,Phải chi (Must have),46000,6.0,0.0,1,8,2,2
+2024-01-27,Dừa tươi,Thực phẩm,Phát sinh (Nice to have),20000,5.0,0.0,1,8,1,5
+2024-01-29,Bún chả hà nội,Thực phẩm,Phải chi (Must have),60000,0.0,0.0,0,8,2,0
+2024-01-29,Grab bike,Đi lại,Phát sinh (Nice to have),80000,0.0,0.0,0,10,1,1
+2024-01-30,Cơm tấm,Thực phẩm,Phải chi (Must have),56000,1.0,0.0,0,8,2,0
+2024-02-01,Farewell team,Other,Phát sinh (Nice to have),2300000,3.0,0.0,0,6,1,1
+2024-01-31,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,2.0,0.0,0,8,2,0
+2024-01-31,Ăn trưA,Thực phẩm,Phải chi (Must have),78000,2.0,0.0,0,8,2,0
+2024-02-01,Magic keyboard,Mua sắm,Phát sinh (Nice to have),1200000,3.0,0.0,0,5,1,1
+2024-02-01,Netflix,Giải trí,Phải chi (Must have),53000,3.0,0.0,0,3,2,0
+2024-02-01,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0.0,0,10,2,0
+2024-01-31,Cà phê,Cà phê,Phát sinh (Nice to have),130000,2.0,0.0,0,0,1,3
+2024-02-01,Cơm tấm,Thực phẩm,Phải chi (Must have),78000,3.0,0.0,0,8,2,0
+2024-02-01,3G,Giải trí,Phát sinh (Nice to have),14000,3.0,0.0,0,3,1,3
+2024-02-01,Bún bò,Thực phẩm,Phải chi (Must have),35000,3.0,0.0,0,8,2,0
+2024-02-05,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4700000,0.0,0.0,0,4,2,4
+2024-02-06,Internet ,Hoá đơn - Thanh toán định kì,Phải chi (Must have),240000,1.0,0.0,0,4,2,0
+2024-02-15,Tín dụng,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4215000,3.0,0.0,0,4,2,4
+2024-02-19,Chi phí Tết nhà Quốc,Other,Phát sinh (Nice to have),10000000,0.0,0.0,0,6,1,4
+2024-02-19,Vé máy bay vô Tết,Đi lại,Phát sinh (Nice to have),4260000,0.0,0.0,0,10,1,4
+2024-02-22,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,3.0,0.0,0,8,2,0
+2024-02-22,Cà phê,Cà phê,Phát sinh (Nice to have),145000,3.0,0.0,0,0,1,3
+2024-02-22,Cà phê hạt,Cà phê,Phải chi (Must have),240000,3.0,0.0,0,0,2,3
+2024-02-22,Lotte mart,Thực phẩm,Phải chi (Must have),436000,3.0,0.0,0,8,2,0
+2024-02-22,Dây cáp HDML,Mua sắm,Phát sinh (Nice to have),459000,3.0,0.0,0,5,1,1
+2024-02-22,Chi phí tết nhà Thôi,Other,Phát sinh (Nice to have),13000000,3.0,0.0,0,6,1,4
+2024-02-23,Chụp hình thẻ ,Other,Phát sinh (Nice to have),46000,4.0,0.0,0,6,1,1
+2024-02-23,Đi chợ,Thực phẩm,Phải chi (Must have),78000,4.0,0.0,0,8,2,0
+2024-02-23,Nước,Thực phẩm,Phải chi (Must have),65000,4.0,0.0,0,8,2,0
+2024-02-24,Đi chợ,Thực phẩm,Phải chi (Must have),140000,5.0,0.0,1,8,2,2
+2024-02-24,ăn vặt,Thực phẩm,Lãng phí (Wasted),104000,5.0,0.0,1,8,0,5
+2024-02-25,Lẩu bò,Thực phẩm,Lãng phí (Wasted),213000,6.0,0.0,1,8,0,5
+2024-02-25,Cà phê,Cà phê,Phát sinh (Nice to have),25000,6.0,0.0,1,0,1,5
+2024-02-25,Dừa + Chè,Thực phẩm,Phát sinh (Nice to have),34000,6.0,0.0,1,8,1,5
+2024-02-25,Lotte,Thực phẩm,Phải chi (Must have),200000,6.0,0.0,1,8,2,2
+2024-02-26,Đi chợ,Thực phẩm,Phải chi (Must have),198000,0.0,0.0,0,8,2,0
+2024-02-27,Spotify,Giải trí,Phát sinh (Nice to have),59000,1.0,0.0,0,3,1,3
+2024-02-28,Ăn sáng,Thực phẩm,Phải chi (Must have),48000,2.0,0.0,0,8,2,0
+2024-02-28,Cà phê Passio,Cà phê,Phát sinh (Nice to have),50000,2.0,0.0,0,0,1,3
+2024-02-28,Sinh tố sầu riêng bơ,Thực phẩm,Lãng phí (Wasted),40000,2.0,0.0,0,8,0,1
+2024-02-29,Đổ xăng,Đi lại,Phải chi (Must have),60000,3.0,0.0,0,10,2,0
+2024-02-29,Nước,Thực phẩm,Phải chi (Must have),65000,3.0,0.0,0,8,2,0
+2024-02-29,Đường cát,Thực phẩm,Phải chi (Must have),38000,3.0,0.0,0,8,2,0
+2024-03-01,Cà phê Hummingbird ,Cà phê,Phát sinh (Nice to have),150000,4.0,0.0,0,0,1,3
+2024-03-01,Cà phê hạt,Cà phê,Phải chi (Must have),210000,4.0,0.0,0,0,2,3
+2024-03-01,Gà rán lotte,Thực phẩm,Phát sinh (Nice to have),154000,4.0,0.0,0,8,1,1
+2024-03-01,Đậu que,Thực phẩm,Phải chi (Must have),6000,4.0,0.0,0,8,2,0
+2024-03-01,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4500000,4.0,0.0,0,4,2,4
+2024-03-01,Netflix,Giải trí,Phải chi (Must have),53000,4.0,0.0,0,3,2,0
+2024-03-01,Internet ,Hoá đơn - Thanh toán định kì,Phải chi (Must have),240000,4.0,0.0,0,4,2,0
+2024-03-04,Bánh mì sáng,Thực phẩm,Phải chi (Must have),30000,0.0,0.0,0,8,2,0
+2024-03-03,Khám bệnh Hoàn Mỹ,Sức khoẻ,Phát sinh (Nice to have),2555000,6.0,0.0,1,7,1,5
+2024-03-03,Bún chả phố cổ buổi trưa,Thực phẩm,Phát sinh (Nice to have),189000,6.0,0.0,1,8,1,5
+2024-03-03,Cà phê Passio,Sức khoẻ,Lãng phí (Wasted),25000,6.0,0.0,1,7,0,5
+2024-03-04,Set tạ - Decalthon ,Sức khoẻ,Phát sinh (Nice to have),999000,0.0,0.0,0,7,1,1
+2024-03-04,Netflix,Giải trí,Phải chi (Must have),53000,0.0,0.0,0,3,2,0
+2024-03-04,Đi chợ,Thực phẩm,Phải chi (Must have),70000,0.0,0.0,0,8,2,0
+2024-03-04,Lotte,Thực phẩm,Phải chi (Must have),213000,0.0,0.0,0,8,2,0
+2024-03-05,Nước,Thực phẩm,Phải chi (Must have),65000,1.0,0.0,0,8,2,0
+2024-03-06,Hớt tóc,Sức khoẻ,Phải chi (Must have),70000,2.0,0.0,0,7,2,0
+2024-03-07,Đi chợ,Thực phẩm,Phải chi (Must have),109000,3.0,0.0,0,8,2,0
+2024-03-08,Cà phê Hoof,Cà phê,Phát sinh (Nice to have),219000,4.0,0.0,0,0,1,3
+2024-03-08,Bánh cuốn Tây Sơn,Thực phẩm,Phát sinh (Nice to have),186000,4.0,0.0,0,8,1,1
+2024-03-09,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,0.0,1,10,2,2
+2024-03-08,Giữ xe Aperia,Đi lại,Phát sinh (Nice to have),5000,4.0,0.0,0,10,1,1
+2024-03-08,3G,Đi lại,Phát sinh (Nice to have),6000,4.0,0.0,0,10,1,1
+2024-03-09,Đi chợ,Thực phẩm,Phải chi (Must have),65000,5.0,0.0,1,8,2,2
+2024-03-09,Coffee with aD,Cà phê,Phát sinh (Nice to have),160000,5.0,0.0,1,0,1,5
+2024-03-10,Đi chợ,Thực phẩm,Phải chi (Must have),210000,6.0,0.0,1,8,2,2
+2024-03-10,Chuối và mì tôm chay,Thực phẩm,Phát sinh (Nice to have),18000,6.0,0.0,1,8,1,5
+2024-03-11,Passio coffee,Cà phê,Lãng phí (Wasted),50000,0.0,0.0,0,0,0,3
+2024-03-11,Đậu phộng,Thực phẩm,Lãng phí (Wasted),20000,0.0,0.0,0,8,0,1
+2024-03-11,Gửi xe bảo hiểm ,Đi lại,Phát sinh (Nice to have),4000,0.0,0.0,0,10,1,1
+2024-03-11,Nước suối,Thực phẩm,Phát sinh (Nice to have),7000,0.0,0.0,0,8,1,1
+2024-03-11,Bánh mì sáng,Thực phẩm,Phải chi (Must have),15000,0.0,0.0,0,8,2,0
+2024-03-14,Công chứng giấy tờ,Other,Phát sinh (Nice to have),17000,3.0,0.0,0,6,1,1
+2024-03-11,Photo công chứng,Other,Phát sinh (Nice to have),13000,0.0,0.0,0,6,1,1
+2024-03-11,Lotte,Thực phẩm,Phải chi (Must have),226000,0.0,0.0,0,8,2,0
+2024-03-11,Nước,Thực phẩm,Phải chi (Must have),65000,0.0,0.0,0,8,2,0
+2024-03-02,Aeon mall ,Mua sắm,Phát sinh (Nice to have),448000,5.0,0.0,1,5,1,5
+2024-03-12,Lotte,Mua sắm,Phải chi (Must have),232000,1.0,0.0,0,5,2,0
+2024-03-13,Cà phê là việt,Cà phê,Lãng phí (Wasted),105000,2.0,0.0,0,0,0,3
+2024-03-13,Cơm gà,Thực phẩm,Phải chi (Must have),127000,2.0,0.0,0,8,2,0
+2024-03-14,Tín dụng thẻ,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4708000,3.0,0.0,0,4,2,4
+2024-03-14,Matcha bar,Cà phê,Phát sinh (Nice to have),200000,3.0,0.0,0,0,1,3
+2024-03-14,Coffee hạt Hoof,Cà phê,Phải chi (Must have),150000,3.0,0.0,0,0,2,3
+2024-03-14,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0.0,0,10,2,0
+2024-03-14,Trái cây,Thực phẩm,Phát sinh (Nice to have),95000,3.0,0.0,0,8,1,1
+2024-03-15,Bắp trái,Thực phẩm,Phát sinh (Nice to have),15000,4.0,0.0,0,8,1,1
+2024-03-15,Ăn sáng bún,Thực phẩm,Phải chi (Must have),33000,4.0,0.0,0,8,2,0
+2024-03-15,Dừa trái,Thực phẩm,Phải chi (Must have),24000,4.0,0.0,0,8,2,0
+2024-03-16,Nước,Thực phẩm,Phải chi (Must have),65000,5.0,0.0,1,8,2,2
+2024-03-16,Gửi xe wall street,Đi lại,Phát sinh (Nice to have),4000,5.0,0.0,1,10,1,5
+2024-03-17,Đi chợ,Thực phẩm,Phải chi (Must have),157000,6.0,0.0,1,8,2,2
+2024-03-17,Cà phê aD,Cà phê,Phát sinh (Nice to have),165000,6.0,0.0,1,0,1,5
+2024-03-17,Gas,Hoá đơn - Thanh toán định kì,Phải chi (Must have),438000,6.0,0.0,1,4,2,2
+2024-03-18,Bún bò,Thực phẩm,Phát sinh (Nice to have),70000,0.0,0.0,0,8,1,1
+2024-03-18,Cà phê shin,Cà phê,Lãng phí (Wasted),161000,0.0,0.0,0,0,0,3
+2024-03-19,Bún + cà chua + giá đỗ,Thực phẩm,Phải chi (Must have),21000,1.0,0.0,0,8,2,0
+2024-03-19,Cà phê Pasio,Cà phê,Phát sinh (Nice to have),50000,1.0,0.0,0,0,1,3
+2024-03-17,Đi chợ,Thực phẩm,Phải chi (Must have),157000,6.0,0.0,1,8,2,2
+2024-03-18,Bún bò,Thực phẩm,Phải chi (Must have),70000,0.0,0.0,0,8,2,0
+2024-03-20,Bún đậu,Thực phẩm,Phát sinh (Nice to have),75000,2.0,0.0,0,8,1,1
+2024-03-20,Nước,Thực phẩm,Phải chi (Must have),65000,2.0,0.0,0,8,2,0
+2024-03-20,Rau + chuối,Thực phẩm,Phát sinh (Nice to have),50000,2.0,0.0,0,8,1,1
+2024-03-21,Bánh tráng trộn,Thực phẩm,Lãng phí (Wasted),30000,3.0,0.0,0,8,0,1
+2024-03-21,Để xe Lotte,Đi lại,Phát sinh (Nice to have),4000,3.0,0.0,0,10,1,1
+2024-03-21,Trứng gà,Thực phẩm,Phát sinh (Nice to have),6000,3.0,0.0,0,8,1,1
+2024-03-22,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,4.0,0.0,0,8,2,0
+2024-03-22,Bánh mì,Thực phẩm,Phát sinh (Nice to have),40000,4.0,0.0,0,8,1,1
+2024-03-22,Cà phê Hummingbird,Cà phê,Phát sinh (Nice to have),160000,4.0,0.0,0,0,1,3
+2024-03-22,Cà phê hạt Hummingbird,Cà phê,Phải chi (Must have),335000,4.0,0.0,0,0,2,3
+2024-03-22,Thảm Yoga,Sức khoẻ,Phát sinh (Nice to have),325000,4.0,0.0,0,7,1,1
+2024-03-22,Yến mạnh + hạt hướng dương,Thực phẩm,Phát sinh (Nice to have),322000,4.0,0.0,0,8,1,1
+2024-03-22,Trái cây Aeon Mall,Thực phẩm,Phát sinh (Nice to have),265000,4.0,0.0,0,8,1,1
+2024-03-23,Trứng + mì tôm,Thực phẩm,Phải chi (Must have),38000,5.0,0.0,1,8,2,2
+2024-03-23,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,0.0,1,10,2,2
+2024-03-23,Chè,Thực phẩm,Phát sinh (Nice to have),40000,5.0,0.0,1,8,1,5
+2024-03-24,Đi chợ,Thực phẩm,Phải chi (Must have),286000,6.0,0.0,1,8,2,2
+2024-03-25,Nước,Thực phẩm,Phải chi (Must have),65000,0.0,0.0,0,8,2,0
+2024-03-26,Gửi xe lotte,Đi lại,Phát sinh (Nice to have),4000,1.0,0.0,0,10,1,1
+2024-03-26,Lotte,Mua sắm,Phải chi (Must have),218000,1.0,0.0,0,5,2,0
+2024-03-26,Gà rán Lotte,Thực phẩm,Phát sinh (Nice to have),97000,1.0,0.0,0,8,1,1
+2024-03-27,Ăn Hàn Quốc,Thực phẩm,Phát sinh (Nice to have),300000,2.0,0.0,0,8,1,1
+2024-03-27,Bánh Hỷ Long Môn,Thực phẩm,Lãng phí (Wasted),70000,2.0,0.0,0,8,0,1
+2024-03-28,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,3.0,0.0,0,8,2,0
+2024-03-28,Lotte,Thực phẩm,Phát sinh (Nice to have),220000,3.0,0.0,0,8,1,1
+2024-03-28,Bút chì ,Giáo dục,Phát sinh (Nice to have),10000,3.0,0.0,0,2,1,3
+2024-03-29,Bún đậu,Thực phẩm,Phát sinh (Nice to have),82000,4.0,0.0,0,8,1,1
+2024-03-30,Ăn sáng,Thực phẩm,Phải chi (Must have),50000,5.0,0.0,1,8,2,2
+2024-03-30,Cà phê Hummingbird,Cà phê,Phát sinh (Nice to have),140000,5.0,0.0,1,0,1,5
+2024-03-30,Nước,Thực phẩm,Phải chi (Must have),65000,5.0,0.0,1,8,2,2
+2024-03-30,Rau,Thực phẩm,Phải chi (Must have),17000,5.0,0.0,1,8,2,2
+2024-04-04,Nước,Thực phẩm,Phải chi (Must have),65000,3.0,0.0,0,8,2,0
+2024-04-01,Card điện thoại,Other,Phát sinh (Nice to have),100000,0.0,0.0,0,6,1,1
+2024-04-01,Đi chợ,Thực phẩm,Phải chi (Must have),323000,0.0,0.0,0,8,2,0
+2024-04-01,Cắt tóc,Sức khoẻ,Phải chi (Must have),70000,0.0,0.0,0,7,2,0
+2024-04-01,quả chanh + tắt,Thực phẩm,Phải chi (Must have),6000,0.0,0.0,0,8,2,0
+2024-04-01,Gửi xe lotte,Đi lại,Phát sinh (Nice to have),4000,0.0,0.0,0,10,1,1
+2024-04-01,GIấy ăn ,Mua sắm,Phải chi (Must have),33000,0.0,0.0,0,5,2,0
+2024-04-01,Chuối,Thực phẩm,Phát sinh (Nice to have),12000,0.0,0.0,0,8,1,1
+2024-04-01,Phúc long,Thực phẩm,Phát sinh (Nice to have),45000,0.0,0.0,0,8,1,1
+2024-04-01,Trứng và tỏi,Thực phẩm,Phải chi (Must have),35000,0.0,0.0,0,8,2,0
+2024-04-02,Chè,Thực phẩm,Phát sinh (Nice to have),85000,1.0,0.0,0,8,1,1
+2024-04-02,Cơm tấm + Bún mắm,Thực phẩm,Phát sinh (Nice to have),86000,1.0,0.0,0,8,1,1
+2024-04-03,Highland,Thực phẩm,Phát sinh (Nice to have),55000,2.0,0.0,0,8,1,1
+2024-04-03,Ăn sáng,Thực phẩm,Phải chi (Must have),66000,2.0,0.0,0,8,2,0
+2024-04-04,Bánh mì,Thực phẩm,Phải chi (Must have),17000,3.0,0.0,0,8,2,0
+2024-04-04,Cà phê Passio,Cà phê,Phát sinh (Nice to have),50000,3.0,0.0,0,0,1,3
+2024-04-04,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0.0,0,10,2,0
+2024-04-03,Lotte,Thực phẩm,Phát sinh (Nice to have),216000,2.0,0.0,0,8,1,1
+2024-04-05,Netflix,Giải trí,Phải chi (Must have),53000,4.0,0.0,0,3,2,0
+2024-04-05,Dừa,Thực phẩm,Phải chi (Must have),26000,4.0,0.0,0,8,2,0
+2024-04-05,Ăn sáng,Thực phẩm,Phát sinh (Nice to have),70000,4.0,0.0,0,8,1,1
+2024-04-05,Cà phê ở Sala,Cà phê,Phát sinh (Nice to have),100000,4.0,0.0,0,0,1,3
+2024-04-06,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),5030000,5.0,0.0,1,4,2,4
+2024-04-06,Chè,Thực phẩm,Phát sinh (Nice to have),30000,5.0,0.0,1,8,1,5
+2024-04-06,Gửi xe lotte,Đi lại,Phát sinh (Nice to have),4000,5.0,0.0,1,10,1,5
+2024-04-08,Nước,Thực phẩm,Phải chi (Must have),65000,0.0,0.0,0,8,2,0
+2024-04-07,Đi chợ,Thực phẩm,Phải chi (Must have),430000,6.0,0.0,1,8,2,2
+2024-04-08,Cà phê Passio,Cà phê,Phát sinh (Nice to have),50000,0.0,0.0,0,0,1,3
+2024-04-08,Bún + gía,Thực phẩm,Phải chi (Must have),13000,0.0,0.0,0,8,2,0
+2024-04-09,Chè ,Thực phẩm,Lãng phí (Wasted),30000,1.0,0.0,0,8,0,1
+,,Unknown,Unknown,0,,,0,9,3,0
+2024-04-09,Nước mía,Thực phẩm,Lãng phí (Wasted),12000,1.0,0.0,0,8,0,1
+2024-04-09,Lotte (Trứng + Nước lau sàn+chố),Mua sắm,Phải chi (Must have),139000,1.0,0.0,0,5,2,0
+2024-04-10,Cà phê passio,Cà phê,Phát sinh (Nice to have),38000,2.0,0.0,0,0,1,3
+2024-04-10,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),250000,2.0,0.0,0,4,2,0
+2024-04-10,Trả tín dụng,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4200000,2.0,0.0,0,4,2,4
+2024-04-10,Trái cây Lotte,Thực phẩm,Phát sinh (Nice to have),332000,2.0,0.0,0,8,1,1
+2024-04-11,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0.0,0,10,2,0
+2024-04-11,Bún đậu,Thực phẩm,Phát sinh (Nice to have),146000,3.0,0.0,0,8,1,1
+2024-04-12,Chè,Thực phẩm,Phát sinh (Nice to have),15000,4.0,0.0,0,8,1,1
+2024-04-12,Cà phê Passio,Cà phê,Phát sinh (Nice to have),25000,4.0,0.0,0,0,1,3
+2024-04-13,Cà phê passio,Cà phê,Phát sinh (Nice to have),50000,5.0,0.0,1,0,1,5
+2024-04-13,Nước,Thực phẩm,Phải chi (Must have),65000,5.0,0.0,1,8,2,2
+2024-04-13,Nem cuốn,Thực phẩm,Phát sinh (Nice to have),134000,5.0,0.0,1,8,1,5
+2024-04-15,LinkedIn Account,Other,Lãng phí (Wasted),750000,0.0,0.0,0,6,0,1
+2024-04-14,Đi chợ,Thực phẩm,Phải chi (Must have),400000,6.0,0.0,1,8,2,2
+2024-04-15,Bánh tráng trộn,Thực phẩm,Lãng phí (Wasted),35000,0.0,0.0,0,8,0,1
+2024-04-15,Thuốc nhỏ mắt,Sức khoẻ,Phát sinh (Nice to have),61000,0.0,0.0,0,7,1,1
+2024-04-16,Cà phê Passio,Cà phê,Phát sinh (Nice to have),49000,1.0,0.0,0,0,1,3
+2024-04-16,Đồ ăn Kenhbachau,Thực phẩm,Phát sinh (Nice to have),292000,1.0,0.0,0,8,1,1
+2024-04-17,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,2.0,0.0,0,8,2,0
+2024-04-17,Cà phê Passio,Cà phê,Phát sinh (Nice to have),25000,2.0,0.0,0,0,1,3
+2024-04-17,Kindle book,Giáo dục,Phát sinh (Nice to have),5000,2.0,0.0,0,2,1,3
+2024-04-17,Bún mắm miền tây,Thực phẩm,Phát sinh (Nice to have),104000,2.0,0.0,0,8,1,1
+2024-04-17,Chè,Thực phẩm,Lãng phí (Wasted),40000,2.0,0.0,0,8,0,1
+2024-04-17,Rửa xe,Đi lại,Phát sinh (Nice to have),30000,2.0,0.0,0,10,1,1
+2024-04-18,Đi chợ,Thực phẩm,Phải chi (Must have),459000,3.0,0.0,0,8,2,0
+2024-04-18,Trái cây,Thực phẩm,Phát sinh (Nice to have),309000,3.0,0.0,0,8,1,1
+2024-04-19,Ăn sáng bánh mì,Thực phẩm,Phải chi (Must have),20000,4.0,0.0,0,8,2,0
+2024-04-19,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0.0,0,0,1,3
+2024-04-19,Highland,Thực phẩm,Lãng phí (Wasted),55000,4.0,0.0,0,8,0,1
+2024-04-20,Cà phê passio,Cà phê,Phát sinh (Nice to have),25000,5.0,0.0,1,0,1,5
+2024-04-20,Đi chợ,Thực phẩm,Phải chi (Must have),142000,5.0,0.0,1,8,2,2
+2024-04-20,Mì tôm,Thực phẩm,Phát sinh (Nice to have),10000,5.0,0.0,1,8,1,5
+2024-04-20,Phở,Thực phẩm,Phát sinh (Nice to have),40000,5.0,0.0,1,8,1,5
+2024-04-20,Japani Matcha,Thực phẩm,Phát sinh (Nice to have),141000,5.0,0.0,1,8,1,5
+2024-04-21,Cà phê Passio,Cà phê,Phát sinh (Nice to have),25000,6.0,0.0,1,0,1,5
+2024-04-21,Đi chợ,Thực phẩm,Phải chi (Must have),14500,6.0,0.0,1,8,2,2
+2024-04-22,Cà phê Passio,Cà phê,Phát sinh (Nice to have),25000,0.0,0.0,0,0,1,3
+2024-04-21,Đồ ăn ở quê,Thực phẩm,Phải chi (Must have),3000000,6.0,0.0,1,8,2,2
+2024-04-22,Cà phê muối,Cà phê,Phát sinh (Nice to have),25000,0.0,0.0,0,0,1,3
+2024-04-22,Rau,Thực phẩm,Phải chi (Must have),44000,0.0,0.0,0,8,2,0
+2024-04-23,Đổ xăng,Đi lại,Phải chi (Must have),50000,1.0,0.0,0,10,2,0
+2024-04-23,Cà phê Passio,Cà phê,Phát sinh (Nice to have),60000,1.0,0.0,0,0,1,3
+2024-04-23,Chụp hình passport,Other,Phát sinh (Nice to have),30000,1.0,0.0,0,6,1,1
+2024-04-23,Nước,Thực phẩm,Phải chi (Must have),65000,1.0,0.0,0,8,2,0
+2024-04-23,Nước ngọt,Thực phẩm,Lãng phí (Wasted),20000,1.0,0.0,0,8,0,1
+2024-04-22,Giấy lọc cà phê,Cà phê,Phát sinh (Nice to have),152000,0.0,0.0,0,0,1,3
+2024-04-23,Bún,Thực phẩm,Phải chi (Must have),10000,1.0,0.0,0,8,2,0
+2024-04-24,Ăn sáng,Thực phẩm,Phải chi (Must have),20000,2.0,0.0,0,8,2,0
+2024-04-24,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,2.0,0.0,0,0,1,3
+2024-04-25,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0.0,0,0,1,3
+2024-04-25,Dừa,Thực phẩm,Phát sinh (Nice to have),16000,3.0,0.0,0,8,1,1
+2024-04-25,Trà đen tóc,Thực phẩm,Phát sinh (Nice to have),330000,3.0,0.0,0,8,1,1
+2024-04-25,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),215000,3.0,0.0,0,0,2,3
+2024-04-25,Vinmart,Thực phẩm,Phát sinh (Nice to have),86000,3.0,0.0,0,8,1,1
+2024-04-26,Mì spagetti và chuối,Thực phẩm,Phải chi (Must have),84000,4.0,0.0,0,8,2,0
+2024-04-26,Mít,Thực phẩm,Phát sinh (Nice to have),34000,4.0,0.0,0,8,1,1
+2024-04-27,Ăn sáng,Thực phẩm,Phải chi (Must have),68000,5.0,0.0,1,8,2,2
+2024-04-27,Vé xem phim Lật mặt 7,Giải trí,Phát sinh (Nice to have),168000,5.0,0.0,1,3,1,5
+2024-04-27,Rau,Thực phẩm,Phải chi (Must have),32000,5.0,0.0,1,8,2,2
+2024-04-28,Bánh cuốn tây sơn,Thực phẩm,Phát sinh (Nice to have),69000,6.0,0.0,1,8,1,5
+2024-04-28,Gửi xe Lotte,Đi lại,Phát sinh (Nice to have),5000,6.0,0.0,1,10,1,5
+2024-04-28,Nước,Thực phẩm,Phải chi (Must have),65000,6.0,0.0,1,8,2,2
+2024-04-28,Đi chợ + trái cây,Thực phẩm,Phải chi (Must have),32000,6.0,0.0,1,8,2,2
+2024-04-28,Nước ép trái cây,Thực phẩm,Phát sinh (Nice to have),35000,6.0,0.0,1,8,1,5
+2024-04-29,Lotte,Mua sắm,Phát sinh (Nice to have),546000,0.0,0.0,0,5,1,1
+2024-05-01,Bánh mì,Thực phẩm,Phải chi (Must have),40000,2.0,0.0,0,8,2,0
+2024-05-01,Đi chợ,Thực phẩm,Phải chi (Must have),225000,2.0,0.0,0,8,2,0
+2024-05-02,Ăn sáng,Thực phẩm,Phải chi (Must have),55000,3.0,0.0,0,8,2,0
+2024-05-02,Nước trái cây,Thực phẩm,Phát sinh (Nice to have),115000,3.0,0.0,0,8,1,1
+2024-05-02,Nước,Thực phẩm,Phải chi (Must have),65000,3.0,0.0,0,8,2,0
+2024-05-02,Vé xem phim,Giải trí,Phát sinh (Nice to have),168000,3.0,0.0,0,3,1,3
+2024-05-02,Bao tay,Mua sắm,Phải chi (Must have),34000,3.0,0.0,0,5,2,0
+2024-05-03,Cà phê hạt Hummingbird,Cà phê,Phát sinh (Nice to have),235000,4.0,0.0,0,0,1,3
+2024-05-03,Phí passport,Other,Phát sinh (Nice to have),190000,4.0,0.0,0,6,1,1
+,,Unknown,Unknown,0,,,0,9,3,0
+2024-05-03,Gạo,Thực phẩm,Phải chi (Must have),200000,4.0,0.0,0,8,2,0
+2024-05-03,Nước mía,Thực phẩm,Lãng phí (Wasted),12000,4.0,0.0,0,8,0,1
+2024-05-04,Bánh tráng trộn,Thực phẩm,Phát sinh (Nice to have),35000,5.0,0.0,1,8,1,5
+2024-05-05,"Lotte - Sữa, Bánh",Thực phẩm,Phát sinh (Nice to have),217000,6.0,0.0,1,8,1,5
+2024-05-05,Netflix,Giải trí,Phải chi (Must have),53000,6.0,0.0,1,3,2,2
+2024-05-05,Đi chợ,Thực phẩm,Phải chi (Must have),200000,6.0,0.0,1,8,2,2
+2024-05-05,Ăn tối,Thực phẩm,Phát sinh (Nice to have),112000,6.0,0.0,1,8,1,5
+2024-05-06,Nước bình 5 lít,Thực phẩm,Phát sinh (Nice to have),26000,0.0,0.0,0,8,1,1
+2024-05-06,Nước ngọt,Thực phẩm,Lãng phí (Wasted),10000,0.0,0.0,0,8,0,1
+2024-05-07,Thuốc nhỏ mắt,Sức khoẻ,Phát sinh (Nice to have),135000,1.0,0.0,0,7,1,1
+2024-05-07,Trứng lộn + bún bò,Thực phẩm,Phát sinh (Nice to have),60000,1.0,0.0,0,8,1,1
+2024-05-08,Coffee Show 2024,Cà phê,Phát sinh (Nice to have),302000,2.0,0.0,0,0,1,3
+2024-05-09,Món Thái,Thực phẩm,Phát sinh (Nice to have),386000,3.0,0.0,0,8,1,1
+2024-05-09,Ăn sáng,Thực phẩm,Phải chi (Must have),66000,3.0,0.0,0,8,2,0
+2024-05-08,Chè,Thực phẩm,Lãng phí (Wasted),30000,2.0,0.0,0,8,0,1
+2024-05-08,Đường,Thực phẩm,Phải chi (Must have),37000,2.0,0.0,0,8,2,0
+2024-05-09,Tiền nhà ,Hoá đơn - Thanh toán định kì,Phải chi (Must have),5650000,3.0,0.0,0,4,2,4
+2024-05-10,Đi chợ,Thực phẩm,Phải chi (Must have),36000,4.0,0.0,0,8,2,0
+2024-05-11,Ăn sáng,Thực phẩm,Phải chi (Must have),35000,5.0,0.0,1,8,2,2
+2024-05-11,Đi show và phê,Giải trí,Phát sinh (Nice to have),45000,5.0,0.0,1,3,1,5
+2024-05-12,Đi chợ,Thực phẩm,Phải chi (Must have),400000,6.0,0.0,1,8,2,2
+2024-05-15,Tín dụng,Hoá đơn - Thanh toán định kì,Phải chi (Must have),720000,2.0,0.0,0,4,2,0
+2024-05-12,Trứng cút,Thực phẩm,Phát sinh (Nice to have),18000,6.0,0.0,1,8,1,5
+2024-05-12,Nước ngọt,Thực phẩm,Lãng phí (Wasted),15000,6.0,0.0,1,8,0,5
+2024-05-12,Nước,Thực phẩm,Phải chi (Must have),65000,6.0,0.0,1,8,2,2
+2024-05-13,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),250000,0.0,0.0,0,4,2,0
+2024-05-14,Chích thuốc + chuyền nước,Sức khoẻ,Phát sinh (Nice to have),435000,1.0,0.0,0,7,1,1
+2024-05-14,Vinmart,Mua sắm,Phát sinh (Nice to have),198000,1.0,0.0,0,5,1,1
+2024-05-15,Chuyền nước + chích thuốc,Sức khoẻ,Phát sinh (Nice to have),280000,2.0,0.0,0,7,1,1
+2024-05-15,Đổ xăng,Đi lại,Phải chi (Must have),50000,2.0,0.0,0,10,2,0
+2024-05-16,Chuyền nước chích thuốc,Sức khoẻ,Phát sinh (Nice to have),280000,3.0,0.0,0,7,1,1
+2024-05-17,Thuốc cảm + dầu gió + chích thuốc,Sức khoẻ,Phát sinh (Nice to have),365000,4.0,0.0,0,7,1,1
+2024-05-16,Đi chợ,Thực phẩm,Phải chi (Must have),140000,3.0,0.0,0,8,2,0
+2024-05-18,Bún + giá,Thực phẩm,Phải chi (Must have),17000,5.0,0.0,1,8,2,2
+2024-05-18,Thuốc cảm,Sức khoẻ,Phát sinh (Nice to have),130000,5.0,0.0,1,7,1,5
+2024-05-18,Nước,Thực phẩm,Phải chi (Must have),65000,5.0,0.0,1,8,2,2
+2024-05-18,Hớt tóc,Sức khoẻ,Phải chi (Must have),70000,5.0,0.0,1,7,2,2
+2024-05-18,Mèo thần tài,Mua sắm,Phát sinh (Nice to have),819000,5.0,0.0,1,5,1,5
+2024-05-18,Ăn chè,Thực phẩm,Lãng phí (Wasted),30000,5.0,0.0,1,8,0,5
+2024-05-18,Sữa chua + miếng gói,Thực phẩm,Phát sinh (Nice to have),56000,5.0,0.0,1,8,1,5
+2024-05-19,Đi chợ,Thực phẩm,Phải chi (Must have),100000,6.0,0.0,1,8,2,2
+2024-05-19,Bún chả,Thực phẩm,Phải chi (Must have),189000,6.0,0.0,1,8,2,2
+2024-05-19,Thuốc pharma,Sức khoẻ,Phát sinh (Nice to have),74000,6.0,0.0,1,7,1,5
+2024-05-20,Cà phê passio,Cà phê,Phát sinh (Nice to have),25000,0.0,0.0,0,0,1,3
+2024-05-20,Amazon book,Giáo dục,Phải chi (Must have),440000,0.0,0.0,0,2,2,3
+2024-05-20,Macbook Air,Giáo dục,Phát sinh (Nice to have),12000000,0.0,0.0,0,2,1,4
+2024-05-20,Pizza,Thực phẩm,Phát sinh (Nice to have),254000,0.0,0.0,0,8,1,1
+2024-05-20,Lotte,Thực phẩm,Phát sinh (Nice to have),261000,0.0,0.0,0,8,1,1
+2024-05-21,Bánh xèo,Thực phẩm,Phát sinh (Nice to have),171000,1.0,0.0,0,8,1,1
+2024-05-21,Trà sữa Koi,Thực phẩm,Lãng phí (Wasted),49000,1.0,0.0,0,8,0,1
+2024-05-22,Đổ xăng,Đi lại,Phải chi (Must have),50000,2.0,0.0,0,10,2,0
+2024-05-22,Cà phê thousand bean,Cà phê,Phát sinh (Nice to have),105000,2.0,0.0,0,0,1,3
+2024-05-22,Bún bò,Thực phẩm,Phát sinh (Nice to have),60000,2.0,0.0,0,8,1,1
+2024-05-23,Passio coffee,Cà phê,Phát sinh (Nice to have),50000,3.0,0.0,0,0,1,3
+2024-05-23,Figma plan,Giáo dục,Phát sinh (Nice to have),425000,3.0,0.0,0,2,1,3
+2024-05-24,Passio coffee,Cà phê,Phát sinh (Nice to have),25000,4.0,0.0,0,0,1,3
+2024-05-24,Bún + giá đỗ,Thực phẩm,Phải chi (Must have),17000,4.0,0.0,0,8,2,0
+2024-05-24,Dừa,Thực phẩm,Phát sinh (Nice to have),14000,4.0,0.0,0,8,1,1
+2024-05-24,Ăn Hàn Quốc,Thực phẩm,Phát sinh (Nice to have),710000,4.0,0.0,0,8,1,1
+2024-05-25,Sầu riêng,Thực phẩm,Lãng phí (Wasted),320000,5.0,0.0,1,8,0,5
+2024-05-26,Bơ,Thực phẩm,Phát sinh (Nice to have),30000,6.0,0.0,1,8,1,5
+2024-05-26,Ăn sáng,Thực phẩm,Phải chi (Must have),23000,6.0,0.0,1,8,2,2
+2024-05-26,Cà phê Passio,Cà phê,Phát sinh (Nice to have),25000,6.0,0.0,1,0,1,5
+2024-05-26,Nước,Thực phẩm,Phải chi (Must have),65000,6.0,0.0,1,8,2,2
+2024-05-26,Cà phê hạt Hummingbird,Cà phê,Phải chi (Must have),350000,6.0,0.0,1,0,2,2
+2024-05-26,Uniqlo,Mua sắm,Phát sinh (Nice to have),989000,6.0,0.0,1,5,1,5
+2024-05-27,Rau + trái cây,Thực phẩm,Phải chi (Must have),13000,0.0,0.0,0,8,2,0
+2024-05-27,Lotte,Thực phẩm,Phải chi (Must have),200000,0.0,0.0,0,8,2,0
+2024-05-30,Cà phê trung nguyên,Cà phê,Lãng phí (Wasted),114000,3.0,0.0,0,0,0,3
+2024-05-30,Cơm tấm,Thực phẩm,Phát sinh (Nice to have),105000,3.0,0.0,0,8,1,1
+2024-05-30,Lotte cho trái cây + mì tôm,Thực phẩm,Phát sinh (Nice to have),103000,3.0,0.0,0,8,1,1
+2024-05-30,Nước,Thực phẩm,Phải chi (Must have),65000,3.0,0.0,0,8,2,0
+2024-05-31,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,4.0,0.0,0,8,2,0
+2024-05-31,Đăng ký bằng lái xe,Đi lại,Phát sinh (Nice to have),1000000,4.0,0.0,0,10,1,1
+2024-05-31,Lotte thực phẩm,Thực phẩm,Phát sinh (Nice to have),160000,4.0,0.0,0,8,1,1
+2024-05-31,Nước giặt,Mua sắm,Phải chi (Must have),90000,4.0,0.0,0,5,2,0
+2024-06-01,Cà phê hummingbird,Cà phê,Lãng phí (Wasted),75000,5.0,0.0,1,0,0,5
+2024-06-02,Đi chợ,Thực phẩm,Phải chi (Must have),334000,6.0,0.0,1,8,2,2
+2024-06-03,coffee passio,Cà phê,Phát sinh (Nice to have),50000,0.0,0.0,0,0,1,3
+2024-06-03,Đi chợ,Thực phẩm,Phải chi (Must have),21000,0.0,0.0,0,8,2,0
+2024-06-03,Nước,Thực phẩm,Phải chi (Must have),65000,0.0,0.0,0,8,2,0
+2024-06-03,Nước coca,Thực phẩm,Phát sinh (Nice to have),10000,0.0,0.0,0,8,1,1
+2024-06-04,Bánh mì,Thực phẩm,Phải chi (Must have),40000,1.0,0.0,0,8,2,0
+2024-06-04,Bún tươi,Thực phẩm,Phải chi (Must have),10000,1.0,0.0,0,8,2,0
+2024-06-04,Lotte,Thực phẩm,Phát sinh (Nice to have),200000,1.0,0.0,0,8,1,1
+2024-06-09,Đổ xăng,Đi lại,Phải chi (Must have),50000,6.0,0.0,1,10,2,2
+2024-06-05,Cà phê passio,Cà phê,Phát sinh (Nice to have),50000,2.0,0.0,0,0,1,3
+2024-06-06,Ăn cua,Thực phẩm,Phát sinh (Nice to have),546000,3.0,0.0,0,8,1,1
+2024-06-06,Cà phê passio,Cà phê,Lãng phí (Wasted),25000,3.0,0.0,0,0,0,3
+2024-06-06,Ăn sáng,Thực phẩm,Phải chi (Must have),40000,3.0,0.0,0,8,2,0
+2024-06-06,Gửi xe thi bằng lái,Đi lại,Phát sinh (Nice to have),10000,3.0,0.0,0,10,1,1
+2024-06-08,Quần đùi,Mua sắm,Phát sinh (Nice to have),127000,5.0,0.0,1,5,1,5
+2024-06-08,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,5.0,0.0,1,8,2,2
+2024-06-08,Cà phê passio,Cà phê,Phát sinh (Nice to have),25000,5.0,0.0,1,0,1,5
+2024-06-08,Gửi xe,Đi lại,Phát sinh (Nice to have),10000,5.0,0.0,1,10,1,5
+2024-06-08,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),215000,5.0,0.0,1,0,2,2
+2024-06-08,Cà phê hummingbird,Cà phê,Phát sinh (Nice to have),140000,5.0,0.0,1,0,1,5
+2024-06-08,Nước,Thực phẩm,Phải chi (Must have),75000,5.0,0.0,1,8,2,2
+2024-06-06,Bắp trái,Thực phẩm,Phát sinh (Nice to have),20000,3.0,0.0,0,8,1,1
+2024-06-10,Đi chợ,Thực phẩm,Phải chi (Must have),245000,0.0,0.0,0,8,2,0
+2024-06-10,Áo thun ba lỗ,Mua sắm,Phát sinh (Nice to have),116000,0.0,0.0,0,5,1,1
+2024-06-15,Internet (1),Hoá đơn - Thanh toán định kì,Phải chi (Must have),250000,5.0,0.0,1,4,2,2
+2024-06-14,Bánh xèo phú yên (1),Thực phẩm,Phát sinh (Nice to have),105000,4.0,0.0,0,8,1,1
+2024-06-12,Lotte mart (1),Thực phẩm,Unknown,525000,2.0,0.0,0,8,3,0
+2024-06-12,Cà phê beanthere (1),Cà phê,Unknown,59000,2.0,0.0,0,0,3,0
+2024-06-13,Lotte (1),Mua sắm,Phát sinh (Nice to have),152000,3.0,0.0,0,5,1,1
+2024-06-14,Gói euro (1),Giải trí,Phát sinh (Nice to have),66000,4.0,0.0,0,3,1,3
+2024-06-12,Nước (1),Thực phẩm,Unknown,65000,2.0,0.0,0,8,3,0
+2024-06-14,Bún + giá đỗ (1),Thực phẩm,Phải chi (Must have),17000,4.0,0.0,0,8,2,0
+2024-06-11,Cơm gà (1),Thực phẩm,Unknown,51000,1.0,0.0,0,8,3,0
+2024-06-13,Cà phê passio (1),Cà phê,Lãng phí (Wasted),54000,3.0,0.0,0,0,0,3
+2024-06-12,Gà rán Lotte (1),Thực phẩm,Unknown,155000,2.0,0.0,0,8,3,0
+2024-06-15,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),5346000,5.0,0.0,1,4,2,4
+2024-06-15,Ăn sáng,Thực phẩm,Phải chi (Must have),35000,5.0,0.0,1,8,2,2
+2024-06-15,Đi chợ,Thực phẩm,Phải chi (Must have),286000,5.0,0.0,1,8,2,2
+2024-06-15,Trà sữa,Thực phẩm,Lãng phí (Wasted),49000,5.0,0.0,1,8,0,5
+2024-06-16,Nước,Thực phẩm,Phải chi (Must have),65000,6.0,0.0,1,8,2,2
+2024-06-16,Bánh bèo huế,Thực phẩm,Lãng phí (Wasted),102000,6.0,0.0,1,8,0,5
+2024-06-16,Nón bulldog,Đi lại,Phát sinh (Nice to have),776000,6.0,0.0,1,10,1,5
+2024-06-16,Cà phê  hoàng sa,Cà phê,Lãng phí (Wasted),110000,6.0,0.0,1,0,0,5
+2024-06-16,Đổ xăng,Đi lại,Phải chi (Must have),50000,6.0,0.0,1,10,2,2
+2024-06-17,Ăn sáng,Thực phẩm,Phải chi (Must have),23000,0.0,0.0,0,8,2,0
+2024-06-17,Gạo,Thực phẩm,Phải chi (Must have),200000,0.0,0.0,0,8,2,0
+2024-06-17,Trà sữa Sasimi,Thực phẩm,Lãng phí (Wasted),70000,0.0,0.0,0,8,0,1
+2024-06-18,Spotify premium,Giải trí,Phát sinh (Nice to have),59000,1.0,0.0,0,3,1,3
+2024-06-18,Bún,Thực phẩm,Phải chi (Must have),10000,1.0,0.0,0,8,2,0
+2024-06-18,Đi chợ,Thực phẩm,Phải chi (Must have),147000,1.0,0.0,0,8,2,0
+2024-06-18,Hớt tóc,Sức khoẻ,Phát sinh (Nice to have),60000,1.0,0.0,0,7,1,1
+2024-06-19,Mỹ phẩm ,Sức khoẻ,Phát sinh (Nice to have),1213000,2.0,0.0,0,7,1,1
+2024-06-19,Trứng cút,Thực phẩm,Phải chi (Must have),18000,2.0,0.0,0,8,2,0
+2024-06-19,Cà phê passio,Cà phê,Lãng phí (Wasted),50000,2.0,0.0,0,0,0,3
+2024-06-19,Bún mắm,Thực phẩm,Phát sinh (Nice to have),50000,2.0,0.0,0,8,1,1
+2024-06-18,3G,Giải trí,Phát sinh (Nice to have),7000,1.0,0.0,0,3,1,3
+2024-06-20,Nước,Thực phẩm,Phải chi (Must have),65000,3.0,0.0,0,8,2,0
+2024-06-20,Trái cây lotte,Thực phẩm,Phát sinh (Nice to have),259000,3.0,0.0,0,8,1,1
+2024-06-20,Nước xả vải,Other,Phải chi (Must have),191000,3.0,0.0,0,6,2,0
+2024-06-21,Cà phê passio,Cà phê,Lãng phí (Wasted),50000,4.0,0.0,0,0,0,3
+2024-06-22,Farewell Thuan,Other,Phát sinh (Nice to have),36,5.0,0.0,1,6,1,5
+2024-06-23,Lotte - Rau củ,Thực phẩm,Phải chi (Must have),765000,6.0,0.0,1,8,2,2
+2024-06-24,Bánh mì,Thực phẩm,Phải chi (Must have),9000,0.0,0.0,0,8,2,0
+2024-06-24,Cà phê Passio,Cà phê,Phát sinh (Nice to have),25000,0.0,0.0,0,0,1,3
+2024-06-24,Bắp + bơ,Thực phẩm,Phát sinh (Nice to have),28000,0.0,0.0,0,8,1,1
+2024-06-24,Áo thun,Mua sắm,Phát sinh (Nice to have),64000,0.0,0.0,0,5,1,1
+2024-06-24,Nước,Thực phẩm,Phải chi (Must have),65000,0.0,0.0,0,8,2,0
+2024-06-25,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),215000,1.0,0.0,0,0,2,3
+2024-06-25,Khám sức khoẻ đi làm,Sức khoẻ,Phát sinh (Nice to have),180000,1.0,0.0,0,7,1,1
+2024-06-25,Hồ sơ xin việc công chứng,Other,Phát sinh (Nice to have),36000,1.0,0.0,0,6,1,1
+2024-06-25,Nước mắt nhân tạo,Sức khoẻ,Phải chi (Must have),60000,1.0,0.0,0,7,2,0
+2024-06-25,Hớt tóc,Sức khoẻ,Phải chi (Must have),70000,1.0,0.0,0,7,2,0
+2024-06-25,Vinmart,Thực phẩm,Lãng phí (Wasted),82000,1.0,0.0,0,8,0,1
+2024-06-26,Mắt kính Owndays,Sức khoẻ,Phát sinh (Nice to have),961000,2.0,0.0,0,7,1,1
+2024-06-26,Bún đậu,Thực phẩm,Phát sinh (Nice to have),122000,2.0,0.0,0,8,1,1
+2024-06-26,Cà phê beanthere,Thực phẩm,Phát sinh (Nice to have),56000,2.0,0.0,0,8,1,1
+2024-06-26,Đồ ăn ở quê,Thực phẩm,Phải chi (Must have),1500000,2.0,0.0,0,8,2,0
+2024-06-28,Đổ xăng,Đi lại,Phải chi (Must have),50000,4.0,0.0,0,10,2,0
+2024-06-28,Công chứng ,Other,Phát sinh (Nice to have),12000,4.0,0.0,0,6,1,1
+2024-06-28,Coffee Hoff Specialty,Cà phê,Phát sinh (Nice to have),210000,4.0,0.0,0,0,1,3
+2024-06-28,Gía đỗ,Thực phẩm,Phải chi (Must have),7000,4.0,0.0,0,8,2,0
+2024-06-28,Gửi xe,Đi lại,Phát sinh (Nice to have),5000,4.0,0.0,0,10,1,1
+2024-06-28,Giấy lọc cà phê,Cà phê,Phải chi (Must have),132000,4.0,0.0,0,0,2,3
+2024-06-29,Lotte,Thực phẩm,Phải chi (Must have),400000,5.0,0.0,1,8,2,2
+2024-06-30,Đi chợ,Thực phẩm,Phải chi (Must have),116000,6.0,0.0,1,8,2,2
+2024-07-01,Netflix ,Giải trí,Phải chi (Must have),53000,0.0,0.0,0,3,2,0
+2024-06-30,Bánh canh hẹ,Thực phẩm,Phải chi (Must have),97000,6.0,0.0,1,8,2,2
+2024-07-01,syngum,Thực phẩm,Phát sinh (Nice to have),29000,0.0,0.0,0,8,1,1
+2024-06-28,Thay nhớt xe,Đi lại,Phát sinh (Nice to have),210000,4.0,0.0,0,10,1,1
+2024-07-02,Cà phê passio,Cà phê,Phát sinh (Nice to have),24000,1.0,0.0,0,0,1,3
+2024-07-02,Gửi xe bảo hiểm,Đi lại,Phát sinh (Nice to have),5000,1.0,0.0,0,10,1,1
+2024-07-03,Cà phê Pasio,Cà phê,Phát sinh (Nice to have),19000,2.0,0.0,0,0,1,3
+2024-07-03,Bún đậu,Thực phẩm,Phải chi (Must have),53000,2.0,0.0,0,8,2,0
+2024-07-03,Nước,Thực phẩm,Phải chi (Must have),65000,2.0,0.0,0,8,2,0
+2024-07-04,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0.0,0,0,1,3
+2024-07-04,Cơm tấm,Thực phẩm,Phải chi (Must have),49000,3.0,0.0,0,8,2,0
+2024-07-05,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0.0,0,0,1,3
+2024-07-05,Cơm tấm,Thực phẩm,Phải chi (Must have),47000,4.0,0.0,0,8,2,0
+2024-07-05,Lotte,Thực phẩm,Phải chi (Must have),113000,4.0,0.0,0,8,2,0
+2024-07-05,Đổ xăng,Đi lại,Phải chi (Must have),50000,4.0,0.0,0,10,2,0
+2024-07-05,Trà sữa,Thực phẩm,Lãng phí (Wasted),47000,4.0,0.0,0,8,0,1
+2024-07-06,Đi chợ,Thực phẩm,Phải chi (Must have),323000,5.0,0.0,1,8,2,2
+2024-07-06,Listerine,Sức khoẻ,Phải chi (Must have),200000,5.0,0.0,1,7,2,2
+2024-07-06,Lotte,Thực phẩm,Phải chi (Must have),550000,5.0,0.0,1,8,2,2
+2024-07-08,Nước,Thực phẩm,Phải chi (Must have),70000,0.0,0.0,0,8,2,0
+2024-07-08,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,0.0,0.0,0,0,1,3
+2024-07-05,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4930000,4.0,0.0,0,4,2,4
+2024-07-09,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,1.0,0.0,0,0,1,3
+2024-07-09,Nước đóng chai,Thực phẩm,Phải chi (Must have),7000,1.0,0.0,0,8,2,0
+2024-07-10,Đổ xăng,Đi lại,Phải chi (Must have),50000,2.0,0.0,0,10,2,0
+2024-07-10,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,2.0,0.0,0,0,1,3
+2024-07-10,Bột giặt,Other,Phải chi (Must have),146000,2.0,0.0,0,6,2,0
+2024-07-10,Khoai lang + thanh long,Thực phẩm,Phát sinh (Nice to have),35000,2.0,0.0,0,8,1,1
+2024-07-11,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0.0,0,0,1,3
+2024-07-12,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0.0,0,0,1,3
+2024-07-12,Bún,Thực phẩm,Phải chi (Must have),56000,4.0,0.0,0,8,2,0
+2024-07-12,Nem cuốn bà điệp,Thực phẩm,Phải chi (Must have),65000,4.0,0.0,0,8,2,0
+2024-07-13,Đi chợ,Thực phẩm,Phải chi (Must have),390000,5.0,0.0,1,8,2,2
+2024-07-13,Nước,Thực phẩm,Phải chi (Must have),70000,5.0,0.0,1,8,2,2
+2024-07-13,Bún bò với aD,Thực phẩm,Phát sinh (Nice to have),160000,5.0,0.0,1,8,1,5
+2024-07-13,Card điện thoại bố già,Other,Phát sinh (Nice to have),50000,5.0,0.0,1,6,1,5
+2024-07-13,Lotte - Rau - Trái cây,Thực phẩm,Phải chi (Must have),443700,5.0,0.0,1,8,2,2
+2024-07-14,Đổ xăng,Đi lại,Phải chi (Must have),50000,6.0,0.0,1,10,2,2
+2024-07-14,Hummingbird coffee,Cà phê,Phát sinh (Nice to have),70000,6.0,0.0,1,0,1,5
+2024-07-15,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,0.0,0.0,0,0,1,3
+2024-07-16,Singum,Other,Phát sinh (Nice to have),29000,1.0,0.0,0,6,1,1
+2024-07-16,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,1.0,0.0,0,0,1,3
+2024-07-17,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,2.0,0.0,0,0,1,3
+2024-07-18,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0.0,0,0,1,3
+2024-07-18,Thuốc pharma,Sức khoẻ,Phát sinh (Nice to have),114000,3.0,0.0,0,7,1,1
+2024-07-18,Tín dụng HSBC,Hoá đơn - Thanh toán định kì,Phải chi (Must have),3494000,3.0,0.0,0,4,2,4
+2024-07-19,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),240000,4.0,0.0,0,4,2,0
+2024-07-19,Spotify,Giải trí,Phát sinh (Nice to have),65000,4.0,0.0,0,3,1,3
+2024-07-19,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0.0,0,0,1,3
+2024-07-19,Cơm tấm,Thực phẩm,Phải chi (Must have),50000,4.0,0.0,0,8,2,0
+2024-07-19,Nước,Thực phẩm,Phải chi (Must have),70000,4.0,0.0,0,8,2,0
+2024-07-19,Đổ xăng,Đi lại,Phải chi (Must have),50000,4.0,0.0,0,10,2,0
+2024-07-19,Dimsum,Thực phẩm,Phát sinh (Nice to have),685000,4.0,0.0,0,8,1,1
+2024-07-20,Nhổ và trám răng,Sức khoẻ,Phát sinh (Nice to have),2614000,5.0,0.0,1,7,1,5
+2024-07-20,Ăn sáng,Thực phẩm,Phải chi (Must have),43000,5.0,0.0,1,8,2,2
+2024-07-20,"Cà chua, sữa, cháo gói Lotte",Thực phẩm,Phải chi (Must have),260800,5.0,0.0,1,8,2,2
+2024-07-20,Bánh cuốn tây sơn,Thực phẩm,Phải chi (Must have),73000,5.0,0.0,1,8,2,2
+2024-07-21,Đi chợ,Thực phẩm,Phải chi (Must have),244000,6.0,0.0,1,8,2,2
+2024-07-21,"Kem trị mụn, dầu gội, chống nắng",Sức khoẻ,Phát sinh (Nice to have),934000,6.0,0.0,1,7,1,5
+2024-07-21,Đồ chơi cho Tom & Bo,Mua sắm,Phát sinh (Nice to have),540000,6.0,0.0,1,5,1,5
+2024-07-22,Thuốc giải nhiệt và khẩu trang pharma,Sức khoẻ,Phát sinh (Nice to have),89000,0.0,0.0,0,7,1,1
+2024-07-22,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0.0,0,10,2,0
+2024-07-22,Vé máy bay,Đi lại,Phát sinh (Nice to have),3186000,0.0,0.0,0,10,1,1
+2024-08-01,Tiền đồ ăn ở quê,Thực phẩm,Phải chi (Must have),1500000,3.0,0.0,0,8,2,0
+2024-07-22,Gạo,Thực phẩm,Phải chi (Must have),200000,0.0,0.0,0,8,2,0
+2024-07-22,Nước,Thực phẩm,Phải chi (Must have),70000,0.0,0.0,0,8,2,0
+2024-07-22,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,0.0,0.0,0,0,1,3
+2024-07-23,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,1.0,0.0,0,0,1,3
+2024-07-24,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,2.0,0.0,0,0,1,3
+2024-07-25,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0.0,0,0,1,3
+2024-07-23,"Lotte - Nước lau sàn, dầu gội",Mua sắm,Phải chi (Must have),465000,1.0,0.0,0,5,2,0
+2024-07-25,Grab tới nha sỹ,Sức khoẻ,Phát sinh (Nice to have),52000,3.0,0.0,0,7,1,1
+2024-07-25,Bún bò,Thực phẩm,Phát sinh (Nice to have),172000,3.0,0.0,0,8,1,1
+2024-07-26,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0.0,0,0,1,3
+2024-07-28,Gas,Hoá đơn - Thanh toán định kì,Phải chi (Must have),450000,6.0,0.0,1,4,2,2
+2024-07-29,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,0.0,0.0,0,0,1,3
+2024-07-29,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0.0,0,10,2,0
+2024-07-29,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,0.0,0.0,0,8,2,0
+2024-07-29,3G,Giải trí,Phát sinh (Nice to have),20000,0.0,0.0,0,3,1,3
+2024-07-30,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,1.0,0.0,0,0,1,3
+2024-07-30,Ăn sáng,Thực phẩm,Phải chi (Must have),23000,1.0,0.0,0,8,2,0
+2024-07-30,Sữa bịch,Thực phẩm,Phát sinh (Nice to have),4000,1.0,0.0,0,8,1,1
+2024-07-31,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,2.0,0.0,0,0,1,3
+2024-07-31,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,2.0,0.0,0,8,2,0
+2024-07-31,Cơm tấm,Thực phẩm,Phải chi (Must have),60000,2.0,0.0,0,8,2,0
+2024-08-01,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,3.0,0.0,0,8,2,0
+2024-08-01,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0.0,0,0,1,3
+2024-08-01,Cơm tấm,Thực phẩm,Phải chi (Must have),55000,3.0,0.0,0,8,2,0
+2024-08-02,Bánh cuốn tây sơn,Thực phẩm,Phải chi (Must have),69000,4.0,0.0,0,8,2,0
+2024-08-02,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0.0,0,0,1,3
+2024-08-03,Ăn sáng + gía,Thực phẩm,Phải chi (Must have),30000,5.0,0.0,1,8,2,2
+2024-08-03,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,0.0,1,10,2,2
+2024-08-03,Cà phê Hummingbird,Cà phê,Phát sinh (Nice to have),75000,5.0,0.0,1,0,1,5
+2024-08-03,Netflix,Giải trí,Phải chi (Must have),53000,5.0,0.0,1,3,2,2
+2024-08-03,Nước,Thực phẩm,Phải chi (Must have),70000,5.0,0.0,1,8,2,2
+2024-07-31,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,2.0,0.0,0,8,2,0
+2024-08-04,Ăn sáng,Thực phẩm,Phải chi (Must have),33000,6.0,0.0,1,8,2,2
+2024-08-04,Hớt tóc,Sức khoẻ,Phải chi (Must have),70000,6.0,0.0,1,7,2,2
+2024-07-29,Kẹo gum,Thực phẩm,Phát sinh (Nice to have),29000,0.0,0.0,0,8,1,1
+2024-08-04,"Rau, củ, sữa lotte",Thực phẩm,Phải chi (Must have),259000,6.0,0.0,1,8,2,2
+2024-08-05,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,0.0,0.0,0,0,1,3
+2024-08-05,Nước GS25,Other,Lãng phí (Wasted),31000,0.0,0.0,0,6,0,1
+2024-08-05,Grab sân bay,Đi lại,Phát sinh (Nice to have),30000,0.0,0.0,0,10,1,1
+2024-08-05,Nem nướng cô điệp,Thực phẩm,Phải chi (Must have),149000,0.0,0.0,0,8,2,0
+2024-08-06,Biếu mẹ,Other,Phát sinh (Nice to have),2000000,1.0,0.0,0,6,1,1
+2024-08-07,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,2.0,0.0,0,0,1,3
+2024-08-06,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,1.0,0.0,0,0,1,3
+2024-08-07,Đổ xăng,Đi lại,Phải chi (Must have),50000,2.0,0.0,0,10,2,0
+2024-08-07,Về quê đám hỏi bé Xuân,Đi lại,Phát sinh (Nice to have),3200000,2.0,0.0,0,10,1,1
+2024-08-07,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4844000,2.0,0.0,0,4,2,4
+2024-08-07,Đi chợ,Thực phẩm,Phải chi (Must have),119000,2.0,0.0,0,8,2,0
+2024-08-08,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0.0,0,0,1,3
+2024-08-08,Sữa chua + sữa,Thực phẩm,Phải chi (Must have),119000,3.0,0.0,0,8,2,0
+2024-08-10,Cà phê okio,Cà phê,Phát sinh (Nice to have),155000,5.0,0.0,1,0,1,5
+2024-08-10,Lotte,Thực phẩm,Phải chi (Must have),190000,5.0,0.0,1,8,2,2
+2024-08-10,Trái cây,Thực phẩm,Phải chi (Must have),50000,5.0,0.0,1,8,2,2
+2024-08-10,Ăn sáng,Thực phẩm,Phải chi (Must have),69000,5.0,0.0,1,8,2,2
+2024-09-01,Kính Owndays,Sức khoẻ,Phải chi (Must have),3450000,6.0,0.0,1,7,2,2
+2024-08-10,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),200000,5.0,0.0,1,0,2,2
+2024-08-10,Thuốc cảm và kẹo ngậm,Sức khoẻ,Phát sinh (Nice to have),94000,5.0,0.0,1,7,1,5
+2024-08-11,Đi chợ,Thực phẩm,Phải chi (Must have),320000,6.0,0.0,1,8,2,2
+2024-08-11,Thuốc cảm,Sức khoẻ,Phát sinh (Nice to have),57000,6.0,0.0,1,7,1,5
+2024-08-11,Trà sữa,Thực phẩm,Lãng phí (Wasted),50000,6.0,0.0,1,8,0,5
+2024-08-12,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0.0,0,10,2,0
+2024-08-12,Passio,Cà phê,Phát sinh (Nice to have),19000,0.0,0.0,0,0,1,3
+2024-08-15,Nước,Thực phẩm,Phải chi (Must have),70000,3.0,0.0,0,8,2,0
+2024-08-17,Phở,Thực phẩm,Phải chi (Must have),80000,5.0,0.0,1,8,2,2
+2024-08-15,"Sữa chua, ăn vặt",Thực phẩm,Phát sinh (Nice to have),149000,3.0,0.0,0,8,1,1
+2024-08-16,Lotte,Mua sắm,Phải chi (Must have),708000,4.0,0.0,0,5,2,0
+2024-08-17,Giặt giày,Other,Phát sinh (Nice to have),80000,5.0,0.0,1,6,1,5
+2024-08-17,Tín dụng,Hoá đơn - Thanh toán định kì,Phải chi (Must have),5092000,5.0,0.0,1,4,2,4
+2024-08-17,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),240000,5.0,0.0,1,4,2,2
+2024-08-17,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,0.0,1,10,2,2
+2024-08-17,Cà phê Okkio,Cà phê,Phát sinh (Nice to have),155000,5.0,0.0,1,0,1,5
+2024-08-17,Đi chợ,Thực phẩm,Phải chi (Must have),141000,5.0,0.0,1,8,2,2
+2024-08-17,Hót tóc,Sức khoẻ,Phải chi (Must have),60000,5.0,0.0,1,7,2,2
+2024-08-17,"Mua khăn, ",Mua sắm,Phát sinh (Nice to have),310000,5.0,0.0,1,5,1,5
+2024-08-18,Đi chợ,Thực phẩm,Phải chi (Must have),92000,6.0,0.0,1,8,2,2
+2024-08-19,Nước,Thực phẩm,Phải chi (Must have),70000,0.0,0.0,0,8,2,0
+2024-08-19,card điện thoại,Other,Phát sinh (Nice to have),20000,0.0,0.0,0,6,1,1
+2024-08-20,Ăn trưa,Thực phẩm,Phải chi (Must have),50000,1.0,0.0,0,8,2,0
+2024-08-20,Trả góp,Hoá đơn - Thanh toán định kì,Phải chi (Must have),5092000,1.0,0.0,0,4,2,4
+2024-08-20,Giá đỗ,Thực phẩm,Phải chi (Must have),7000,1.0,0.0,0,8,2,0
+2024-08-20,Spotify,Giải trí,Phát sinh (Nice to have),65000,1.0,0.0,0,3,1,3
+2024-08-22,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0.0,0,10,2,0
+2024-08-22,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,3.0,0.0,0,0,1,3
+2024-08-23,Cà phê passio,Cà phê,Phát sinh (Nice to have),19000,4.0,0.0,0,0,1,3
+2024-08-23,Gửi xe,Đi lại,Phát sinh (Nice to have),10000,4.0,0.0,0,10,1,1
+2024-08-24,Ăn trưa,Thực phẩm,Phải chi (Must have),78000,5.0,0.0,1,8,2,2
+2024-08-24,Lotte,Mua sắm,Phải chi (Must have),280000,5.0,0.0,1,5,2,2
+2024-08-24,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),215000,5.0,0.0,1,0,2,2
+2024-08-25,Nước,Thực phẩm,Phải chi (Must have),70000,6.0,0.0,1,8,2,2
+2024-08-26,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0.0,0,10,2,0
+2024-08-25,Đi chợ,Thực phẩm,Phải chi (Must have),84000,6.0,0.0,1,8,2,2
+2024-08-25,Hớt tóc,Sức khoẻ,Phải chi (Must have),90000,6.0,0.0,1,7,2,2
+2024-08-25,Đi chợ,Thực phẩm,Phải chi (Must have),213000,6.0,0.0,1,8,2,2
+2024-08-25,Bánh mì + bánh trung thu,Thực phẩm,Phát sinh (Nice to have),70000,6.0,0.0,1,8,1,5
+2024-08-26,Khẩu trang + thuốc nhỏ mắt,Sức khoẻ,Phát sinh (Nice to have),107000,0.0,0.0,0,7,1,1
+2024-08-26,nước ngọt,Thực phẩm,Lãng phí (Wasted),10000,0.0,0.0,0,8,0,1
+2024-08-27,Sữa chua + bánh,Thực phẩm,Phát sinh (Nice to have),121000,1.0,0.0,0,8,1,1
+2024-08-29,Nước,Thực phẩm,Phải chi (Must have),70000,3.0,0.0,0,8,2,0
+2024-08-29,Bánh tráng trộn,Thực phẩm,Lãng phí (Wasted),35000,3.0,0.0,0,8,0,1
+2024-08-29,Sữa chua + kẹo + bánh,Thực phẩm,Phát sinh (Nice to have),147000,3.0,0.0,0,8,1,1
+2024-08-30,Bún mắm nem,Thực phẩm,Phải chi (Must have),69000,4.0,0.0,0,8,2,0
+2024-08-31,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,5.0,0.0,1,8,2,2
+2024-08-31,Lotte đồ ăn,Thực phẩm,Phải chi (Must have),291000,5.0,0.0,1,8,2,2
+2024-08-31,Cà phê Hummingbird (lễ 2/9) ,Cà phê,Phát sinh (Nice to have),310000,5.0,0.0,1,0,1,5
+2024-09-01,Đi chợ,Thực phẩm,Phải chi (Must have),465000,6.0,0.0,1,8,2,2
+2024-09-01,Netflix,Giải trí,Phải chi (Must have),53000,6.0,0.0,1,3,2,2
+2024-09-02,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0.0,0,10,2,0
+2024-09-02,Váy đám cưới bé Xuân,Mua sắm,Phát sinh (Nice to have),845000,0.0,0.0,0,5,1,1
+2024-09-02,Áo thun UT Uniqlo,Mua sắm,Phát sinh (Nice to have),391000,0.0,0.0,0,5,1,1
+2024-09-02,Sushi Aionmal,Thực phẩm,Phát sinh (Nice to have),192000,0.0,0.0,0,8,1,1
+2024-09-02,kem đánh răng,Sức khoẻ,Phải chi (Must have),74000,0.0,0.0,0,7,2,0
+2024-09-02,Dâù ăn,Thực phẩm,Phải chi (Must have),65000,0.0,0.0,0,8,2,0
+2024-09-02,chuối,Thực phẩm,Phát sinh (Nice to have),25000,0.0,0.0,0,8,1,1
+2024-09-03,Đi chợ,Thực phẩm,Phải chi (Must have),308000,1.0,0.0,0,8,2,0
+2024-09-03,Khẩu trang + kẹo,Sức khoẻ,Phát sinh (Nice to have),72000,1.0,0.0,0,7,1,1
+2024-09-03,Bánh trung thu + bánh hỏi lotte,Thực phẩm,Phát sinh (Nice to have),139000,1.0,0.0,0,8,1,1
+2024-09-03,Mua vàng cho bé Xuân,Other,Phát sinh (Nice to have),11800000,1.0,0.0,0,6,1,4
+2024-09-04,Nước,Thực phẩm,Phải chi (Must have),70000,2.0,0.0,0,8,2,0
+2024-09-04,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),220000,2.0,0.0,0,0,2,3
+2024-09-06,Highland coffee,Thực phẩm,Phát sinh (Nice to have),55000,4.0,0.0,0,8,1,1
+2024-09-07,Cà phê hạt hummingbird cho Hương Anh,Cà phê,Phát sinh (Nice to have),235000,5.0,0.0,1,0,1,5
+2024-09-07,Lotte,Mua sắm,Phải chi (Must have),520000,5.0,0.0,1,5,2,2
+2024-09-07,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,0.0,1,10,2,2
+2024-09-07,Hummingbird,Cà phê,Phát sinh (Nice to have),65000,5.0,0.0,1,0,1,5
+2024-09-07,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4910000,5.0,0.0,1,4,2,4
+2024-09-07,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),250000,5.0,0.0,1,4,2,2
+2024-09-08,Bánh phồng chiên,Thực phẩm,Phát sinh (Nice to have),11000,6.0,0.0,1,8,1,5
+2024-09-08,Đi chợ,Thực phẩm,Phải chi (Must have),190000,6.0,0.0,1,8,2,2
+2024-09-08,Bảo trì xe yamaha,Đi lại,Phát sinh (Nice to have),1704000,6.0,0.0,1,10,1,5
+2024-09-08,Bánh cuốn tây sơn,Thực phẩm,Phải chi (Must have),74000,6.0,0.0,1,8,2,2
+2024-09-09,Nước,Thực phẩm,Phải chi (Must have),70000,0.0,0.0,0,8,2,0
+2024-09-09,Vé máy bay về đà nẵng đám cưới,Đi lại,Phát sinh (Nice to have),5040000,0.0,0.0,0,10,1,4
+2024-09-09,Tiền đám ma ba Thiện,Other,Phát sinh (Nice to have),300000,0.0,0.0,0,6,1,1
+2024-09-09,Coca cola,Thực phẩm,Lãng phí (Wasted),10000,0.0,0.0,0,8,0,1
+2024-09-12,Kẹo gum,Thực phẩm,Lãng phí (Wasted),29000,3.0,0.0,0,8,0,1
+2024-09-12,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0.0,0,10,2,0
+2024-09-12,Khẩu trang + kẹo,Sức khoẻ,Phát sinh (Nice to have),79000,3.0,0.0,0,7,1,1
+2024-09-13,Phở ăn tối,Thực phẩm,Phát sinh (Nice to have),86000,4.0,0.0,0,8,1,1
+2024-09-13,Trà sữa alley,Thực phẩm,Lãng phí (Wasted),67000,4.0,0.0,0,8,0,1
+2024-09-14,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,5.0,0.0,1,8,2,2
+2024-09-14,Sầu riêng,Thực phẩm,Lãng phí (Wasted),300000,5.0,0.0,1,8,0,5
+2024-09-14,Đi chợ,Thực phẩm,Phải chi (Must have),90000,5.0,0.0,1,8,2,2
+2024-09-14,Bánh kẹo cho cu Bo,Thực phẩm,Phát sinh (Nice to have),230000,5.0,0.0,1,8,1,5
+2024-09-14,Bánh pía + hạt cho bố mẹ,Thực phẩm,Phát sinh (Nice to have),769000,5.0,0.0,1,8,1,5
+2024-09-14,Ủng hộ đồng bào bão lũ,Other,Phát sinh (Nice to have),200000,5.0,0.0,1,6,1,5
+2024-09-15,Giấy lọc và phê,Cà phê,Phải chi (Must have),120000,6.0,0.0,1,0,2,2
+2024-09-15,Cà phê hạt hummingbird,Cà phê,Phải chi (Must have),215000,6.0,0.0,1,0,2,2
+2024-09-15,VTV cap gói 1 ngày + 3G,Giải trí,Lãng phí (Wasted),13000,6.0,0.0,1,3,0,5
+2024-09-16,Sữa rửa mặt,Sức khoẻ,Phải chi (Must have),374000,0.0,0.0,0,7,2,0
+2024-09-16,Trả góp,Hoá đơn - Thanh toán định kì,Phải chi (Must have),3103000,0.0,0.0,0,4,2,4
+2024-09-14,Hớt tóc,Sức khoẻ,Phải chi (Must have),90000,5.0,0.0,1,7,2,2
+2024-09-21,Spotify,Giải trí,Phát sinh (Nice to have),65000,5.0,0.0,1,3,1,5
+2024-09-22,Bún bò,Thực phẩm,Phải chi (Must have),70000,6.0,0.0,1,8,2,2
+2024-09-22,Đi chợ,Thực phẩm,Phải chi (Must have),270000,6.0,0.0,1,8,2,2
+2024-09-23,Đổ xăng,Đi lại,Phải chi (Must have),50000,0.0,0.0,0,10,2,0
+2024-09-23,Lotte trái cây,Thực phẩm,Phát sinh (Nice to have),308000,0.0,0.0,0,8,1,1
+2024-11-01,Mỹ phẩm,Sức khoẻ,Phát sinh (Nice to have),2080000,4.0,0.0,0,7,1,1
+2024-09-24,Khẩu trang,Sức khoẻ,Phải chi (Must have),26000,1.0,0.0,0,7,2,0
+2024-09-25,Nước,Thực phẩm,Phải chi (Must have),70000,2.0,0.0,0,8,2,0
+2024-09-25,Thuốc cảm pharma,Sức khoẻ,Phát sinh (Nice to have),169000,2.0,0.0,0,7,1,1
+2024-09-26,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0.0,0,10,2,0
+2024-09-26,Bánh tráng ở quê,Thực phẩm,Phát sinh (Nice to have),260000,3.0,0.0,0,8,1,1
+2024-09-26,Tiền biếu mẹ Thôi,Other,Phát sinh (Nice to have),1300000,3.0,0.0,0,6,1,1
+2024-09-28,Dừa,Thực phẩm,Phát sinh (Nice to have),52000,5.0,0.0,1,8,1,5
+2024-09-28,Ăn cua,Thực phẩm,Phát sinh (Nice to have),810000,5.0,0.0,1,8,1,5
+2024-09-28,Thuốc xịt ho,Sức khoẻ,Phát sinh (Nice to have),270000,5.0,0.0,1,7,1,5
+2024-09-28,Giá,Thực phẩm,Phải chi (Must have),7000,5.0,0.0,1,8,2,2
+2024-09-29,Ăn sáng,Thực phẩm,Phải chi (Must have),66000,6.0,0.0,1,8,2,2
+2024-09-29,Cà phê passio,Cà phê,Phát sinh (Nice to have),25000,6.0,0.0,1,0,1,5
+2024-09-29,Đi chợ,Thực phẩm,Phải chi (Must have),126000,6.0,0.0,1,8,2,2
+2024-09-29,Nước,Thực phẩm,Phải chi (Must have),70000,6.0,0.0,1,8,2,2
+2024-09-21,Trip Đà nẵng,Du lịch,Phát sinh (Nice to have),4876000,5.0,0.0,1,1,1,4
+2024-09-29,Chi phí về quê đám cưới bé Xuân,Đi lại,Phát sinh (Nice to have),1610000,6.0,0.0,1,10,1,5
+2024-09-29,Đi chợ,Thực phẩm,Phải chi (Must have),118000,6.0,0.0,1,8,2,2
+2024-10-01,cà phê hạt hummingbird,Cà phê,Phải chi (Must have),215000,1.0,0.0,0,0,2,3
+2024-10-01,Đám cưới Quang,Other,Phát sinh (Nice to have),1000000,1.0,0.0,0,6,1,1
+2024-10-01,Tiền nhà,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4880000,1.0,0.0,0,4,2,4
+2024-10-01,Internet,Hoá đơn - Thanh toán định kì,Phải chi (Must have),240000,1.0,0.0,0,4,2,0
+2024-10-01,Trả góp,Hoá đơn - Thanh toán định kì,Phải chi (Must have),4203000,1.0,0.0,0,4,2,4
+2024-10-01,Netflix,Hoá đơn - Thanh toán định kì,Phải chi (Must have),53000,1.0,0.0,0,4,2,0
+2024-10-01,Tiền đồ ăn ở quê,Thực phẩm,Phải chi (Must have),1700000,1.0,0.0,0,8,2,0
+2024-09-30,Sinh tố,Thực phẩm,Phát sinh (Nice to have),25000,0.0,0.0,0,8,1,1
+2024-10-01,Khẩu trang,Sức khoẻ,Phải chi (Must have),95000,1.0,0.0,0,7,2,0
+2024-10-02,Đổ xăng,Đi lại,Phải chi (Must have),50000,2.0,0.0,0,10,2,0
+2024-10-02,Nước listerine + sữa tắm,Mua sắm,Phải chi (Must have),390000,2.0,0.0,0,5,2,0
+2024-10-02,"Sữa chua, kẹo, bánh ngọt + rau củ quả lotte",Thực phẩm,Phát sinh (Nice to have),333000,2.0,0.0,0,8,1,1
+2024-10-03,Rổ + khay gia vị,Mua sắm,Phát sinh (Nice to have),151000,3.0,0.0,0,5,1,1
+2024-10-05,Nước giặt,Mua sắm,Phải chi (Must have),139000,5.0,0.0,1,5,2,2
+2024-10-05,Ăn sáng,Thực phẩm,Phải chi (Must have),56000,5.0,0.0,1,8,2,2
+2024-10-05,Đi chợ,Thực phẩm,Phải chi (Must have),163000,5.0,0.0,1,8,2,2
+2024-10-06,Ăn tối Tacos,Thực phẩm,Phát sinh (Nice to have),63000,6.0,0.0,1,8,1,5
+2024-10-08,Chuối Winmart,Thực phẩm,Phát sinh (Nice to have),16000,1.0,0.0,0,8,1,1
+2024-10-07,Sách tiki,Giáo dục,Phát sinh (Nice to have),245000,0.0,0.0,0,2,1,3
+2024-10-07,"Dầu ăn, đậu hủ, chuối Winmart",Thực phẩm,Phải chi (Must have),115000,0.0,0.0,0,8,2,0
+2024-10-08,Gà rán,Thực phẩm,Phát sinh (Nice to have),111000,1.0,0.0,0,8,1,1
+2024-10-10,Đồ ăn ở quê,Thực phẩm,Phải chi (Must have),3000000,3.0,0.0,0,8,2,0
+2024-10-10,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0.0,0,10,2,0
+2024-10-10,Trà sữa Koi,Thực phẩm,Lãng phí (Wasted),50000,3.0,0.0,0,8,0,1
+2024-10-17,Rau + chuối Winmart,Thực phẩm,Phát sinh (Nice to have),50000,3.0,0.0,0,8,1,1
+2024-10-11,Mì tôm,Thực phẩm,Phát sinh (Nice to have),29000,4.0,0.0,0,8,1,1
+2024-10-11,Mì odon,Thực phẩm,Phát sinh (Nice to have),284000,4.0,0.0,0,8,1,1
+2024-10-12,Thảm chùi chân shopee,Mua sắm,Phát sinh (Nice to have),154000,5.0,0.0,1,5,1,5
+2024-10-12,Passio coffee,Cà phê,Phát sinh (Nice to have),49000,5.0,0.0,1,0,1,5
+2024-10-12,Đi chợ,Thực phẩm,Phải chi (Must have),382000,5.0,0.0,1,8,2,2
+2024-10-12,Cắt tóc,Sức khoẻ,Phải chi (Must have),90000,5.0,0.0,1,7,2,2
+2024-10-13,Xanh SM đám cưới Quang,Đi lại,Phát sinh (Nice to have),116000,6.0,0.0,1,10,1,5
+2024-10-13,Bánh mì,Thực phẩm,Phát sinh (Nice to have),40000,6.0,0.0,1,8,1,5
+2024-10-13,Cà phê đám cưới Quang,Cà phê,Phát sinh (Nice to have),202000,6.0,0.0,1,0,1,5
+2024-10-15,Đổ xăng,Đi lại,Phải chi (Must have),50000,1.0,0.0,0,10,2,0
+2024-10-15,Gạo,Thực phẩm,Phải chi (Must have),210000,1.0,0.0,0,8,2,0
+2024-10-15,Nước,Thực phẩm,Phải chi (Must have),70000,1.0,0.0,0,8,2,0
+2024-10-15,Miến dẫm chân,Mua sắm,Phát sinh (Nice to have),154000,1.0,0.0,0,5,1,1
+2024-10-16,Sữa chua + trái cây Winmart,Thực phẩm,Phát sinh (Nice to have),117000,2.0,0.0,0,8,1,1
+2024-10-17,Quýt Winmart,Thực phẩm,Phát sinh (Nice to have),53000,3.0,0.0,0,8,1,1
+2024-10-17,Cà phê Passio,Cà phê,Phải chi (Must have),95000,3.0,0.0,0,0,2,3
+2024-10-19,Nhổ răng,Sức khoẻ,Phát sinh (Nice to have),2724000,5.0,0.0,1,7,1,5
+2024-10-19,Kem ý quận 1,Thực phẩm,Phát sinh (Nice to have),155000,5.0,0.0,1,8,1,5
+2024-10-19,Cà phê hạt Hummingbird,Cà phê,Phải chi (Must have),235000,5.0,0.0,1,0,2,2
+2024-10-19,Cháo gói Winmart,Thực phẩm,Phát sinh (Nice to have),59000,5.0,0.0,1,8,1,5
+2024-10-19,Đổ xăng,Đi lại,Phải chi (Must have),50000,5.0,0.0,1,10,2,2
+2024-10-19,Sinh tố bơ,Thực phẩm,Phát sinh (Nice to have),35000,5.0,0.0,1,8,1,5
+2024-10-19,Bắp trái,Thực phẩm,Phát sinh (Nice to have),10000,5.0,0.0,1,8,1,5
+2024-10-20,Đi chợ,Thực phẩm,Phải chi (Must have),290000,6.0,0.0,1,8,2,2
+2024-10-20,Nước,Thực phẩm,Phải chi (Must have),70000,6.0,0.0,1,8,2,2
+2024-10-21,Chuối,Thực phẩm,Phát sinh (Nice to have),15000,0.0,0.0,0,8,1,1
+2024-10-24,Đổ xăng,Đi lại,Phải chi (Must have),50000,3.0,0.0,0,10,2,0
+2024-10-24,Mì quảng,Thực phẩm,Phát sinh (Nice to have),52000,3.0,0.0,0,8,1,1
+2024-10-25,Nước,Thực phẩm,Phải chi (Must have),70000,4.0,0.0,0,8,2,0
+2024-10-24,Trái cây + đồ ăn vặt lotte,Thực phẩm,Phát sinh (Nice to have),455000,3.0,0.0,0,8,1,1
+2024-10-26,Đi chợ,Thực phẩm,Phải chi (Must have),440000,5.0,0.0,1,8,2,2
+2024-10-27,"Bột giặt, kem đánh răng, giấy vệ sinh, gia vị",Mua sắm,Phải chi (Must have),215000,6.0,0.0,1,5,2,2
+2024-10-27,Đi chợ,Thực phẩm,Phải chi (Must have),129000,6.0,0.0,1,8,2,2
+2024-10-27,Card điện thoại,Other,Phát sinh (Nice to have),30000,6.0,0.0,1,6,1,5
+2024-10-28,Nước ngọt cocacola,Thực phẩm,Lãng phí (Wasted),10000,0.0,0.0,0,8,0,1
