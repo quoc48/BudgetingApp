@@ -61,9 +61,6 @@ def convert_numpy(obj):
 
 ## Helper function to preprocess data
 def process_data(data):
-    """
-    Preprocess the data by creating derived features and handling missing values.
-    """
     try:
         # Validate and convert 'Date' column
         if 'Date' in data.columns:
