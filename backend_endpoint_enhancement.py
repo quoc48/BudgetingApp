@@ -6,7 +6,6 @@ from flask_cors import CORS
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 import logging
-import json
 
 app = Flask(__name__)
 CORS(app)
