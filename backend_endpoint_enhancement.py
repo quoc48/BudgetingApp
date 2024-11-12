@@ -11,6 +11,7 @@ app = Flask(__name__)
 CORS(app)
 
 DATA_FILE = 'spending_data.csv'
+
 # Upload Spending Data
 @app.route('/upload', methods=['POST'])
 def upload_file():
@@ -22,7 +23,6 @@ def upload_file():
 
     try:
         new_data = pd.read_csv(file)
-        # Keep only necessary columns: 'Date', 'Name', 'Category', 'Type', 'Amount'
         columns_to_keep = ['Date', 'Name', 'Category', 'Type', 'Amount']
         new_data = new_data[columns_to_keep]
 
@@ -57,8 +57,7 @@ def convert_numpy(obj):
     else:
         return obj
 
-
-## Helper function to preprocess data
+# Helper function to preprocess data
 def process_data(data):
     try:
         # Validate and convert 'Date' column
@@ -128,8 +127,6 @@ def run_clustering():
         logging.error(f"Error in run_clustering: {e}")
         return jsonify({"error": str(e)}), 500
 
-
-
 def calculate_transaction_distribution(data):
     """Calculate transaction distributions for each cluster."""
     cluster_distributions = {}
@@ -137,7 +134,6 @@ def calculate_transaction_distribution(data):
         cluster_data = data[data['Cluster'] == cluster]
         cluster_distributions[int(cluster)] = cluster_data['Amount'].tolist()  # Ensure cluster is an int for JSON compatibility
     return cluster_distributions
-
 
 def summarize_cluster(data):
     """Summarize each cluster's characteristics."""
@@ -164,7 +160,6 @@ def summarize_cluster(data):
             "Cluster Type": cluster_type
         })
     return cluster_summaries
-
 
 def spending_by_time_period(data):
     """Categorize spending into time periods of the month."""
