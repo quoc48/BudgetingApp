@@ -176,54 +176,53 @@ def spending_by_time_period(data):
         middle_spending = cluster_data[(cluster_data['Day'] > 10) & (cluster_data['Day'] <= 20)].groupby('Category')['Amount'].sum()
         end_spending = cluster_data[cluster_data['Day'] > 20].groupby('Category')['Amount'].sum()
 
-        # Convert keys to strings to ensure JSON serialization compatibility
-        time_periods['Early'].append({
-            "Cluster": int(cluster),
-            "Categories": {str(key): value for key, value in early_spending.to_dict().items()}
-        })
-        time_periods['Middle'].append({
-            "Cluster": int(cluster),
-            "Categories": {str(key): value for key, value in middle_spending.to_dict().items()}
-        })
-        time_periods['End'].append({
-            "Cluster": int(cluster),
-            "Categories": {str(key): value for key, value in end_spending.to_dict().items()}
-        })
+        # Ensure JSON serialization by converting indexes to strings
+        time_periods['Early'].append(early_spending.to_dict())
+        time_periods['Middle'].append(middle_spending.to_dict())
+        time_periods['End'].append(end_spending.to_dict())
 
     return time_periods
 
 
 @app.route('/insights', methods=['GET'])
 def get_insights():
-    """Generate insights for clustered spending data."""
+    # Ensure data is available
     if not os.path.exists(DATA_FILE):
         return jsonify({"error": "No data available. Please upload a file first."}), 400
 
     try:
-        # Load the data
+        # Load and process data
         data = pd.read_csv(DATA_FILE)
-        logging.info(f"Data loaded for insights with columns: {data.columns.tolist()}")
+        logging.info(
+            f"Data loaded for insights with columns: {data.columns.tolist()}")
 
-        # Ensure 'Cluster' column exists
         if 'Cluster' not in data.columns:
             return jsonify({"error": "No clustering information available. Please run clustering first."}), 400
 
-        # Generate insights
+        # Summarize clusters
         cluster_summaries = summarize_cluster(data)
-        transaction_distributions = calculate_transaction_distribution(data)
-        time_period_spending = spending_by_time_period(data)
+        logging.info(f"Generated cluster summaries: {cluster_summaries}")
 
-        # Return the response
-        return jsonify({
+        # Calculate transaction distributions
+        transaction_distributions = calculate_transaction_distribution(data)
+        logging.info(f"Transaction distributions: {transaction_distributions}")
+
+        time_period_spending = spending_by_time_period(data)
+        logging.info(f"Spending by time period: {time_period_spending}")
+
+        # Include it in the response
+        insights = {
             "cluster_summaries": cluster_summaries,
             "transaction_distributions": transaction_distributions,
-            "time_period_spending": time_period_spending,
-            "message": "Insights successfully generated"
-        }), 200
+            "time_period_spending": time_period_spending
+        }
+
+        return jsonify(insights), 200
 
     except Exception as e:
         logging.error(f"Error in get_insights: {e}")
         return jsonify({"error": str(e)}), 500
+
 
 if __name__ == '__main__':
     app.run(debug=True)
