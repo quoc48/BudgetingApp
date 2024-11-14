@@ -88,7 +88,7 @@ def process_data(data):
         logging.error(f"Error in process_data: {e}")
         raise
 
-# Route for clustering by spending behaviors
+# Run clustering
 @app.route('/run_clustering', methods=['POST'])
 def run_clustering():
     if not os.path.exists(DATA_FILE):
@@ -140,9 +140,18 @@ def summarize_cluster(data):
     cluster_summaries = []
     for cluster in data['Cluster'].unique():
         cluster_data = data[data['Cluster'] == cluster]
+
+        # Core summary statistics
         avg_amount = cluster_data['Amount'].mean()
+        median_amount = cluster_data['Amount'].median()
         transaction_count = len(cluster_data)
         weekend_percentage = cluster_data['IsWeekend'].mean() * 100
+        most_common_categories = cluster_data['Category'].value_counts().head(
+            3).to_dict()
+        biggest_spend_categories = (
+            cluster_data.groupby('Category')['Amount'].sum().sort_values(
+                ascending=False).head(3).to_dict()
+        )
 
         # Infer cluster type
         if weekend_percentage > 50:
@@ -153,10 +162,13 @@ def summarize_cluster(data):
             cluster_type = "Occasional spending"
 
         cluster_summaries.append({
-            "Cluster": int(cluster),  # Ensure JSON compatibility
+            "Cluster": int(cluster),
             "Average Amount": avg_amount,
+            "Median Amount": median_amount,
             "Transaction Count": transaction_count,
             "Weekend Percentage": weekend_percentage,
+            "Most Common Categories": most_common_categories,
+            "Biggest Spend Categories": biggest_spend_categories,
             "Cluster Type": cluster_type
         })
     return cluster_summaries
