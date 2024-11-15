@@ -95,7 +95,6 @@ def run_clustering():
         return jsonify({"error": "No data available. Please upload a file first."}), 400
 
     try:
-        # Load and preprocess data
         data = pd.read_csv(DATA_FILE)
         logging.info(f"Data loaded for clustering with columns: {data.columns.tolist()}")
 
