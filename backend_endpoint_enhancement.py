@@ -12,7 +12,7 @@ CORS(app)
 
 DATA_FILE = 'spending_data.csv'
 
-# Upload Spending Data
+# Upload Data
 @app.route('/upload', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
