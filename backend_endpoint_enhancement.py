@@ -135,8 +135,10 @@ def calculate_transaction_distribution(data):
     return cluster_distributions
 
 def summarize_cluster(data):
-    """Summarize each cluster's characteristics."""
+    """Summarize each cluster's characteristics with deeper behavioral analysis."""
     cluster_summaries = []
+    total_transactions = data['Amount'].count()
+
     for cluster in data['Cluster'].unique():
         cluster_data = data[data['Cluster'] == cluster]
 
@@ -147,18 +149,20 @@ def summarize_cluster(data):
         weekend_percentage = cluster_data['IsWeekend'].mean() * 100
         most_common_categories = cluster_data['Category'].value_counts().head(
             3).to_dict()
-        biggest_spend_categories = (
-            cluster_data.groupby('Category')['Amount'].sum().sort_values(
-                ascending=False).head(3).to_dict()
+        monthly_spending = (
+            cluster_data.groupby(cluster_data['Date'].str[:7])['Amount'].sum().to_dict()
         )
 
-        # Infer cluster type
+        # Behavior insights
         if weekend_percentage > 50:
             cluster_type = "Weekend-focused spending"
-        elif transaction_count > data['Amount'].count() * 0.2:
-            cluster_type = "Routine daily spending"
+        elif transaction_count > total_transactions * 0.2:
+            if avg_amount < data['Amount'].mean():
+                cluster_type = "Low-value frequent transactions"
+            else:
+                cluster_type = "High-value frequent transactions"
         else:
-            cluster_type = "Occasional spending"
+            cluster_type = "Occasinal big_ticket spending"
 
         cluster_summaries.append({
             "Cluster": int(cluster),
@@ -167,7 +171,7 @@ def summarize_cluster(data):
             "Transaction Count": transaction_count,
             "Weekend Percentage": weekend_percentage,
             "Most Common Categories": most_common_categories,
-            "Biggest Spend Categories": biggest_spend_categories,
+            "Monthly Spending": monthly_spending,
             "Cluster Type": cluster_type
         })
     return cluster_summaries
