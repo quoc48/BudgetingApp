@@ -42,33 +42,36 @@ def upload_file():
         logging.error(f"Error in upload_file: {e}")
         return jsonify({"error": str(e)})
 
-def convert_numpy(obj):
-    """Recursively convert numpy types in JSON data to Python-native types."""
+def make_json_serializable(obj):
+    """Recursively convert all NumPy types in a dictionary to JSON-compatible types."""
     if isinstance(obj, dict):
-        return {str(key): convert_numpy(value) for key, value in obj.items()}
+        return {str(key): make_json_serializable(value) for key, value in obj.items()}
     elif isinstance(obj, list):
-        return [convert_numpy(item) for item in obj]
+        return [make_json_serializable(item) for item in obj]
     elif isinstance(obj, (np.integer, int)):
         return int(obj)
     elif isinstance(obj, (np.floating, float)):
         return float(obj)
     elif isinstance(obj, (np.ndarray, list)):
         return obj.tolist()
+    elif isinstance(obj, pd.Period):
+        return str(obj)
     else:
         return obj
+
 
 # Helper function to preprocess data
 def process_data(data):
     try:
         # Validate and convert 'Date' column
         if 'Date' in data.columns:
+            # Convert 'Date' to datetime, setting errors='coerce' to handle invalid values
             data['Date'] = pd.to_datetime(data['Date'], errors='coerce')
             if data['Date'].isna().any():
-                logging.warning("Some 'Date' values could not be converted. They will be dropped.")
-            data.dropna(subset=['Date'], inplace=True)
+                logging.warning("Some 'Date' values could not be converted. Dropping these rows.")
+            data.dropna(subset=['Date'], inplace=True)  # Drop rows where 'Date' is NaT
             data['DayOfWeek'] = data['Date'].dt.dayofweek  # 0=Monday, 6=Sunday
             data['IsWeekend'] = data['DayOfWeek'].apply(lambda x: 1 if x >= 5 else 0)
-            logging.info(f"Derived 'DayOfWeek' and 'IsWeekend' features successfully.")
         else:
             raise ValueError("The 'Date' column is missing and required for processing.")
 
@@ -127,62 +130,40 @@ def run_clustering():
         return jsonify({"error": str(e)}), 500
 
 def calculate_transaction_distribution(data):
-    """Calculate transaction distributions for each cluster."""
     cluster_distributions = {}
     for cluster in data['Cluster'].unique():
-        cluster_data = data[data['Cluster'] == cluster]
-        cluster_distributions[int(cluster)] = cluster_data['Amount'].tolist()  # Ensure cluster is an int for JSON compatibility
+        cluster_distributions[str(cluster)] = data[data['Cluster'] == cluster]['Amount'].tolist()
     return cluster_distributions
 
 def summarize_cluster(data):
-    """Summarize each cluster's characteristics with deeper behavioral analysis."""
+    """Summarize each cluster's characteristics."""
     cluster_summaries = []
-    total_transactions = data['Amount'].count()
-
     for cluster in data['Cluster'].unique():
         cluster_data = data[data['Cluster'] == cluster]
-
-        # Core summary statistics
         avg_amount = cluster_data['Amount'].mean()
-        median_amount = cluster_data['Amount'].median()
         transaction_count = len(cluster_data)
         weekend_percentage = cluster_data['IsWeekend'].mean() * 100
-        most_common_categories = cluster_data['Category'].value_counts().head(
-            3).to_dict()
-        monthly_spending = (
-            cluster_data.groupby(cluster_data['Date'].str[:7])['Amount'].sum().to_dict()
-        )
+        most_common_categories = cluster_data['Category'].value_counts().head(3).to_dict()
 
-        # Behavior insights
-        if weekend_percentage > 50:
-            cluster_type = "Weekend-focused spending"
-        elif transaction_count > total_transactions * 0.2:
-            if avg_amount < data['Amount'].mean():
-                cluster_type = "Low-value frequent transactions"
-            else:
-                cluster_type = "High-value frequent transactions"
-        else:
-            cluster_type = "Occasinal big_ticket spending"
+        # Convert keys of `most_common_categories` to strings
+        most_common_categories = {str(key): int(value) for key, value in most_common_categories.items()}
 
         cluster_summaries.append({
-            "Cluster": int(cluster),
-            "Average Amount": avg_amount,
-            "Median Amount": median_amount,
+            "Cluster": str(cluster),  # Convert cluster number to string
+            "Average Amount": float(avg_amount),
             "Transaction Count": transaction_count,
-            "Weekend Percentage": weekend_percentage,
-            "Most Common Categories": most_common_categories,
-            "Monthly Spending": monthly_spending,
-            "Cluster Type": cluster_type
+            "Weekend Percentage": float(weekend_percentage),
+            "Most Common Categories": most_common_categories
         })
     return cluster_summaries
+
 
 def spending_by_time_period(data):
     """Categorize spending into time periods of the month."""
     time_periods = {"Early": [], "Middle": [], "End": []}
 
-    # Ensure 'Day' column exists in the original DataFrame
-    if 'Day' not in data.columns:
-        data['Day'] = pd.to_datetime(data['Date']).dt.day
+    # Ensure 'Day' column exists
+    data['Day'] = pd.to_datetime(data['Date']).dt.day
 
     for cluster in data['Cluster'].unique():
         cluster_data = data[data['Cluster'] == cluster]
@@ -191,53 +172,116 @@ def spending_by_time_period(data):
         middle_spending = cluster_data[(cluster_data['Day'] > 10) & (cluster_data['Day'] <= 20)].groupby('Category')['Amount'].sum()
         end_spending = cluster_data[cluster_data['Day'] > 20].groupby('Category')['Amount'].sum()
 
-        # Ensure JSON serialization by converting indexes to strings
-        time_periods['Early'].append(early_spending.to_dict())
-        time_periods['Middle'].append(middle_spending.to_dict())
-        time_periods['End'].append(end_spending.to_dict())
+        time_periods['Early'].append({str(key): value for key, value in early_spending.to_dict().items()})
+        time_periods['Middle'].append({str(key): value for key, value in middle_spending.to_dict().items()})
+        time_periods['End'].append({str(key): value for key, value in end_spending.to_dict().items()})
 
     return time_periods
+
+def calculate_monthly_spending_with_details(data):
+    """
+    Calculate monthly spending for each cluster with detailed transactions for the biggest category.
+    :param data: DataFrame containing spending data with 'Cluster', 'Date', 'Category', and 'Amount' columns.
+    :return: Dictionary with clusters as keys, including monthly spending and details for the biggest category.
+    """
+    # Ensure the 'Date' column is a datetime object
+    data['Date'] = pd.to_datetime(data['Date'], errors='coerce')
+
+    # Add 'Month' for grouping
+    data['Month'] = data['Date'].dt.month
+
+    monthly_spending = {}
+
+    for cluster in data['Cluster'].unique():
+        cluster_data = data[data['Cluster'] == cluster]
+
+        # Group by Month and Category, sum the spending
+        spending_by_month_category = cluster_data.groupby(['Month', 'Category'])['Amount'].sum().unstack(fill_value=0)
+
+        # Identify the biggest category for the cluster based on total spending
+        total_category_spending = cluster_data.groupby('Category')['Amount'].sum()
+        biggest_category = total_category_spending.idxmax() if not total_category_spending.empty else None
+
+        # Collect detailed transactions for the biggest category
+        category_transactions = cluster_data[cluster_data['Category'] == biggest_category][['Date', 'Name', 'Amount']].to_dict(orient='records')
+
+        # Structure monthly spending data
+        monthly_spending[cluster] = {
+            "monthly_data": [
+                spending_by_month_category.loc[month].to_dict() if month in spending_by_month_category.index else {}
+                for month in range(1, 13)
+            ],
+            "biggest_category": biggest_category,
+            "transactions": category_transactions
+        }
+    return monthly_spending
+
+def calculate_monthly_spending(data):
+    """Calculate monthly spending for each cluster."""
+    monthly_spending = {}
+
+    # Ensure 'Month' column exists
+    data['Month'] = pd.to_datetime(data['Date']).dt.to_period('M')
+
+    for cluster in data['Cluster'].unique():
+        cluster_data = data[data['Cluster'] == cluster]
+        monthly_totals = cluster_data.groupby(['Month', 'Category'])['Amount'].sum()
+
+        # Convert the MultiIndex DataFrame to a JSON-compatible dictionary
+        monthly_spending[str(cluster)] = {
+            str(month): {str(category): float(amount) for category, amount in categories.items()}
+            for month, categories in monthly_totals.unstack(fill_value=0).iterrows()
+        }
+
+    return monthly_spending
+
+
+def calculate_category_spending(data):
+    """
+    Calculate category spending for each cluster.
+    :param data: DataFrame containing spending data with 'Cluster', 'Category', and 'Amount' columns.
+    :return: Dictionary with clusters as keys and category spending data.
+    """
+    category_spending = {}
+
+    for cluster in data['Cluster'].unique():
+        cluster_data = data[data['Cluster'] == cluster]
+
+        # Calculate total spending by category
+        category_totals = cluster_data.groupby('Category')['Amount'].sum()
+
+        # If no category data, initialize an empty dictionary for the cluster
+        category_spending[str(cluster)] = category_totals.to_dict() if not category_totals.empty else {}
+
+    return category_spending
+
+def calculate_high_value_transactions(data):
+    high_value_summary = {}
+    for cluster in data['Cluster'].unique():
+        cluster_data = data[data['Cluster'] == cluster]
+        highest_transactions = cluster_data.nlargest(3, 'Amount')[['Date', 'Name', 'Category', 'Amount']]
+        high_value_summary[cluster] = highest_transactions.to_dict(orient='records')
+    return high_value_summary
 
 
 @app.route('/insights', methods=['GET'])
 def get_insights():
-    # Ensure data is available
-    if not os.path.exists(DATA_FILE):
-        return jsonify({"error": "No data available. Please upload a file first."}), 400
-
     try:
-        # Load and process data
         data = pd.read_csv(DATA_FILE)
-        logging.info(
-            f"Data loaded for insights with columns: {data.columns.tolist()}")
-
         if 'Cluster' not in data.columns:
             return jsonify({"error": "No clustering information available. Please run clustering first."}), 400
 
-        # Summarize clusters
+        # Generate insights
         cluster_summaries = summarize_cluster(data)
-        logging.info(f"Generated cluster summaries: {cluster_summaries}")
+        category_spending = calculate_category_spending(data)
 
-        # Calculate transaction distributions
-        transaction_distributions = calculate_transaction_distribution(data)
-        logging.info(f"Transaction distributions: {transaction_distributions}")
-
-        time_period_spending = spending_by_time_period(data)
-        logging.info(f"Spending by time period: {time_period_spending}")
-
-        # Include it in the response
-        insights = {
+        return jsonify({
             "cluster_summaries": cluster_summaries,
-            "transaction_distributions": transaction_distributions,
-            "time_period_spending": time_period_spending
-        }
-
-        return jsonify(insights), 200
-
+            "category_spending": category_spending,
+        }), 200
     except Exception as e:
         logging.error(f"Error in get_insights: {e}")
         return jsonify({"error": str(e)}), 500
-
 
 if __name__ == '__main__':
     app.run(debug=True)
