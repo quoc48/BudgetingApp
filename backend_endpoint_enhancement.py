@@ -42,22 +42,24 @@ def upload_file():
         logging.error(f"Error in upload_file: {e}")
         return jsonify({"error": str(e)})
 
-def make_json_serializable(obj):
-    """Recursively convert all NumPy types in a dictionary to JSON-compatible types."""
-    if isinstance(obj, dict):
-        return {str(key): make_json_serializable(value) for key, value in obj.items()}
-    elif isinstance(obj, list):
-        return [make_json_serializable(item) for item in obj]
-    elif isinstance(obj, (np.integer, int)):
+import numpy as np
+
+def convert_to_json_serializable(obj):
+    """Recursively convert objects to JSON serializable types."""
+    if isinstance(obj, (np.integer, int)):
         return int(obj)
     elif isinstance(obj, (np.floating, float)):
         return float(obj)
     elif isinstance(obj, (np.ndarray, list)):
-        return obj.tolist()
-    elif isinstance(obj, pd.Period):
-        return str(obj)
-    else:
-        return obj
+        return [convert_to_json_serializable(item) for item in obj]
+    elif isinstance(obj, (pd.Timestamp, pd.Period)):
+        return str(obj)  # Convert timestamps or periods to strings
+    elif isinstance(obj, dict):
+        return {str(key): convert_to_json_serializable(value) for key, value in obj.items()}
+    elif isinstance(obj, pd.DataFrame):
+        return obj.to_dict(orient='records')  # Convert DataFrame to a list of dictionaries
+    return obj
+
 
 
 # Helper function to preprocess data
@@ -136,24 +138,29 @@ def calculate_transaction_distribution(data):
     return cluster_distributions
 
 def summarize_cluster(data):
-    """Summarize each cluster's characteristics."""
     cluster_summaries = []
     for cluster in data['Cluster'].unique():
         cluster_data = data[data['Cluster'] == cluster]
-        avg_amount = cluster_data['Amount'].mean()
-        transaction_count = len(cluster_data)
-        weekend_percentage = cluster_data['IsWeekend'].mean() * 100
-        most_common_categories = cluster_data['Category'].value_counts().head(3).to_dict()
 
-        # Convert keys of `most_common_categories` to strings
-        most_common_categories = {str(key): int(value) for key, value in most_common_categories.items()}
+        # Calculate spending per category
+        category_spending = cluster_data.groupby('Category')['Amount'].sum().to_dict()
+
+        # Identify biggest category
+        biggest_category = max(category_spending, key=category_spending.get)
+
+        # Highlight most recurring transaction in the biggest category
+        recurring_transaction = (
+            cluster_data[cluster_data['Category'] == biggest_category]
+            .groupby(['Name'])
+            ['Amount'].sum().sort_values(ascending=False).head(1).to_dict()
+        )
 
         cluster_summaries.append({
-            "Cluster": str(cluster),  # Convert cluster number to string
-            "Average Amount": float(avg_amount),
-            "Transaction Count": transaction_count,
-            "Weekend Percentage": float(weekend_percentage),
-            "Most Common Categories": most_common_categories
+            "Cluster": cluster,
+            "Category Spending": category_spending,
+            "Cluster Type": "Routine daily spending" if len(cluster_data) > 50 else "Occasional big-ticket spending",
+            "Biggest Category": biggest_category,
+            "Recurring Transaction": recurring_transaction
         })
     return cluster_summaries
 
@@ -266,22 +273,38 @@ def calculate_high_value_transactions(data):
 
 @app.route('/insights', methods=['GET'])
 def get_insights():
+    if not os.path.exists(DATA_FILE):
+        return jsonify({"error": "No data available. Please upload a file first."}), 400
+
     try:
+        # Load the data
         data = pd.read_csv(DATA_FILE)
+        logging.info(f"Data loaded for insights with columns: {data.columns.tolist()}")
+
         if 'Cluster' not in data.columns:
             return jsonify({"error": "No clustering information available. Please run clustering first."}), 400
 
         # Generate insights
         cluster_summaries = summarize_cluster(data)
-        category_spending = calculate_category_spending(data)
+        transaction_distributions = calculate_transaction_distribution(data)
+        time_period_spending = spending_by_time_period(data)
+        monthly_spending = calculate_monthly_spending(data)
 
-        return jsonify({
+        # Ensure all outputs are JSON serializable
+        insights = {
             "cluster_summaries": cluster_summaries,
-            "category_spending": category_spending,
-        }), 200
+            "transaction_distributions": transaction_distributions,
+            "time_period_spending": time_period_spending,
+            "monthly_spending": monthly_spending
+        }
+
+        # Convert the entire response to JSON serializable format
+        return jsonify(convert_to_json_serializable(insights)), 200
+
     except Exception as e:
         logging.error(f"Error in get_insights: {e}")
         return jsonify({"error": str(e)}), 500
+
 
 if __name__ == '__main__':
     app.run(debug=True)
