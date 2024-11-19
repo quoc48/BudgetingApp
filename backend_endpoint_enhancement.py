@@ -60,9 +60,6 @@ def convert_to_json_serializable(obj):
         return obj.to_dict(orient='records')  # Convert DataFrame to a list of dictionaries
     return obj
 
-
-
-# Helper function to preprocess data
 def process_data(data):
     try:
         # Validate and convert 'Date' column
@@ -164,7 +161,6 @@ def summarize_cluster(data):
         })
     return cluster_summaries
 
-
 def spending_by_time_period(data):
     """Categorize spending into time periods of the month."""
     time_periods = {"Early": [], "Middle": [], "End": []}
@@ -241,7 +237,6 @@ def calculate_monthly_spending(data):
         }
 
     return monthly_spending
-
 
 def calculate_category_spending(data):
     """
