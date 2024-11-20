@@ -128,28 +128,28 @@ def run_clustering():
         return jsonify({"error": "No data available. Please upload a file first."}), 400
 
     try:
+        # Load the data
         data = pd.read_csv(DATA_FILE)
         logging.info(f"Data loaded for clustering with columns: {data.columns.tolist()}")
 
-        # Process data
+        # Process the data
         data = process_data(data)
 
-        # Check required features
-        required_features = ['Amount', 'DayOfWeek', 'IsWeekend']
-        missing_features = [feature for feature in required_features if feature not in data.columns]
-        if missing_features:
-            return jsonify({"error": f"Missing required features: {missing_features}"}), 400
+        # Define clustering features
+        clustering_features = ['DayOfMonth', 'WeekOfMonth', 'DayOfWeek', 'IsWeekend', 'WeightedAmount']
 
-        # Perform clustering
+        # Normalize features for clustering
         scaler = StandardScaler()
-        scaled_features = scaler.fit_transform(data[required_features])
+        scaled_features = scaler.fit_transform(data[clustering_features])
+
+        # Apply KMeans clustering
         kmeans = KMeans(n_clusters=6, random_state=42)
         data['Cluster'] = kmeans.fit_predict(scaled_features)
 
-        # Log cluster counts
+        # Log cluster counts for debugging
         logging.info(f"Cluster counts: {data['Cluster'].value_counts()}")
 
-        # Save updated data
+        # Save the clustered data
         data.to_csv(DATA_FILE, index=False)
         logging.info("Clustered data successfully saved.")
 
@@ -307,25 +307,24 @@ def get_insights():
         data = pd.read_csv(DATA_FILE)
         logging.info(f"Data loaded for insights with columns: {data.columns.tolist()}")
 
+        # Process the data
+        data = process_data(data)
+
+        # Ensure clustering has been performed
         if 'Cluster' not in data.columns:
             return jsonify({"error": "No clustering information available. Please run clustering first."}), 400
 
         # Generate insights
-        cluster_summaries = summarize_cluster(data)
-        transaction_distributions = calculate_transaction_distribution(data)
-        time_period_spending = spending_by_time_period(data)
-        monthly_spending = calculate_monthly_spending(data)
+        cluster_summaries = summarize_cluster(data)  # Summarize cluster characteristics
+        category_spending_by_cluster = calculate_transaction_distribution(data)  # Stacked bar chart data
+        temporal_trends = spending_by_time_period(data)  # Spending trends by time periods
 
-        # Ensure all outputs are JSON serializable
-        insights = {
+        # Return insights
+        return jsonify({
             "cluster_summaries": cluster_summaries,
-            "transaction_distributions": transaction_distributions,
-            "time_period_spending": time_period_spending,
-            "monthly_spending": monthly_spending
-        }
-
-        # Convert the entire response to JSON serializable format
-        return jsonify(convert_to_json_serializable(insights)), 200
+            "category_spending": category_spending_by_cluster,
+            "temporal_trends": temporal_trends
+        }), 200
 
     except Exception as e:
         logging.error(f"Error in get_insights: {e}")
