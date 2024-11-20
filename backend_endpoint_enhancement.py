@@ -60,6 +60,7 @@ def convert_to_json_serializable(obj):
         return obj.to_dict(orient='records')  # Convert DataFrame to a list of dictionaries
     return obj
 
+
 def process_data(data):
     try:
         # Validate and convert 'Date' column
@@ -67,28 +68,58 @@ def process_data(data):
             # Convert 'Date' to datetime, setting errors='coerce' to handle invalid values
             data['Date'] = pd.to_datetime(data['Date'], errors='coerce')
             if data['Date'].isna().any():
-                logging.warning("Some 'Date' values could not be converted. Dropping these rows.")
-            data.dropna(subset=['Date'], inplace=True)  # Drop rows where 'Date' is NaT
+                logging.warning(
+                    "Some 'Date' values could not be converted. Dropping these rows.")
+            data.dropna(subset=['Date'],
+                        inplace=True)  # Drop rows where 'Date' is NaT
+
+            # Extract temporal features
             data['DayOfWeek'] = data['Date'].dt.dayofweek  # 0=Monday, 6=Sunday
-            data['IsWeekend'] = data['DayOfWeek'].apply(lambda x: 1 if x >= 5 else 0)
+            data['IsWeekend'] = data['DayOfWeek'].apply(
+                lambda x: 1 if x >= 5 else 0)
+            data['DayOfMonth'] = data['Date'].dt.day  # Day of the month (1-31)
+            data['WeekOfMonth'] = (data[
+                                       'DayOfMonth'] - 1) // 7 + 1  # 1st, 2nd, 3rd week, etc.
+            data['Month'] = data[
+                'Date'].dt.month  # Extract month for seasonal analysis
         else:
-            raise ValueError("The 'Date' column is missing and required for processing.")
+            raise ValueError(
+                "The 'Date' column is missing and required for processing.")
 
         # Validate and clean 'Amount' column
         if 'Amount' in data.columns:
-            data['Amount'] = pd.to_numeric(data['Amount'], errors='coerce').fillna(0)
+            data['Amount'] = pd.to_numeric(data['Amount'],
+                                           errors='coerce').fillna(0)
         else:
-            raise ValueError("The 'Amount' column is missing and required for clustering.")
+            raise ValueError(
+                "The 'Amount' column is missing and required for clustering.")
 
         # Fill missing values for 'Category' and 'Type'
         data['Category'] = data['Category'].fillna('Unknown')
         data['Type'] = data['Type'].fillna('Unknown')
 
+        # Add category weights
+        total_spending = data['Amount'].sum()
+        category_frequency = data['Category'].value_counts(
+            normalize=True)  # Frequency as a proportion
+        category_spending = data.groupby('Category')[
+            'Amount'].sum()  # Total spending by category
+
+        data['CategoryFrequencyWeight'] = data['Category'].map(
+            category_frequency)  # Map frequency weights
+        data['CategorySpendingWeight'] = data['Category'].map(
+            lambda x: category_spending[x] / total_spending)  # Spending weight
+        data['WeightedAmount'] = data['Amount'] * data[
+            'CategorySpendingWeight']  # Combine into weighted spending
+
+        # Log processed data preview for debugging
         logging.info(f"Processed data preview:\n{data.head()}")
         return data
+
     except Exception as e:
         logging.error(f"Error in process_data: {e}")
         raise
+
 
 # Run clustering
 @app.route('/run_clustering', methods=['POST'])
