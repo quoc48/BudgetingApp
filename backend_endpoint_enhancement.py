@@ -305,7 +305,7 @@ def get_insights():
         data = pd.read_csv(DATA_FILE)
         logging.info(f"Data loaded for insights with columns: {data.columns.tolist()}")
 
-        # Process the data
+
         data = process_data(data)
 
         # Ensure clustering has been performed
