@@ -44,22 +44,20 @@ def upload_file():
 
 import numpy as np
 
-def convert_to_json_serializable(obj):
-    """Recursively convert objects to JSON serializable types."""
-    if isinstance(obj, (np.integer, int)):
+def convert_numpy(obj):
+    """Recursively convert numpy types to Python-native types."""
+    if isinstance(obj, dict):
+        return {str(key): convert_numpy(value) for key, value in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_numpy(item) for item in obj]
+    elif isinstance(obj, (np.integer, int)):
         return int(obj)
     elif isinstance(obj, (np.floating, float)):
         return float(obj)
     elif isinstance(obj, (np.ndarray, list)):
-        return [convert_to_json_serializable(item) for item in obj]
-    elif isinstance(obj, (pd.Timestamp, pd.Period)):
-        return str(obj)  # Convert timestamps or periods to strings
-    elif isinstance(obj, dict):
-        return {str(key): convert_to_json_serializable(value) for key, value in obj.items()}
-    elif isinstance(obj, pd.DataFrame):
-        return obj.to_dict(orient='records')  # Convert DataFrame to a list of dictionaries
-    return obj
-
+        return obj.tolist()
+    else:
+        return obj
 
 def process_data(data):
     try:
@@ -303,7 +301,7 @@ def get_insights():
         return jsonify({"error": "No data available. Please upload a file first."}), 400
 
     try:
-        # Load the data
+
         data = pd.read_csv(DATA_FILE)
         logging.info(f"Data loaded for insights with columns: {data.columns.tolist()}")
 
