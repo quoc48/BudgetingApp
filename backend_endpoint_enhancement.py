@@ -167,28 +167,20 @@ def summarize_cluster(data):
     cluster_summaries = []
     for cluster in data['Cluster'].unique():
         cluster_data = data[data['Cluster'] == cluster]
-
-        # Calculate spending per category
-        category_spending = cluster_data.groupby('Category')['Amount'].sum().to_dict()
-
-        # Identify biggest category
-        biggest_category = max(category_spending, key=category_spending.get)
-
-        # Highlight most recurring transaction in the biggest category
-        recurring_transaction = (
-            cluster_data[cluster_data['Category'] == biggest_category]
-            .groupby(['Name'])
-            ['Amount'].sum().sort_values(ascending=False).head(1).to_dict()
-        )
+        avg_amount = float(cluster_data['Amount'].mean())
+        transaction_count = int(len(cluster_data))
+        weekend_percentage = float(cluster_data['IsWeekend'].mean() * 100)
 
         cluster_summaries.append({
-            "Cluster": cluster,
-            "Category Spending": category_spending,
-            "Cluster Type": "Routine daily spending" if len(cluster_data) > 50 else "Occasional big-ticket spending",
-            "Biggest Category": biggest_category,
-            "Recurring Transaction": recurring_transaction
+            "Cluster": int(cluster),
+            "Average Amount": avg_amount,
+            "Transaction Count": transaction_count,
+            "Weekend Percentage": weekend_percentage,
+            "Most Common Categories": {str(k): int(v) for k, v in cluster_data['Category'].value_counts().head(3).to_dict().items()}
         })
+
     return cluster_summaries
+
 
 def spending_by_time_period(data):
     """Categorize spending into time periods of the month."""
@@ -301,28 +293,27 @@ def get_insights():
         return jsonify({"error": "No data available. Please upload a file first."}), 400
 
     try:
-
+        # Load and process data
         data = pd.read_csv(DATA_FILE)
-        logging.info(f"Data loaded for insights with columns: {data.columns.tolist()}")
-
-
-        data = process_data(data)
-
-        # Ensure clustering has been performed
         if 'Cluster' not in data.columns:
             return jsonify({"error": "No clustering information available. Please run clustering first."}), 400
 
         # Generate insights
-        cluster_summaries = summarize_cluster(data)  # Summarize cluster characteristics
-        category_spending_by_cluster = calculate_transaction_distribution(data)  # Stacked bar chart data
-        temporal_trends = spending_by_time_period(data)  # Spending trends by time periods
+        cluster_summaries = summarize_cluster(data)
+        transaction_distributions = calculate_transaction_distribution(data)
+        time_period_spending = spending_by_time_period(data)
+        monthly_spending = calculate_monthly_spending(data)
 
-        # Return insights
-        return jsonify({
-            "cluster_summaries": cluster_summaries,
-            "category_spending": category_spending_by_cluster,
-            "temporal_trends": temporal_trends
-        }), 200
+        # Convert all insights to Python-native types
+        response = {
+            "cluster_summaries": convert_numpy(cluster_summaries),
+            "transaction_distributions": convert_numpy(transaction_distributions),
+            "time_period_spending": convert_numpy(time_period_spending),
+            "monthly_spending": convert_numpy(monthly_spending),
+        }
+        logging.info(f"Generated insights response: {response}")
+
+        return jsonify(response), 200
 
     except Exception as e:
         logging.error(f"Error in get_insights: {e}")
