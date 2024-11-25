@@ -293,7 +293,6 @@ def get_insights():
         return jsonify({"error": "No data available. Please upload a file first."}), 400
 
     try:
-        # Load and process data
         data = pd.read_csv(DATA_FILE)
         if 'Cluster' not in data.columns:
             return jsonify({"error": "No clustering information available. Please run clustering first."}), 400
