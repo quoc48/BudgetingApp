@@ -303,7 +303,7 @@ def get_insights():
         time_period_spending = spending_by_time_period(data)
         monthly_spending = calculate_monthly_spending(data)
 
-        # Convert all insights to Python-native types
+        # Convert all insights to Python-native
         response = {
             "cluster_summaries": convert_numpy(cluster_summaries),
             "transaction_distributions": convert_numpy(transaction_distributions),
