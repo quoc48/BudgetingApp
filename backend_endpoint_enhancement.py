@@ -6,6 +6,7 @@ from flask_cors import CORS
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 import logging
+import numpy as np
 
 app = Flask(__name__)
 CORS(app)
@@ -42,7 +43,7 @@ def upload_file():
         logging.error(f"Error in upload_file: {e}")
         return jsonify({"error": str(e)})
 
-import numpy as np
+
 
 def convert_numpy(obj):
     """Recursively convert numpy types to Python-native types."""
