@@ -43,8 +43,6 @@ def upload_file():
         logging.error(f"Error in upload_file: {e}")
         return jsonify({"error": str(e)})
 
-
-
 def convert_numpy(obj):
     """Recursively convert numpy types to Python-native types."""
     if isinstance(obj, dict):
@@ -230,7 +228,7 @@ def calculate_monthly_spending_with_details(data):
         # Collect detailed transactions for the biggest category
         category_transactions = cluster_data[cluster_data['Category'] == biggest_category][['Date', 'Name', 'Amount']].to_dict(orient='records')
 
-        # Structure monthly spending data
+
         monthly_spending[cluster] = {
             "monthly_data": [
                 spending_by_month_category.loc[month].to_dict() if month in spending_by_month_category.index else {}
